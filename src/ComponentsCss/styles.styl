@@ -1,0 +1,243 @@
+@import 'reticula.styl'
+@import 'home/home.styl'
+@import 'info/info.styl'
+@import 'contact/contact.styl'
+@import 'question/question.styl'
+
+
+
+* {
+  outline: 0;
+}
+
+body
+	background #ECEFF1
+
+.headerr
+  position: fixed;
+  background: #FFF;
+  width: 100%;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #cfd8dc;
+  transition: all .3s ease-in-out;
+
+.headerr img
+  display: block;
+  width: 180px;
+  height 50px
+
+.headerr .input-wrapper
+  position relative
+
+.right
+  float: right!important;
+
+.fa-search
+  position: absolute;
+  font-size: 22px;
+  top: 11px;
+  left: 6px;
+  color: #607D8B;
+  z-index: 9;
+
+.mdi
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translate(0,0);
+
+.mdi-magnify:before
+  content: "\f401";
+
+.headerr .input-wrapper input
+  position: relative;
+  z-index: 10;
+  height: auto;
+  margin: 5px 0 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: 0 0;
+  border-bottom: 1px solid transparent;
+  font-size: 16px;
+  padding: 6px 28px 6px 34px;
+  display: inline-block;
+  width: 200px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-weight: 700;
+  color: #546E7A;
+
+
+.content-row
+  position: relative;
+  background: #eceff1;
+  padding-top 80px
+
+//MENU LEFT NAV
+.menu-left
+  position relative
+  &-content
+    padding-top 20px
+
+
+.nav-list
+  position fixed
+  list-style none
+  margin 0 0 24px
+
+.nav-list a
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #78909C;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  border-left: 3px solid #eceff1;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+
+li a:hover
+  background #E5E9EC
+  border-left-color: #B0BEC5;
+
+li .active
+  border-left-color #00bcd4;
+  color: #455A64;
+  font-weight: 700;
+
+
+.nav-list a img
+  height: 18px;
+  width: 18px;
+  line-height: 1;
+  margin-right: 6px;
+  margin-top: -3px;
+
+a img
+  border: none;
+
+img
+   display: inline-block;
+
+
+@media screen and (max-width: 639.0px)
+  .content-row
+    padding-top 0px
+
+
+//HEADER SMALL
+
+.header-small
+  background white
+  padding 20px
+  border-bottom: 1px solid #CFD8DC;
+  img
+    height 50px
+  input
+    position: relative;
+    z-index: 10;
+    height: auto;
+    margin: 5px 0 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: 0 0;
+    border-bottom: 1px solid transparent;
+    font-size: 16px;
+    padding: 6px 28px 6px 34px;
+    display: inline-block;
+    width: 200px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    color: #546E7A;
+
+
+//MENU SMALL
+.top-barr
+  padding 4px
+  border-bottom 1px solid #BFBFBF
+.top-bar-section
+  left: 0
+  width: auto
+  transition: left .3s ease-out
+  ul
+    display: block;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+.top-barr ul
+  list-style: none;
+  margin-left 20px
+  margin-bottom 3px
+
+.top-bar-section ul:hover
+  color #B0BEC5
+
+.top-bar-section .listMenu a
+  padding 7px
+  background transparent
+
+.top-bar-section .rightt
+  margin 0
+  padding 0
+
+.top-bar-section .rightt a
+  background transparent
+  padding-top 10px
+  padding-bottom 7px
+  padding-left 32px
+
+
+.top-bar-section a
+  display: block;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #78909C;
+  -webkit-border-radius: 0 2px 2px 0;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+.top-bar-section .iconos
+  padding-right 10px
+  font-size 18px
+
+//REDES
+
+.redess a
+  margin 0 .5em
+
+.facebook
+  color #3B5998
+  font-size 2.5em !important
+
+.twitter
+  color #1B95E0
+  font-size 2.5em !important
+
+.google
+  color #DA4B39
+  font-size 2.5em !important
+
+.skype
+  color #00AFF0
+  font-size 2.5em !important

@@ -1,0 +1,106 @@
+.form
+	input
+		max-width 250px
+
+.formulario
+	input
+		border none
+		border-bottom 2px solid #EAF6FC
+		border-radius 5px
+		height 50px
+		font-size 18px
+	input[type="text"]:focus
+		border 2px solid #EAF6FC
+		font-family 'Allerta'
+		text-align top
+		font-size 20px
+	input[placeholder]:focus
+		font-size 1em
+
+	textarea
+		border none
+		outline 0
+		border-bottom 2px solid #EAF6FC
+		height 150px
+	textarea:focus
+		border 2px solid #EAF6FC
+		font-size 20px
+
+	textarea[placeholder]
+		font-size 20px
+		font-family 'Allerta'
+		font-size 20px
+
+	button
+		background #289BBF
+		color white
+		font-family 'Allerta'
+		font-size 1em
+		width  150px
+		padding 1em 3em
+		margin-top 2em
+
+		
+
+
+/*Helpers */
+
+.error
+	color #F62319
+	font-family 'Allerta'
+	margin-right  250px
+	display block
+	font-size .8em
+.error1
+	color #F62319
+	font-family 'Allerta'
+	margin-right  250px
+	font-size .8em
+	display block
+	
+
+.barra
+	background red
+	height 100px
+	width 100px
+	border-radius 50%
+
+
+//SVG CIRCULO
+
+
+
+//PRUEBA SVG
+
+#container
+	margin 0
+	padding 0
+	height 100%
+	display table
+	width 100%
+
+.Demo
+	display table-cell
+	text-align center
+	vertical-align middle
+
+
+:root
+	--progress-bg-color #49B5D5
+	--progress-fg-color #F2F2F2
+
+.CircularProgress-Bg,
+.CircularProgress-Fg
+	fill none
+
+.CircularProgress-Bg
+	stroke var(--progress-bg-color)
+
+.CircularProgress-Fg
+	transition stroke-dashoffset .5s ease-in-out
+	stroke var(--progress-fg-color)
+
+.CircularProgress-Text
+	font-family sans-serif
+	fill var(--progress-fg-color)
+	transform translate(0 50%)
