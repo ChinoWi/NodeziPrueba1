@@ -3,8 +3,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import TestUtils from 'react-addons-test-utils';
 import MediaQuery from 'react-responsive'
 
-
-
 const Respuestas=React.createClass({
     render(){
         return(

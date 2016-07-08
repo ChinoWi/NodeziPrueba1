@@ -1,8 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
 import AppSidebar from '../component/sidebar/sidebar'
-
-
 const styles = {
     contentHeaderMenuLink: {
         textDecoration: 'none',

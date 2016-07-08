@@ -55,13 +55,11 @@ const Modal=React.createClass({
             position: 'absolute',
             top: '44%',
             left: '50%',
-            transform: 'translate(-50%, -50%)',
+            transform: 'translate(-50%, -100%)',
             zIndex: '9999',
             background: '#fff',
             textAlign:'center'
         };
-
-
         let FondoModal = {
             position: 'absolute',
             width: '100%',
