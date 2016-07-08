@@ -45,78 +45,78 @@ const ViewInformacion=React.createClass({
                         </div>
                     </div>
                 </section>
+
+                <section className="sectionInfo">
+                    <div className="content">
+                        <div className="content-title">
+                            sdfsdf
+                        </div>
+                        <div className="content-content">
+                            <div className="row">
+                                <div className="small-up-1 medium-up-1 large-up-3" >
+                                    <div className="columns" >
+                                        <div className="spaces text-center">
+                                            <img src="asset/images/software-medida1.png" alt="software medidda"/>
+                                            <h5 className="titlebox">Software a Medida</h5>
+                                            <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                        </div>
+                                    </div>
+                                    <div className="columns">
+                                        <div className="spaces text-center">
+                                            <img src="asset/images/ux.png" alt="software medidda"/>
+                                            <h5 className="titlebox">Experiencia de Usuario</h5>
+                                            <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                        </div>
+                                    </div>
+                                    <div className="columns" >
+                                        <div className="spaces text-center">
+                                            <img src="asset/images/ui.png" alt="software medidda"/>
+                                            <h5 className="titlebox">Interfaz Grafica</h5>
+                                            <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                        </div>
+                                    </div>
+                                    <div className="columns" >
+                                        <div className="spaces text-center">
+                                            <img src="asset/images/compromiso.png" alt="software medidda"/>
+                                            <h5 className="titlebox">Compromiso con el cliente</h5>
+                                            <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                        </div>
+                                    </div>
+                                    <div className="columns" >
+                                        <div className="spaces text-center">
+                                            <img src="asset/images/testing.png" alt="software medidda"/>
+                                            <h5 className="titlebox">Testing De hacking</h5>
+                                            <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                        </div>
+                                    </div>
+                                    <div className="columns">
+                                        <div className="spaces text-center">
+                                            <img src="asset/images/seo.png" alt="software medidda"/>
+                                            <h5 className="titlebox">Seo y Posicionamiento</h5>
+                                            <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="text-left">
+                            <div className="sectionInfo-titl">¿Que nos hace diferente?</div>
+                        </div>
+
+                    </div>
+
+                </section>
+
                 <section className="sectionInformationDife">
                     <div className="row">
                         <div className="text-center" style={{padding:'20px'}}>
                             <h1 className="diferences-title">¿Que nos hace diferente?</h1>
                             <div className="row">
-                                <div className="row small-up-1 medium-up-2 large-up-3">
-                                    <div className="columns" >
-                                        <div className="sepa">
-                                            <div className="row">
-                                                <img src="asset/images/software-medida1.png" alt="Escaneo vuln"/>
-                                            </div>
-                                            <div className="mensaje">
-                                                <h5 className="title">Software a Medida</h5>
-                                                <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="columns" >
-                                        <div className="sepa">
-                                            <div className="row">
-                                                <img src="asset/images/ux.png" alt="Escaneo vuln"/>
-                                            </div>
-                                            <div className="mensaje">
-                                                <h5 className="title">Experiencia de Usuario</h5>
-                                                <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="columns">
-                                        <div className="sepa">
-                                            <div className="row">
-                                                <img src="asset/images/ui.png" alt="Escaneo vuln"/>
-                                            </div>
-                                            <div className="mensaje">
-                                                <h5 className="title">Interfaz Grafica</h5>
-                                                <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="columns" >
-                                        <div className="sepa">
-                                            <div className="row">
-                                                <img src="asset/images/compromiso.png"  alt="Escaneo vuln"/>
-                                            </div>
-                                            <div className="mensaje">
-                                                <h5 className="title">Compromiso con el cliente</h5>
-                                                <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="columns">
-                                        <div className="sepa">
-                                            <div className="row">
-                                                <img src="asset/images/testing.png" alt="Escaneo vuln"/>
-                                            </div>
-                                            <div className="mensaje">
-                                                <h5 className="title">Testing De hacking</h5>
-                                                <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                    <div className="columns">
-                                        <div className="sepa">
-                                            <img src="asset/images/seo.png"alt="Escaneo vuln"/>
 
-                                            <div className="mensaje">
-                                                <h5 className="title">Seo y Posicionamiento</h5>
-                                                <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

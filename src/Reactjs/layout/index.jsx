@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
 import AppSidebar from '../component/sidebar/sidebar'
+
+
 const styles = {
     contentHeaderMenuLink: {
         textDecoration: 'none',
@@ -10,8 +12,6 @@ const styles = {
     content: {
         padding: '16px',
     },
-
-
     menuNav:{
         zIndex: '1000',
         marginLeft: '0px',
@@ -19,10 +19,8 @@ const styles = {
         left: '45.3px',
         maxWidth:'50%'
 
-    }
+    },
 };
-
-
 
 const Footer=React.createClass({
     render(){
@@ -130,34 +128,39 @@ const App=React.createClass({
 
                     <div className="content-row">
                         <div className="row">
-                            <div className="medium-3 large-2 hide-for-small-only columns menu-left">
-                                <div className="menu-left-content" style={styles.menuNav}>
-                                    <ul className="nav-list">
-                                        <li>
-                                            <Link to="/" className="active">
-                                                <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                <span>Inicio</span>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/Informacion">
-                                                <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                <span>Informacion</span>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/Preguntas">
-                                                <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                <span>Preguntas</span>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/Contactenos">
-                                                <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                <span>Contactenos</span>
-                                            </Link>
-                                        </li>
-                                    </ul>
+                            <div className="medium-3 large-2 hide-for-small-only columns menu-izq">
+                                <div className="text-center">
+                                    <div className="menu-izq-content" style={styles.menuNav}>
+                                        <div className="row">
+                                            <ul className="menu-izq-nav text-left">
+                                                <li>
+                                                    <Link to="/" className="active">
+                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
+                                                        <span>Inicio</span>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/Informacion">
+                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
+                                                        <span>Informacion</span>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/Preguntas">
+                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
+                                                        <span>Preguntas</span>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/Contactenos">
+                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
+                                                        <span>Contactenos</span>
+                                                    </Link>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                             <div className="show-for-small-only">
@@ -171,23 +174,22 @@ const App=React.createClass({
                                         </div>
                                     </div>
                                 </header>
-                                <div className="row">
-                                    <div className="top-barr">
-                                        <section className="top-bar-section">
-                                            <ul onClick={this.handleClickShow} >
-                                                <li className="listMenu">
-                                                    <Link to="/">
-                                                        <i className="fa fa-list iconos"></i>
-                                                        <span>Menu</span>
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                            {this.state.showMenu ? this.state.datos.map(this.eachItem) : null}
-                                        </section>
-                                    </div>
+                                <div className="top-barr">
+                                    <section className="top-bar-section">
+                                        <ul onClick={this.handleClickShow} >
+                                            <li className="listMenu">
+                                                <Link to="/">
+                                                    <i className="fa fa-list iconos"></i>
+                                                    <span>Menu</span>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                        {this.state.showMenu ? this.state.datos.map(this.eachItem) : null}
+                                    </section>
                                 </div>
+
                             </div>
-                            <div className="medium-9 large-10 columns" >
+                            <div className="medium-9 large-10 columns menu-der" style={{border:'1px solid green'}}>
                                 {this.props.children}
                             </div>
                         </div>

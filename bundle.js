@@ -29864,8 +29864,8 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { 'class': 'flex-video', style: { marginLeft: '30px', marginRight: '30px', marginBottom: '20px' } },
-	                    _react2.default.createElement('iframe', { style: { background: '#DBD8F0', width: '1000px', height: '400px', margin: '0px' }, className: 'thumbnail', src: 'https://www.youtube.com/embed/aiBt44rrslw', frameborder: '0', allowfullscreen: true })
+	                    { style: { marginLeft: '30px', marginRight: '30px', marginBottom: '20px' } },
+	                    _react2.default.createElement('iframe', { style: { background: '#DBD8F0', width: '1000px', height: '400px', margin: '0px' }, className: 'thumbnail', src: 'https://www.youtube.com/embed/aiBt44rrslw' })
 	                )
 	            )
 	        );
@@ -29890,7 +29890,7 @@
 	            position: 'absolute',
 	            top: '44%',
 	            left: '50%',
-	            transform: 'translate(-50%, -50%)',
+	            transform: 'translate(-50%, -100%)',
 	            zIndex: '9999',
 	            background: '#fff',
 	            textAlign: 'center'

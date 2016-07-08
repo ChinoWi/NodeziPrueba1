@@ -28,8 +28,8 @@ const PruebaModal=React.createClass({
                     <div className="text-right" style={{marginRight:'8px'}}>
                         <a className="icon-closeModal" onClick={() => this.hideModal()} >X</a>
                     </div>
-                    <div class="flex-video" style={{marginLeft:'30px',marginRight:'30px',marginBottom:'20px'}}>
-                        <iframe style={{background:'#DBD8F0',width:'1000px',height:'400px',margin:'0px'}} className="thumbnail"src="https://www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+                    <div style={{marginLeft:'30px',marginRight:'30px',marginBottom:'20px'}}>
+                        <iframe style={{background:'#DBD8F0',width:'1000px',height:'400px',margin:'0px'}} className="thumbnail"src="https://www.youtube.com/embed/aiBt44rrslw"></iframe>
                     </div>
                 </Modal>
 
@@ -56,10 +56,12 @@ const Modal=React.createClass({
             top: '44%',
             left: '50%',
             transform: 'translate(-50%, -100%)',
-            zIndex: '9999',
+            zIndex: '300',
             background: '#fff',
             textAlign:'center'
         };
+
+
         let FondoModal = {
             position: 'absolute',
             width: '100%',
