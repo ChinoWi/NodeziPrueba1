@@ -89,6 +89,10 @@
 	--progress-bg-color #49B5D5
 	--progress-fg-color #F2F2F2
 
+	--progressInfo-bg-color #49B5D5
+	--progressInfo-fg-color #f26b6b
+	--progressInfo-fy-color #f239e6
+
 .CircularProgress-Bg,
 .CircularProgress-Fg
 	fill none
@@ -103,4 +107,25 @@
 .CircularProgress-Text
 	font-family sans-serif
 	fill var(--progress-fg-color)
+	transform translate(0 50%)
+
+
+.CircularProgressInfo-Bg,
+.CircularProgressInfo-Fg
+	fill none
+
+.CircularProgressInfo-Bg
+	stroke var(--progressInfo-bg-color)
+
+.CircularProgressInfo-Fg
+	transition stroke-dashoffset .5s ease-in-out
+	stroke var(--progressInfo-fg-color)
+
+.CircularProgressInfo-Fy
+	transition stroke-dashoffset .5s ease-in-out
+	stroke var(--progressInfo-fy-color)
+
+.CircularProgressInfo-Text
+	font-family sans-serif
+	fill var(--progressInfo-fg-color)
 	transform translate(0 50%)

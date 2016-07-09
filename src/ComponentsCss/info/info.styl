@@ -1,38 +1,59 @@
-.view-info
-	height 100%
+.sectionInfoQue
+	.content
+		box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+		webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+		&-title
+			padding 15px
+			background #00BAFF
+			.title-mensaje
+				padding-left 20px
+				color white
+				font-size 18px
+				i
+					padding-right 10px
+		.imgFondo
+			height 250px
+			background-image: url("../images/fondoimg1.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment fixed
+			background-size: cover;
+			&-content
+				padding 30px
+				.text-mensaje
+					margin 10px
+					font-size 18px
+				img
+					height 200px
 
-.sectionInformation
-	color white
+					color white
 
-.sectionInformation .imagenInformacion
-	background-image: url("../../asset/images/fondoimg1.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment fixed
-	background-size: cover;
+.sectionInforQuie
+	padding-top 20px
+	.content
+		background white
+		&-title
+			padding 15px
+			background #8C8A95
+			.title-mensaje
+				padding-left 20px
+				color white
+				font-size 18px
+				i
+					padding-right 10px
+		&-content
+			padding 10px
+			text-align center
+			.personal
+				margin 30px
+				border 1px solid blue
 
-
-.sectionInformationDife
-	background white
-	padding 20px
-
-.sepa
-	margin 10px
-	img
-		height 160px
-.sepa .mensaje
-		margin 10px
-
-.sectionInformationQ
-	padding 30px
-	background #6DC2AD
-	color white
 
 
 .info
 	&-title
 		color #273B47
-		font-family 'Allerta' 
+		font-family 'Allerta'
 		border-bottom 2px dashed #00B84E
 		padding-bottom .5em
 
@@ -46,48 +67,41 @@
 		font-family 'Allerta'
 		padding-bottom .5em
 
-/*
-.sectionInfo
-	padding 15px
-	.columns
-		color red
-	&-title
-		color #4F5A64
-		font-family 'Allerta'
-		font-size 30px
-	.spaces
-		margin-left 0
-		margin 10px
-		padding 10px
-		background white
-		border-radius 2px
-		box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-		webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-		img
-			height 170px
-		.titlebox
-			color #263238
-		.description
-			font-size 14px
-			color #546E7A
 
-*/
-.sectionInfo
-	padding-top 15px
+.sectionInfoDif
+	padding-top 20px
 	.content
 		box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 		webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 		&-title
 			padding 15px
-			background #00BAFF
+			background #08D1D8
+			.title-mensaje
+				padding-left 20px
+				color white
+				font-size 18px
+			i
+				padding-right 10px
 		&-content
 			background white
-			padding 40px
+			padding 30px
 			.spaces
 				background white
-				margin 10px
 				padding 10px
-				border 1px solid #78909C
+				.medida
+					margin 1px
+					border 1px solid #CFD8DC
+					border-radius 2px
+					padding 5px
+					.titlebox
+						padding-top 5px
+						color #263238
+					.description
+						font-size 14px
+						color #546E7A
+
+				.medida:hover
+					border 1px solid #B7C4CA
 			img
 				height 170px
 

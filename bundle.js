@@ -26612,7 +26612,6 @@
 	    content: {
 	        padding: '16px'
 	    },
-
 	    menuNav: {
 	        zIndex: '1000',
 	        marginLeft: '0px',
@@ -26784,66 +26783,74 @@
 	                        { className: 'row' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'medium-3 large-2 hide-for-small-only columns menu-left' },
+	                            { className: 'medium-3 large-2 hide-for-small-only columns menu-izq' },
 	                            _react2.default.createElement(
 	                                'div',
-	                                { className: 'menu-left-content', style: styles.menuNav },
+	                                { className: 'text-center' },
 	                                _react2.default.createElement(
-	                                    'ul',
-	                                    { className: 'nav-list' },
+	                                    'div',
+	                                    { className: 'menu-izq-content', style: styles },
 	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
+	                                        'div',
+	                                        { className: 'row' },
 	                                        _react2.default.createElement(
-	                                            _reactRouter.Link,
-	                                            { to: '/', className: 'active' },
-	                                            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                            'ul',
+	                                            { className: 'menu-izq-nav text-left' },
 	                                            _react2.default.createElement(
-	                                                'span',
+	                                                'li',
 	                                                null,
-	                                                'Inicio'
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            _reactRouter.Link,
-	                                            { to: '/Informacion' },
-	                                            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                _react2.default.createElement(
+	                                                    _reactRouter.Link,
+	                                                    { to: '/', className: 'active' },
+	                                                    _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        null,
+	                                                        'Inicio'
+	                                                    )
+	                                                )
+	                                            ),
 	                                            _react2.default.createElement(
-	                                                'span',
+	                                                'li',
 	                                                null,
-	                                                'Informacion'
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            _reactRouter.Link,
-	                                            { to: '/Preguntas' },
-	                                            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                _react2.default.createElement(
+	                                                    _reactRouter.Link,
+	                                                    { to: '/Informacion' },
+	                                                    _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        null,
+	                                                        'Informacion'
+	                                                    )
+	                                                )
+	                                            ),
 	                                            _react2.default.createElement(
-	                                                'span',
+	                                                'li',
 	                                                null,
-	                                                'Preguntas'
-	                                            )
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'li',
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            _reactRouter.Link,
-	                                            { to: '/Contactenos' },
-	                                            _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                _react2.default.createElement(
+	                                                    _reactRouter.Link,
+	                                                    { to: '/Preguntas' },
+	                                                    _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        null,
+	                                                        'Preguntas'
+	                                                    )
+	                                                )
+	                                            ),
 	                                            _react2.default.createElement(
-	                                                'span',
+	                                                'li',
 	                                                null,
-	                                                'Contactenos'
+	                                                _react2.default.createElement(
+	                                                    _reactRouter.Link,
+	                                                    { to: '/Contactenos' },
+	                                                    _react2.default.createElement('img', { src: 'https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png' }),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        null,
+	                                                        'Contactenos'
+	                                                    )
+	                                                )
 	                                            )
 	                                        )
 	                                    )
@@ -26873,39 +26880,35 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
-	                                { className: 'row' },
+	                                { className: 'top-barr' },
 	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'top-barr' },
+	                                    'section',
+	                                    { className: 'top-bar-section' },
 	                                    _react2.default.createElement(
-	                                        'section',
-	                                        { className: 'top-bar-section' },
+	                                        'ul',
+	                                        { onClick: this.handleClickShow },
 	                                        _react2.default.createElement(
-	                                            'ul',
-	                                            { onClick: this.handleClickShow },
+	                                            'li',
+	                                            { className: 'listMenu' },
 	                                            _react2.default.createElement(
-	                                                'li',
-	                                                { className: 'listMenu' },
+	                                                _reactRouter.Link,
+	                                                { to: '/' },
+	                                                _react2.default.createElement('i', { className: 'fa fa-list iconos' }),
 	                                                _react2.default.createElement(
-	                                                    _reactRouter.Link,
-	                                                    { to: '/' },
-	                                                    _react2.default.createElement('i', { className: 'fa fa-list iconos' }),
-	                                                    _react2.default.createElement(
-	                                                        'span',
-	                                                        null,
-	                                                        'Menu'
-	                                                    )
+	                                                    'span',
+	                                                    null,
+	                                                    'Menu'
 	                                                )
 	                                            )
-	                                        ),
-	                                        this.state.showMenu ? this.state.datos.map(this.eachItem) : null
-	                                    )
+	                                        )
+	                                    ),
+	                                    this.state.showMenu ? this.state.datos.map(this.eachItem) : null
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'medium-9 large-10 columns' },
+	                            { className: 'medium-9 large-10 columns menu-der', style: { border: '1px solid green' } },
 	                            this.props.children
 	                        )
 	                    )
@@ -29891,7 +29894,7 @@
 	            top: '44%',
 	            left: '50%',
 	            transform: 'translate(-50%, -100%)',
-	            zIndex: '9999',
+	            zIndex: '300',
 	            background: '#fff',
 	            textAlign: 'center'
 	        };
@@ -30030,46 +30033,47 @@
 	            ),
 	            _react2.default.createElement(
 	                "section",
-	                { className: "sectionInformationDife" },
+	                { className: "sectionInfo" },
 	                _react2.default.createElement(
 	                    "div",
-	                    { className: "row" },
+	                    { className: "content" },
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "text-center", style: { padding: '20px' } },
+	                        { className: "content-title" },
 	                        _react2.default.createElement(
-	                            "h1",
-	                            { className: "diferences-title" },
-	                            "¿Que nos hace diferente?"
-	                        ),
+	                            "div",
+	                            { className: "title-mensaje" },
+	                            _react2.default.createElement("i", { className: "fa fa-th-large", "aria-hidden": "true" }),
+	                            "Que nos diferencia Nodezi?"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "content-content" },
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "row" },
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "row small-up-1 medium-up-2 large-up-3" },
+	                                { className: "small-up-1 medium-up-1 large-up-3" },
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "columns" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "sepa" },
+	                                        { className: "spaces text-center" },
 	                                        _react2.default.createElement(
 	                                            "div",
-	                                            { className: "row" },
-	                                            _react2.default.createElement("img", { src: "asset/images/software-medida1.png", alt: "Escaneo vuln" })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "mensaje" },
+	                                            { className: "medida" },
+	                                            _react2.default.createElement("img", { src: "asset/images/software-medida1.png", alt: "software medidda" }),
 	                                            _react2.default.createElement(
 	                                                "h5",
-	                                                { className: "title" },
+	                                                { className: "titlebox" },
 	                                                "Software a Medida"
 	                                            ),
 	                                            _react2.default.createElement(
-	                                                "p",
-	                                                null,
+	                                                "div",
+	                                                { className: "description" },
 	                                                "No tienes nada que hacer. El desarrollo ya corre por nuestra parte."
 	                                            )
 	                                        )
@@ -30080,23 +30084,19 @@
 	                                    { className: "columns" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "sepa" },
+	                                        { className: "spaces text-center" },
 	                                        _react2.default.createElement(
 	                                            "div",
-	                                            { className: "row" },
-	                                            _react2.default.createElement("img", { src: "asset/images/ux.png", alt: "Escaneo vuln" })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "mensaje" },
+	                                            { className: "medida" },
+	                                            _react2.default.createElement("img", { src: "asset/images/ux.png", alt: "software medidda" }),
 	                                            _react2.default.createElement(
 	                                                "h5",
-	                                                { className: "title" },
+	                                                { className: "titlebox" },
 	                                                "Experiencia de Usuario"
 	                                            ),
 	                                            _react2.default.createElement(
-	                                                "p",
-	                                                null,
+	                                                "div",
+	                                                { className: "description" },
 	                                                "No tienes nada que hacer. El desarrollo ya corre por nuestra parte."
 	                                            )
 	                                        )
@@ -30107,23 +30107,19 @@
 	                                    { className: "columns" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "sepa" },
+	                                        { className: "spaces text-center" },
 	                                        _react2.default.createElement(
 	                                            "div",
-	                                            { className: "row" },
-	                                            _react2.default.createElement("img", { src: "asset/images/ui.png", alt: "Escaneo vuln" })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "mensaje" },
+	                                            { className: "medida" },
+	                                            _react2.default.createElement("img", { src: "asset/images/ui.png", alt: "software medidda" }),
 	                                            _react2.default.createElement(
 	                                                "h5",
-	                                                { className: "title" },
+	                                                { className: "titlebox" },
 	                                                "Interfaz Grafica"
 	                                            ),
 	                                            _react2.default.createElement(
-	                                                "p",
-	                                                null,
+	                                                "div",
+	                                                { className: "description" },
 	                                                "No tienes nada que hacer. El desarrollo ya corre por nuestra parte."
 	                                            )
 	                                        )
@@ -30134,23 +30130,19 @@
 	                                    { className: "columns" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "sepa" },
+	                                        { className: "spaces text-center" },
 	                                        _react2.default.createElement(
 	                                            "div",
-	                                            { className: "row" },
-	                                            _react2.default.createElement("img", { src: "asset/images/compromiso.png", alt: "Escaneo vuln" })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "mensaje" },
+	                                            { className: "medida" },
+	                                            _react2.default.createElement("img", { src: "asset/images/compromiso.png", alt: "software medidda" }),
 	                                            _react2.default.createElement(
 	                                                "h5",
-	                                                { className: "title" },
+	                                                { className: "titlebox" },
 	                                                "Compromiso con el cliente"
 	                                            ),
 	                                            _react2.default.createElement(
-	                                                "p",
-	                                                null,
+	                                                "div",
+	                                                { className: "description" },
 	                                                "No tienes nada que hacer. El desarrollo ya corre por nuestra parte."
 	                                            )
 	                                        )
@@ -30161,23 +30153,19 @@
 	                                    { className: "columns" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "sepa" },
+	                                        { className: "spaces text-center" },
 	                                        _react2.default.createElement(
 	                                            "div",
-	                                            { className: "row" },
-	                                            _react2.default.createElement("img", { src: "asset/images/testing.png", alt: "Escaneo vuln" })
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            "div",
-	                                            { className: "mensaje" },
+	                                            { className: "medida" },
+	                                            _react2.default.createElement("img", { src: "asset/images/testing.png", alt: "software medidda" }),
 	                                            _react2.default.createElement(
 	                                                "h5",
-	                                                { className: "title" },
+	                                                { className: "titlebox" },
 	                                                "Testing De hacking"
 	                                            ),
 	                                            _react2.default.createElement(
-	                                                "p",
-	                                                null,
+	                                                "div",
+	                                                { className: "description" },
 	                                                "No tienes nada que hacer. El desarrollo ya corre por nuestra parte."
 	                                            )
 	                                        )
@@ -30188,25 +30176,38 @@
 	                                    { className: "columns" },
 	                                    _react2.default.createElement(
 	                                        "div",
-	                                        { className: "sepa" },
-	                                        _react2.default.createElement("img", { src: "asset/images/seo.png", alt: "Escaneo vuln" }),
+	                                        { className: "spaces text-center" },
 	                                        _react2.default.createElement(
 	                                            "div",
-	                                            { className: "mensaje" },
+	                                            { className: "medida" },
+	                                            _react2.default.createElement("img", { src: "asset/images/seo.png", alt: "software medidda" }),
 	                                            _react2.default.createElement(
 	                                                "h5",
-	                                                { className: "title" },
+	                                                { className: "titlebox" },
 	                                                "Seo y Posicionamiento"
 	                                            ),
 	                                            _react2.default.createElement(
-	                                                "p",
-	                                                null,
+	                                                "div",
+	                                                { className: "description" },
 	                                                "No tienes nada que hacer. El desarrollo ya corre por nuestra parte."
 	                                            )
 	                                        )
 	                                    )
 	                                )
 	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "row" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "text-left" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "sectionInfo-titl", ONmosuse: true },
+	                            "¿Que nos hace diferente?"
 	                        )
 	                    )
 	                )

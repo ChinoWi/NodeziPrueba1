@@ -130,7 +130,7 @@ const App=React.createClass({
                         <div className="row">
                             <div className="medium-3 large-2 hide-for-small-only columns menu-izq">
                                 <div className="text-center">
-                                    <div className="menu-izq-content" style={styles.menuNav}>
+                                    <div className="menu-izq-content" style={styles}>
                                         <div className="row">
                                             <ul className="menu-izq-nav text-left">
                                                 <li>
@@ -189,7 +189,7 @@ const App=React.createClass({
                                 </div>
 
                             </div>
-                            <div className="medium-9 large-10 columns menu-der" style={{border:'1px solid green'}}>
+                            <div className="medium-9 large-10 columns menu-der">
                                 {this.props.children}
                             </div>
                         </div>
