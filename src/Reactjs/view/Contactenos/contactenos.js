@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import CircularProgress from '../../component/ProgressCircular/progresscircular'
-
+import $ from 'jquery'
 
 
 var config = {
@@ -250,6 +250,15 @@ const ViewContactenos=React.createClass({
         this.bindAsArray(firebaseReff.limitToLast(40), 'itemss');
     },
 
+    componentDidMount(){
+        var maxLength = 140;
+        $('textarea').keyup(function() {
+            var length = $(this).val().length;
+            var length = maxLength-length;
+            $('#chars').text(length);
+        });
+    },
+
     handleSubmit(e){
         e.preventDefault();
         if(this.state.valor==100 && this.state.textNombreFirebase!='' && this.state.textEmailFirebase!='' && this.state.textTextareaFirebase!=''){
@@ -382,8 +391,9 @@ const ViewContactenos=React.createClass({
                                                     </div>
                                                     <div className="small-10 columns">
                                                         <label>Mensaje
-                                                            <textarea  onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} placeholder="Escribe tu consulta"/>
-                                                            <div className="help-textArea">Min 4 - Max 140</div>
+                                                            <textarea id="textArea" onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} placeholder="Escribe tu consulta"/>
+                                                            <div className="help-textArea">Min 4 - Max <span id="chars">140</span></div>
+
                                                         </label>
                                                     </div>
                                                 </div>
