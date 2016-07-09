@@ -71,7 +71,22 @@ const SmallMenu=React.createClass({
             </ul>
         );
     }
+});
+
+
+const FormSearch=React.createClass({
+  render(){
+     return(
+          <form className="form-content">
+              <span className="form-icon"><i className="fa fa-search" aria-hidden="true"></i></span>
+              <input className="form-search" type="text" placeholder="Buscar en Nodezi"/>
+          </form>
+     )
+  }
+
+
 })
+
 
 const App=React.createClass({
     getInitialState(){
@@ -117,10 +132,8 @@ const App=React.createClass({
                                         <img src="asset/images/logo.png" alt=""/>
                                     </Link>
                                 </div>
-                                <div className="small-12 medium-2 columns">
-                                    <div className="input-wrapper right">
-                                        <input type="text" className="search-box" placeholder="Buscar en Nodezi"/>
-                                    </div>
+                                <div className="small-12 medium-2 columns form">
+                                   <FormSearch/>  
                                 </div>
                             </div>
                         </header>

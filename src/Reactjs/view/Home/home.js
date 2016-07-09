@@ -3,13 +3,7 @@ import {Link} from 'react-router';
 import Slider from '../../component/slider/slider'
 import PruebaModal from '../../component/modalVideo/modalVideo'
 
-var styleSection1={
-    solution:{
-        paddingLeft:'10px',
-        paddingRight:'10px',
-        border:'2px solid blue'
-    }
-};
+
 
 const SectionInformacionDesktop=React.createClass({
     render(){
@@ -137,9 +131,9 @@ const ViewHome=React.createClass({
                         </div>
                     </section>
                     <section style={{background:'#FCFAF9'}}>
-                        <div className="text-center" style={{padding:'20px'}}>
-                            ¿Quienes Somos?
-                            <Link to="/Informacion" className="button" style={{margin:'5px'}}>Mas informacion</Link>
+                        <div className="text-center information">
+                             <span className="information-we">¿Quienes Somos?</span>
+                            <Link to="/Informacion" className="information-more">Mas informacion</Link>
                         </div>
                     </section>
                     <section id="sectionSlider">
@@ -149,7 +143,7 @@ const ViewHome=React.createClass({
                         <div className="row columns">
                             <div className="text-center">
                                 <div className="row columns">
-                                    <h1>NUESTRAS SOLUCINES INCLUYEN LO SIGUIENTE</h1>
+                                    <h1>Nuestras Soluciones</h1>
                                 </div>
                                 {this.state.informacion.map(this.eachItemDesktop)}
 

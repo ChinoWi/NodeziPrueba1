@@ -17,7 +17,6 @@ body
   padding 12px 0
   border-bottom 1px solid #cfd8dc
   transition all .3s ease-in-out
-
 .headerr img
   display block
   width 180px
@@ -224,4 +223,62 @@ body
 .skype
   color #00AFF0
   font-size 2.5em !important
+
+
+//SEARCH
+
+.form
+    width 400px
+    &-content
+       position relative
+       right 10px
+       top 10px
+       animation-name animacion1
+       animation-duration 1s
+    &-search
+      border 1px solid #0A8ECD
+      display inline-block
+      padding 0 2em
+      min-width 400px
+      outline 0
+      color #268ECD 
+      border-radius 3px
+    &-search:focus
+      border 1px solid #0A8ECD
+      box-shadow: -1px -1px 1px #0A8ECD,
+               1px  1px 1px #0A8ECD
+      color #268ECD    
+    &-icon
+      position absolute
+      top 8px
+      left 5px
+      i
+        color #208ECD
+
+input::-webkit-input-placeholder
+  color #AAA
+  font-family 'Roboto'
+  font-weight bold
+  font-size 1.2em
+
+
+
+
+
+
+//ANIMACIONES
+@keyframes animacion1
+  from
+    right -400px
+  to
+    right 10px 
+
+
+
+
+
+
+
+  
+
 

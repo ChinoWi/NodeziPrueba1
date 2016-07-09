@@ -39,9 +39,9 @@ const Preguntas=React.createClass({
             <div className="card-item article-question">
                 <div className="row columns text-left">
                     <div className="medium-2 large-2 columns">
-                        <img src={this.props.imgUrl}/>
+                        <img src={this.props.imgUrl}  width="70px" />
                     </div>
-                    <div className="medium-10 large-10 columns" >
+                    <div className="medium-10 large-10 columns content-question">
                         <div style={{borderBottom:'2px solid #EDECE8'}}>
                             <h5 className="question">{this.props.pregunta} </h5>
                             <div className="separator-question"></div>
