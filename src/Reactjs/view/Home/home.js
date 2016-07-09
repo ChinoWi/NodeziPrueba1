@@ -4,7 +4,6 @@ import Slider from '../../component/slider/slider'
 import PruebaModal from '../../component/modalVideo/modalVideo'
 
 
-
 const SectionInformacionDesktop=React.createClass({
     render(){
         return(
@@ -64,7 +63,45 @@ const ViewHome=React.createClass({
     },
     render(){
          return(
-            <div id="captura">
+            <div >
+                <div className="sectionhome">
+                    <div className="content">
+                        <div className="text-content">
+                            <div className="description">
+                                Desarrollo de Software Aplicaciones Web, Móviles
+                                y Desktop, implementando Seguridad Hacking.
+                            </div>
+                        </div>
+                        <div className="text-img">
+                            <img src="asset/images/desktop.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="sectionhome1">
+                    <div className="row columns">
+                        <div className="large-7 columns">
+                            <div className="content1">
+                                <div className="container">
+                                    sdfsdf
+                                </div>
+                            </div>
+                        </div>
+                        <div className="large-5 columns">
+                            <div className="content2">
+                                <div className="container">
+                                    <div className="text-img">
+                                        <img src="asset/images/desktop.png" alt=""/>
+                                    </div>
+                                    <PruebaModal></PruebaModal>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
                 <div className="show-for-small-only">
                     <section id="sectionVideo">
                         <div className="topVideo"></div>

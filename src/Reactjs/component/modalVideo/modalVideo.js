@@ -21,7 +21,7 @@ const PruebaModal=React.createClass({
             <div className="row" style={{padding:'15px'}}>
                 <div id="contentModal">
                     <div className="text-center">
-                        <img className="imgVideoModal" src="asset/images/video_portada.jpg" style={{height:'280px'}} onClick={() => this.showModal()}alt=""/>
+                        <img className="imgVideoModal" src="asset/images/video_portada.png" style={{height:'280px'}} onClick={() => this.showModal()}alt=""/>
                     </div>
                 </div>
                 <Modal isShowModal={this.state.isModalOpen} isHideModal={() => this.hideModal()}>
