@@ -191,10 +191,8 @@ const App=React.createClass({
                                     <section className="top-bar-section">
                                         <ul onClick={this.handleClickShow} >
                                             <li className="listMenu">
-                                                <Link to="/">
-                                                    <i className="fa fa-list iconos"></i>
-                                                    <span>Menu</span>
-                                                </Link>
+                                                <i className="fa fa-list iconos"></i>
+                                                <span>Menu</span>
                                             </li>
                                         </ul>
                                         {this.state.showMenu ? this.state.datos.map(this.eachItem) : null}

@@ -23,22 +23,24 @@ let value=0;
 const SuccesMensaje=React.createClass({
     render(){
         return(
-            <div className="row" style={{display:this.props.styleMostrar}}>
-                <div className="text-center" style={{color:'white'}}>
-                    <div className="large-1 columns" style={{border:'1px solid #4CB050'}}></div>
-                    <div className="large-5 columns" style={{border:'1px solid #4CB050'}}>
-                        <img src="asset/images/success.png" style={{height:'350px',width:'450px'}} alt=""/>
-                    </div>
-                    <div className="large-4 columns" style={{border:'1px solid #4CB050'}}>
-                        <div style={{margin:'50px'}}>
-                            <img className="text-left" src="asset/images/icon_success.png" style={{height:'60px',width:'60px'}} alt=""/>
-                            <h2> Hola {this.props.nombre},</h2>
-                            <h3>Su mensaje a sido enviado.</h3>
-                            <button onClick={this.props.retorna} className="button">Volver a enviar Mensaje</button>
+            <div className="SuccessMensaje" style={{display:this.props.styleMostrar}}>
+                <div className="row">
+                    <div className="medium-6 large-6 columns"   >
+                        <div className="content-img">
+                            <img src="asset/images/success.png" alt=""/>
                         </div>
                     </div>
-                    <div className="large-2 columns" style={{border:'1px solid #4CB050'}}></div>
+                    <div className="medium-6 large-6 columns">
+                        <div className="content-text">
+                            <div className="textMensaje">
+                                <img src="asset/images/icon_success.png" alt=""/>
+                                <h2> Hola {this.props.nombre},</h2>
+                                <h3>Su mensaje a sido enviado.</h3>
+                                <button onClick={this.props.retorna} className="button">Volver a enviar Mensaje</button>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
         );
@@ -91,7 +93,7 @@ const ViewContactenos=React.createClass({
         this.setState({
             textNombreFirebase:valorNombre
         });
-        if(this.validateNombre(valorNombre) && valorNombre.length>3 && valorNombre!=''){
+        if(this.validateNombre(valorNombre) && valorNombre.length>2 && valorNombre!=''){
             this.setState({
                 mostrarMensajeDisplay:'none'
             });
@@ -110,7 +112,7 @@ const ViewContactenos=React.createClass({
                 value=100;
                 this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'asset/images/icon_success.png'})
             }
-        }if(valorNombre.length<=3 ){
+        }if(valorNombre.length<=2 ){
             if(this.state.valor==0)
                 value=0;
             else if(this.state.valor==33)
@@ -310,67 +312,113 @@ const ViewContactenos=React.createClass({
                 {this.state.mostrarSucces ? <SuccesMensaje nombre={this.state.showMensajeNombre} retorna={this.retornarContacto} styleMostrar={this.state.showMensaje} ></SuccesMensaje> :null  }
 
                 <div className="text-center" style={{display:this.state.showContacto}}>
+                    <div className="contactenos">
+                        <div className="row">
+                            <div className="container">
+                                <div className="title">
+                                    <div className="row">
+                                        <div className="show-for-small-only">
+                                            <div className="small-3 columns text-center" style={{paddingTop:'10px'}}>
+                                                <CircularProgress
+                                                    strokeWidth="2"
+                                                    fontsize="15px"
+                                                    stroken1="#D1D1D1"
+                                                    stroken2="white"
+                                                    radius="22"
+                                                    percentage={this.state.valor}/>
+                                            </div>
+                                            <div className="small-9 columns text-left">
+                                                <i className="fa fa-wpforms" aria-hidden="true"></i>
+                                                <div className="text-contactOculto">Contact form</div>
+                                            </div>
+                                        </div>
+                                        <div className="show-for-medium">
+                                            <i className="fa fa-wpforms" aria-hidden="true"></i>
+                                            <div className="text-contact">Contact forma</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="content">
+                                    <div className="row">
+                                        <div className="medium-6 large-6 columns">
+                                            <form className="formContat">
+                                                <div className="row">
+                                                    <div className="small-2 columns">
+                                                        <div className="show-for-small-only">
+                                                            <div className="iconAprov">
+                                                                <img src={this.state.iconItem1} style={{height:'40px'}} alt=""/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="small-10 columns">
+                                                        <label>Nombres
+                                                            <input type="text" name="nombre" value={this.state.textNombreFirebase}  onChange={this.onNombreChange} placeholder="Nombre" />
+                                                        </label>
+                                                        <div className="help-text">La contraseña debe tener al menos 3 caracteres.</div>
+                                                    </div>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="small-2 columns">
+                                                        <div className="show-for-small-only">
+                                                            <div className="iconAprov">
+                                                                <img src={this.state.iconItem2} style={{height:'40px'}} alt=""/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="small-10 columns">
+                                                        <label>Email
+                                                            <input type="text" name="email" value={this.state.textEmailFirebase} onChange={this.onEmailChange} placeholder="Email" />
+                                                        </label>
+                                                        <div className="help-text">Ingrese Email correcto @dominio.com</div>
+                                                    </div>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="small-2 columns">
+                                                        <div className="show-for-small-only">
+                                                            <div className="iconAprov">
+                                                                <img src={this.state.iconItem3} style={{height:'40px'}} alt=""/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="small-10 columns">
+                                                        <label>Mensaje
+                                                            <textarea  onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} placeholder="Escribe tu consulta"/>
+                                                            <div className="help-textArea">Min 4 - Max 140</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
 
-                    <div className="show-for-small-only">
-                        <div className="row" style={{padding:'10px' ,background:'#2196F3'}}>
-                            <div className="small-2 columns text-center" style={{paddingTop:'10px'}}>
-                                <CircularProgress
-                                    strokeWidth="2"
-                                    radius="22"
-                                    percentage={this.state.valor}/>
-                            </div>
-                            <div className="small-10 columns text-left">
-                                <div style={{color:'white'}}>
-                                    <h5 style={{marginTop:'30px'}}>Request for contact</h5>
+                                                <span style={{display:this.state.mostrarMensajeDisplay}}>
+                                                    <div className="row">
+                                                        <div className="ErrorMessage">
+                                                            <div className="Message-text">Error Ingrese Correctamente los campos</div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+
+                                                <div className="buttonFinal">
+                                                    <button type="button" onClick={this.handleSubmit} className="hollow button">Enviar</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div className="medium-6 large-6 columns">
+                                            <div className="show-for-medium">
+                                                <div className="circleDesktop">
+                                                    <CircularProgress
+                                                        strokeWidth="8"
+                                                        fontsize="25px"
+                                                        stroken1="#7B858A"
+                                                        stroken2="#49B5D5"
+                                                        radius="75"
+                                                        percentage={this.state.valor}/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <form className="form">
-                            <div className="row" style={{paddingTop:'20px'}}>
-                                <div className="small-2 columns text-center" style={{color:'black'}}>
-                                    <img src={this.state.iconItem1} style={{height:'40px'}} alt=""/>
-                                </div>
-                                <div className="small-10 columns text-left">
-                                    <label>Nombres
-                                        <input type="text" style={{border:this.state.borderInput}}  name="nombre" value={this.state.textNombreFirebase}  onChange={this.onNombreChange} placeholder="Nombre" />
-                                    </label>
-                                    <p className="help-text">La contraseña debe tener al menos 3 caracteres.</p>
-                                </div>
-                            </div>
-                            <div className="row" style={{paddingTop:'20px'}}>
-                                <div className="small-2 columns text-center" style={{color:'black'}}>
-                                    <img src={this.state.iconItem2} style={{height:'40px'}} alt=""/>
-                                </div>
-                                <div className="small-10 columns text-left">
-                                    <label>Email
-                                        <input type="text" name="email" value={this.state.textEmailFirebase} onChange={this.onEmailChange} placeholder="Email" />
-                                    </label>
-                                    <p className="help-text">Your password must have at least 10 characters, a number, and an Emoji.</p>
-                                </div>
-                            </div>
-                            <div className="row" style={{paddingTop:'20px',paddingBottom:'20px'}}>
-                                <div className="small-2 columns text-center" style={{color:'black'}}>
-                                    <img src={this.state.iconItem3} style={{height:'40px'}} alt=""/>
-                                </div>
-                                <div className="small-10 columns text-left">
-                                    <label>Mensaje</label>
-                                    <textarea  onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} placeholder="Escribe tu consulta"/>
-                                </div>
-                            </div>
-                            <div className="row" style={{paddingTop:'20px'}}>
-                                                    <span style={{display:this.state.mostrarMensajeDisplay}}>
-                                                        <div style={{background:'#C93434',border:'1px solid #A52B2B'}}>
-                                                            <p>Error Ingrese Correctamente los campos</p>
-                                                        </div>
-                                                    </span>
-                                <button type="button" onClick={this.handleSubmit} className="button">Enviar</button>
-                            </div>
-                        </form>
-
-
-                    </div>
-                    <div className="show-for-medium">
-                        <h2>Contactenos</h2>
                     </div>
                 </div>
             </div>
@@ -380,3 +428,21 @@ const ViewContactenos=React.createClass({
     }
 });
 export default ViewContactenos;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

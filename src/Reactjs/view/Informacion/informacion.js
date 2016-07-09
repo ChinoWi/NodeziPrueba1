@@ -8,15 +8,13 @@ const CircularProgress1=React.createClass({
         return(
             <div className="row text-left">
                 <div className="small-3 medium-6 large-4 columns">
-                    <div className="progressCircle">
-                        <CircularProgressInfo
+                    <CircularProgressInfo
                             strokeWidth="3"
                             radius="20"
                             stroken="#6BAED6"
                             fontsize="10px"
                             percentage="22"
                         />
-                    </div>
                 </div>
                 <div className="small-9 medium-6 large-8 columns">
                     <div className="progressText">
@@ -119,7 +117,7 @@ const QuienesSomos2=React.createClass({
                 {key:2,text:"php, ruby on rails, go, visual.net, asp.net.",experience:"1",colorCircle:"#FF7F0E"},
                 {key:3,text:"mysql,sql server, mongo-db, postgress, firebase.",experience:"2",colorCircle:"#56B356"},
                 {key:4,text:"Ux, UI, APPs.",experience:"1",colorCircle:"#DE5253"},
-                {key:5,text:"Hacking Etico, Pruebas de penetracion, ofensive security Profesioanl, Owasp Top 10,python pentester",experience:"3",colorCircle:"#9467BD"}
+                {key:5,text:"Hacking Etico, Pruebas de penetracion, ofensive security Profesional, Owasp Top 10,python pentester",experience:"3",colorCircle:"#9467BD"}
             ]
         }
     },

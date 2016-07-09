@@ -1,75 +1,109 @@
-.form
-	input
-		max-width 250px
-
-.formulario
-	input
-		border none
-		border-bottom 2px solid #EAF6FC
-		border-radius 5px
-		height 50px
-		font-size 18px
-	input[type="text"]:focus
-		border 2px solid #EAF6FC
-		font-family 'Allerta'
-		text-align top
-		font-size 20px
-	input[placeholder]:focus
-		font-size 1em
-
-	textarea
-		border none
-		outline 0
-		border-bottom 2px solid #EAF6FC
-		height 150px
-	textarea:focus
-		border 2px solid #EAF6FC
-		font-size 20px
-
-	textarea[placeholder]
-		font-size 20px
-		font-family 'Allerta'
-		font-size 20px
-
-	button
-		background #289BBF
-		color white
-		font-family 'Allerta'
-		font-size 1em
-		width  150px
-		padding 1em 3em
-		margin-top 2em
-
-		
+.contactenos
+	padding 15px
+	padding-top 0
+	padding-bottom 0
+	.container
+		.title
+			padding 10px
+			text-align center
+			background #00BAFF
+			.circleMovil
+				text-align left
+				padding-left 30px
+				position relative
+			i
+				padding-right 8px
+			.text-contact
+				text-align center
+				display inline-block
+				font-size 18px
+			.text-contactOculto
+				display inline-block
+				padding-top 22px
 
 
-/*Helpers */
+		.content
+			padding 30px
+			background white
+			.formContat
+				position relative
+				text-align left
+				padding-right 10px
+				padding-left 10px
+				label
+					font-size 16px
+					color #546E7A
+				.help-text
+					color #596E7A
+					margin-top -13px
+					font-size 12px
+				.help-textArea
+					color #596E7A
+					margin-top 2px
+					text-align right
+					font-size 9px
 
-.error
-	color #F62319
-	font-family 'Allerta'
-	margin-right  250px
-	display block
-	font-size .8em
-.error1
-	color #F62319
-	font-family 'Allerta'
-	margin-right  250px
-	font-size .8em
-	display block
-	
+				.iconAprov
+					padding-top 20px
 
-.barra
-	background red
-	height 100px
-	width 100px
-	border-radius 50%
+				input
+					padding 10px
+					max-width: 80%
+					font-size 16px
+					height 50px
+					color #5F6A70
+					border-radius 2px
+					border: 1px solid #BDC3C7;
+					background transparent
+				input:-webkit-autofill
+					background-color white
+				input:focus
+					border: 1px solid #00BAFF;
+
+				textarea
+					color #596E7A
+					border-radius 2px
+					border: 1px solid #BDC3C7;
+					height 100px
+				textarea:focus
+					border: 1px solid #00BAFF;
+
+				.ErrorMessage
+					background #E33238
+					border 1px solid #A52B2B
+					padding 8px
+					.Message-text
+						text-align center
+						font-size 14px
+						color white
+			.buttonFinal
+				padding-top 10px
+				text-align center
+				button
+					min-width 200px
+
+			.circleDesktop
+				padding-top 70px
+				height 320px
 
 
-//SVG CIRCULO
-
-
-
+.SuccessMensaje
+	padding 30px
+	.content-img
+		padding-top 50px
+		padding-left 10px
+		padding-right 10px
+		text-align center
+		img
+			height 300px
+	.content-text
+		padding 60px
+		.textMensaje
+			color white
+			text-align center
+			img
+				height 50px
+				text-align center
 //PRUEBA SVG
 
 #container

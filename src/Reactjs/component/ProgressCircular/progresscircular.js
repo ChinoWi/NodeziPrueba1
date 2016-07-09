@@ -23,13 +23,15 @@ export default class CircularProgress extends React.Component {
                 height={this.props.radius * 2}
                 viewBox={viewBox}>
                 <circle
-                    className="CircularProgress-Bg"
+                    stroke={this.props.stroken1}
+                    fill="none"
                     cx={this.props.radius}
                     cy={this.props.radius}
                     r={radius}
                     strokeWidth={`${this.props.strokeWidth}px`} />
                 <circle
-                    className="CircularProgress-Fg"
+                    stroke={this.props.stroken2}
+                    fill="none"
                     cx={this.props.radius}
                     cy={this.props.radius}
                     r={radius}
@@ -39,13 +41,13 @@ export default class CircularProgress extends React.Component {
                         strokeDashoffset: dashOffset
                     }} />
                 <text
-                    className="CircularProgress-Text"
-                    style={this.props.textPorcentage}
+                    style={{fontSize:this.props.fontsize}}
+                    fill={this.props.stroken2}
                     x={this.props.radius}
                     y={this.props.radius}
                     dy=".4em"
                     textAnchor="middle">
-                    {`${this.props.percentage}`}
+                    {`${this.props.percentage}%`}
                 </text>
             </svg>
         );
@@ -53,6 +55,8 @@ export default class CircularProgress extends React.Component {
 }
 
 CircularProgress.defaultProps = {
+    stroken1:"#5F6A70",
+    stroken2:"#09D2D9",
     radius: 50,
     percentage:50,
     strokeWidth: 1
