@@ -4,14 +4,8 @@
     <list default="true" id="2e0d5713-053e-459d-b6d8-5ad57828688c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asset/css/styles.css" afterPath="$PROJECT_DIR$/asset/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bundle.js" afterPath="$PROJECT_DIR$/bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl" afterPath="$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentsCss/info/info.styl" afterPath="$PROJECT_DIR$/src/ComponentsCss/info/info.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentsCss/styles.styl" afterPath="$PROJECT_DIR$/src/ComponentsCss/styles.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/component/ProgressCircular/progresscircular.js" afterPath="$PROJECT_DIR$/src/Reactjs/component/ProgressCircular/progresscircular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/layout/index.jsx" afterPath="$PROJECT_DIR$/src/Reactjs/layout/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/view/Contactenos/contactenos.js" afterPath="$PROJECT_DIR$/src/Reactjs/view/Contactenos/contactenos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js" afterPath="$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js" afterPath="$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js" />
     </list>
     <ignored path="NodeziPrueba.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,41 +27,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contactenos.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="preguntas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contactenos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Contactenos/contactenos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="358" column="54" selection-start-line="358" selection-start-column="54" selection-end-line="358" selection-end-column="54" />
+            <state relative-caret-position="75">
+              <caret line="315" column="43" selection-start-line="315" selection-start-column="43" selection-end-line="315" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.styl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.styl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="informacion.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="progresscircular.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Reactjs/component/ProgressCircular/progresscircular.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -76,18 +62,8 @@
       <file leaf-file-name="styles.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComponentsCss/styles.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="progresscircularInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Reactjs/component/ProgressCircular/progresscircularInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
-              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+              <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -119,7 +95,6 @@
         <option value="$PROJECT_DIR$/src/ComponentsCss/question/question.styl" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/Reactjs/view/Home/home.js" />
-        <option value="$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js" />
         <option value="$PROJECT_DIR$/src/Reactjs/component/scrollBar/horizontal-scrollbar.js" />
         <option value="$PROJECT_DIR$/src/Reactjs/component/scrollBar/vertical-scrollbar.js" />
         <option value="$PROJECT_DIR$/src/Reactjs/component/scrollBar/react-scrollbar.js" />
@@ -134,8 +109,9 @@
         <option value="$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js" />
         <option value="$PROJECT_DIR$/src/ComponentsCss/styles.styl" />
         <option value="$PROJECT_DIR$/src/ComponentsCss/info/info.styl" />
-        <option value="$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl" />
+        <option value="$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js" />
         <option value="$PROJECT_DIR$/src/Reactjs/view/Contactenos/contactenos.js" />
+        <option value="$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl" />
       </list>
     </option>
   </component>
@@ -268,7 +244,33 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Informacion" />
+              <option name="myItemId" value="Preguntas" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Reactjs" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Contactenos" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,6 +289,94 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ComponentsCss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComponentsCss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="question" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComponentsCss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComponentsCss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NodeziPrueba" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComponentsCss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,19 +455,19 @@
       <workItem from="1467930488940" duration="45000" />
       <workItem from="1467930865773" duration="15487000" />
       <workItem from="1467987663609" duration="6536000" />
-      <workItem from="1467994785200" duration="55846000" />
+      <workItem from="1467994785200" duration="56785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246092000" />
+    <option name="totallyTimeSpent" value="247031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33033708" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -577,34 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/home/home.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Reactjs/component/modalVideo/modalVideo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/question/question.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -715,22 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/styles.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/info/info.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="123" column="40" selection-start-line="123" selection-start-column="40" selection-end-line="123" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Reactjs/component/ProgressCircular/progresscircularInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -739,18 +789,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl">
+    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/home/home.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="240">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/info/info.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="123" column="40" selection-start-line="123" selection-start-column="40" selection-end-line="123" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/question/question.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/styles.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Contactenos/contactenos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="358" column="54" selection-start-line="358" selection-start-column="54" selection-end-line="358" selection-end-column="54" />
+        <state relative-caret-position="75">
+          <caret line="315" column="43" selection-start-line="315" selection-start-column="43" selection-end-line="315" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/contact/contact.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>

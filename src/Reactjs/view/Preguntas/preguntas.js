@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import TestUtils from 'react-addons-test-utils';
-import MediaQuery from 'react-responsive'
 
 const Respuestas=React.createClass({
     render(){
         return(
-            <div className="row">
+            <div className="rows">
                 <div className="medium-3 large-2 columns">
                     <div className="card-item-alinear image-answer">
                         <img className="card-item-imgAdmin"  width="67px" src="asset/images/admin-item.png" alt=""/>
