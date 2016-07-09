@@ -39,7 +39,7 @@ export default class CircularProgressInfo extends React.Component {
                     y={this.props.radius}
                     dy=".4em"
                     textAnchor="middle">
-                    {`${this.props.percentage}%`}
+                    {`${this.props.percentage}`}
                 </text>
             </svg>
         );

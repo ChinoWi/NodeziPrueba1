@@ -3,11 +3,11 @@ import CircularProgressInfo from '../../component/ProgressCircular/progresscircu
 import {Chart,Pies,Transform} from 'rumble-charts'
 
 
-const CircularProgress=React.createClass({
+const CircularProgress1=React.createClass({
     render(){
         return(
-            <div className="row">
-                <div className="small-6 medium-6 large-4 columns">
+            <div className="row text-left">
+                <div className="small-3 medium-6 large-4 columns">
                     <div className="progressCircle">
                         <CircularProgressInfo
                             strokeWidth="3"
@@ -18,10 +18,9 @@ const CircularProgress=React.createClass({
                         />
                     </div>
                 </div>
-                <div className="small-6 medium-6 large-8 columns">
+                <div className="small-9 medium-6 large-8 columns">
                     <div className="progressText">
-                        <div className="columns">html5, css3, javascript,
-                            angular, polimer, react, sass, stylus  </div>
+                        {this.props.text}
                     </div>
                 </div>
             </div>
@@ -29,25 +28,30 @@ const CircularProgress=React.createClass({
     }
 });
 
-const QuienesSomos=React.createClass({
+const QuienesSomos1=React.createClass({
     getInitialState(){
         return {
             cantidadDatos:[
-                {key:1,key:2,key:3}
+                {key:1,text:"html5, css3, javascript,angular, polimer, react, sass, stylus."},
+                {key:2,text:"php, ruby on rails, go, java EE, asp.net."},
+                {key:3,text:"mysql,sql server, mongo-db, postgress."},
+                {key:4,text:"marketing,seo,google analitycs, estrategia digital, email marketing"},
+                {key:5,text:"Ux, UI, APPs."}
             ]
         }
     },
     eachItem(item){
         return(
-            <CircularProgress key={item.key}
+            <CircularProgress1 key={item.key}
+                              text={item.text}
             />
         );
     },
     render(){
         return(
             <div className="container">
-                <div className=" medium-5 large-6 columns" style={{border:'1px solid red'}}>
-                    <Chart width={150} height={150} series={series}>
+                <div className=" medium-5 large-6 columns">
+                    <Chart width={150} height={150} series={series1}>
                         <Transform method={['transpose', 'stackNormalized']}>
                             <Pies
                                 colors='category10'
@@ -57,16 +61,25 @@ const QuienesSomos=React.createClass({
                                 cornerRadius={3}
                                 innerPadding={2}
                                 pieAttributes={{
-                                                                onMouseMove: (e) => e.target.style.opacity = 1,
-                                                                onMouseLeave: (e) => e.target.style.opacity = 0.5
-                                                              }}
+                                    onMouseMove: (e) => e.target.style.opacity = 1,
+                                    onMouseLeave: (e) => e.target.style.opacity = 0.5
+                                }}
                                 pieStyle={{opacity: 0.8}}
                             >
                             </Pies>
                         </Transform>
                     </Chart>
+                    <div className="experiencie">
+                        <div className="title">
+                            <i className="fa fa-cogs" aria-hidden="true"></i>
+                            Experiencia Profesional
+                        </div>
+                        <div className="text-content">
+                            sdfsfsdfsdf
+                        </div>
+                    </div>
                 </div>
-                <div className=" medium-7 large-6 columns" style={{border:'1px solid red'}}>
+                <div className=" medium-7 large-6 columns">
                     {this.state.cantidadDatos.map(this.eachItem)}
                 </div>
             </div>
@@ -74,6 +87,90 @@ const QuienesSomos=React.createClass({
     }
 });
 
+const CircularProgress2=React.createClass({
+    render(){
+        return(
+            <div className="row">
+                <div className="small-3 medium-6 large-4 columns">
+                    <div className="progressCircle">
+                        <CircularProgressInfo
+                            strokeWidth="3"
+                            radius="20"
+                            stroken={this.props.colorCircle}
+                            fontsize="10px"
+                            percentage={this.props.experience}
+                        />
+                    </div>
+                </div>
+                <div className="small-9 medium-6 large-8 columns">
+                    <div className="progressText">
+                        <div className="columns">{this.props.text} </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+});
+const QuienesSomos2=React.createClass({
+    getInitialState(){
+        return {
+            cantidadDatos:[
+                {key:1,text:"html5, css3, javascript, typescript, angular, react, sass, stylus.",experience:"2",colorCircle:"#1F77B4"},
+                {key:2,text:"php, ruby on rails, go, visual.net, asp.net.",experience:"1",colorCircle:"#FF7F0E"},
+                {key:3,text:"mysql,sql server, mongo-db, postgress, firebase.",experience:"2",colorCircle:"#56B356"},
+                {key:4,text:"Ux, UI, APPs.",experience:"1",colorCircle:"#DE5253"},
+                {key:5,text:"Hacking Etico, Pruebas de penetracion, ofensive security Profesioanl, Owasp Top 10,python pentester",experience:"3",colorCircle:"#9467BD"}
+            ]
+        }
+    },
+    eachItem(item){
+        return(
+            <CircularProgress2 key={item.key}
+                               text={item.text}
+                               experience={item.experience}
+                               colorCircle={item.colorCircle}
+            />
+        );
+    },
+    render(){
+        return(
+            <div className="container">
+                <div className=" medium-5 large-6 columns">
+                    <Chart width={150} height={150} series={series2}>
+                        <Transform method={['transpose', 'stackNormalized']}>
+                            <Pies
+                                colors='category10'
+                                combined={true}
+                                innerRadius='35%'
+                                padAngle={0.025}
+                                cornerRadius={3}
+                                innerPadding={2}
+                                pieAttributes={{
+                                    onMouseMove: (e) => e.target.style.opacity = 1,
+                                    onMouseLeave: (e) => e.target.style.opacity = 0.5
+                                }}
+                                pieStyle={{opacity: 0.8}}
+                            >
+                            </Pies>
+                        </Transform>
+                    </Chart>
+                    <div className="experiencie">
+                        <div className="title">
+                            <i className="fa fa-cogs" aria-hidden="true"></i>
+                            Experiencia Profesional
+                        </div>
+                        <div className="text-content">
+                            sdfsfsdfsdf
+                        </div>
+                    </div>
+                </div>
+                <div className=" medium-7 large-6 columns">
+                    {this.state.cantidadDatos.map(this.eachItem)}
+                </div>
+            </div>
+        );
+    }
+});
 const ViewInformacion=React.createClass({
     render(){
 
@@ -117,7 +214,7 @@ const ViewInformacion=React.createClass({
                         </div>
                         <div className="content-content">
                             <div className="row">
-                                <div className="small-up-1 medium-up-1 large-up-3" >
+                                <div className="small-up-1 medium-up-2 large-up-3" >
                                     <div className="columns" >
                                         <div className="spaces text-center">
                                             <div className="medida">
@@ -189,11 +286,11 @@ const ViewInformacion=React.createClass({
                         </div>
                         <div className="content-content">
                             <div className="row">
-                                <div className="large-6 columns" style={{border:'1px solid green'}}>
-                                    <QuienesSomos/>
+                                <div className="large-6 columns">
+                                    <QuienesSomos1/>
                                 </div>
-                                <div className="large-6 columns" style={{border:'1px solid green'}}>
-                                    <QuienesSomos/>
+                                <div className="large-6 columns">
+                                    <QuienesSomos2/>
                                 </div>
                             </div>
                         </div>
@@ -205,8 +302,11 @@ const ViewInformacion=React.createClass({
     }
 });
     
-const series = [{
-    data: [1, 3, 2, 5, 7,]
+const series1 = [{
+    data: [1, 3, 2, 5, 7]
+}];
+const series2 = [{
+    data: [2, 1, 2, 1, 3]
 }];
 
 
