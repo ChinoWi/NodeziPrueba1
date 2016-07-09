@@ -92,9 +92,10 @@ const App=React.createClass({
     getInitialState(){
         return{
             datos:[
-                {key:1,title:'Informacion',urlLink:'/Informacion',styloIcon:'fa fa-home iconos'},
-                {key:2,title:'Preguntas',urlLink:'/Preguntas',styloIcon:'fa fa-question-circle iconos'},
-                {key:3,title:'Contactenos',urlLink:'/Contactenos',styloIcon:'fa fa-envelope iconos'}
+                {key:1,title:'Home',urlLink:'/',styloIcon:'fa fa-home iconos'},
+                {key:2,title:'Informacion',urlLink:'/Informacion',styloIcon:'fa fa-info-circle iconos'},
+                {key:3,title:'Preguntas',urlLink:'/Preguntas',styloIcon:'fa fa-question-circle iconos'},
+                {key:4,title:'Contactenos',urlLink:'/Contactenos',styloIcon:'fa fa-envelope iconos'}
             ],
             showMenu:false
         }

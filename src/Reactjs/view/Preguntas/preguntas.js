@@ -5,15 +5,18 @@ import TestUtils from 'react-addons-test-utils';
 const Respuestas=React.createClass({
     render(){
         return(
-            <div className="rows">
-                <div className="medium-3 large-2 columns">
-                    <div className="card-item-alinear image-answer">
-                        <img className="card-item-imgAdmin"  width="67px" src="asset/images/admin-item.png" alt=""/>
-                    </div>
+            <div className="row">
+                <div className="contentRespuesta">
+                    <div className="medium-3 large-2 columns">
+                        <div className="card-item-alinear image-answer">
+                            <img className="card-item-imgAdmin" src="asset/images/admin-item.png" alt=""/>
+                        </div>
 
-                </div>
-                <div className="medium-9 large-10 columns" >
-                    <h6 className="answer">{this.props.respuesta}</h6>
+                    </div>
+                    <div className="medium-9 large-10 columns">
+                        <h6 className="answer">{this.props.respuesta}</h6>
+
+                    </div>
                 </div>
             </div>
         );
@@ -36,17 +39,17 @@ const Preguntas=React.createClass({
     render(){
         return(
             <div className="card-item article-question">
-                <div className="row columns text-left">
+                <div className="row text-left">
                     <div className="medium-2 large-2 columns">
-                        <img src={this.props.imgUrl}  width="70px" />
+                        <img src={this.props.imgUrl}/>
                     </div>
-                    <div className="medium-10 large-10 columns content-question">
-                        <div style={{borderBottom:'2px solid #EDECE8'}}>
+                    <div className="medium-10 large-10 columns" >
+                        <div style={{paddingLeft:'10px',borderBottom:'2px solid #EDECE8'}}>
                             <h5 className="question">{this.props.pregunta} </h5>
                             <div className="separator-question"></div>
                             <h6 className="card-item-mostrar question-option" onClick={this.handleClickMostrar}>{this.state.showMostrar ? "Ver Respuesta" : "Ocultar Respuesta"} </h6>
                         </div>
-                         <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={800} transitionLeaveTimeout={300}>
+                        <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={800} transitionLeaveTimeout={300}>
                             {this.state.showRespuesta ? <Respuestas  respuesta={this.props.respuesta}></Respuestas> : null}
                         </ReactCSSTransitionGroup>
                     </div>
@@ -86,14 +89,12 @@ const ViewPreguntas= React.createClass({
     render(){
         return(
             <section className="sectionPreguntas">
-                <div className="row">
-                    <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
-                    <div className="medium-10 large-8 columns card  question-content">
-                        <h4 className="question-title">Preguntas</h4>
-                        {this.state.Datos.map(this.eachItem)}
-                    </div>
-                    <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
+                <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
+                <div className="medium-10 large-8 columns card ">
+                    <h4 className="question-title">Preguntas</h4>
+                    {this.state.Datos.map(this.eachItem)}
                 </div>
+                <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
             </section>
         );
     }

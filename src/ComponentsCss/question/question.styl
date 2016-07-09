@@ -1,32 +1,36 @@
 
 .sectionPreguntas
 	background #EEEEEE
-	
+
 .sectionPreguntas .row
 	min-width 80%
 	margin-top 1%
 
+.contentRespuesta
+	padding 10px
+
 .row .card
 	background white
 	border-radius 5px
+	box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+	webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 	&-item
-		margin 20px
+		margin-left 20px
+		margin-right 20px
+		&-imgAdmin
+			width 67px
 		&-mostrar
 			cursor pointer
 
-@media screen and (max-width: 39.9375em)
+@media screen and (max-width: 639px)
 	.row .card
 		&-item
 			&-alinear
 				text-align center
 			&-imgAdmin
-				height 90px
+				width 80px
 
-@media screen and (min-width: 40em)
-	.row .card
-		&-item
-			&-imgAdmin
-				height 70px
+
 
 .separator-question
 	height 10px
@@ -38,7 +42,7 @@
 
 .example-enter.example-enter-active
 	opacity 1
-		
+
 .example-leave
 	opacity 1
 	transition opacity .5s ease-in
@@ -61,42 +65,37 @@
 
 .content-question
 	border 1px solid white
-	
-
-.question-content
-	width 600px
 
 .question-title
 	color #00BAFF
 	padding-bottom 1em
 	padding-top .5em
 	margin-left .5em
-	text-shadow 2px 2px 2px #AAA
-    
+
 .question
 	color #5F6A70
 	font-family 'Roboto'
-	
+
 .question-option
 	color  #00BAFF
-	font-family 'Rokkitt'	
+	font-family 'Rokkitt'
 	font-weight bold
 	font-size 1.2em
-	
+
 .answer
 	color #5F6A70
 	font-family 'Roboto'
-	font-size 1.1em	
-	
+	font-size 1.1em
 
 
-	
 
 
-	
-    
-		
-		
+
+
+
+
+
+
 
 	
 
