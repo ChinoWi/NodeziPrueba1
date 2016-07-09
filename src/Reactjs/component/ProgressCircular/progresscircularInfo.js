@@ -26,39 +26,20 @@ export default class CircularProgressInfo extends React.Component {
                 height={this.props.radius * 2}
                 viewBox={viewBox}>
                 <circle
-                    className="CircularProgressInfo-Bg"
+                    stroke={this.props.stroken}
+                    fill="none"
                     cx={this.props.radius}
                     cy={this.props.radius}
                     r={radius}
-                    strokeWidth={`${this.props.strokeWidth}px`} />
-                <circle
-                    className="CircularProgressInfo-Fg"
-                    cx={this.props.radius}
-                    cy={this.props.radius}
-                    r={radius}
-                    strokeWidth={`${this.props.strokeWidth}px`}
-                    style={{
-                        strokeDasharray: dashArray,
-                        strokeDashoffset: dashOffset
-                    }} />
-                <circle
-                    className="CircularProgressInfo-Fy"
-                    cx="50"
-                    cy="50"
-                    r="40"
-                    strokeWidth="15px"
-                    style={{
-                        strokeDasharray: dashArray,
-                        strokeDashoffset: dashOffset1
-                    }} />
+                    strokeWidth={`${this.props.strokeWidth}px`}/>
                 <text
-                    className="CircularProgressInfo-Text"
-                    style={this.props.textPorcentage}
+                    style={{fontSize:this.props.fontsize}}
+                    fill={this.props.stroken}
                     x={this.props.radius}
                     y={this.props.radius}
                     dy=".4em"
                     textAnchor="middle">
-                    {`${this.props.percentage}`}
+                    {`${this.props.percentage}%`}
                 </text>
             </svg>
         );
@@ -67,6 +48,8 @@ export default class CircularProgressInfo extends React.Component {
 
 CircularProgressInfo.defaultProps = {
     radius: 50,
+    fillcolorText:"blue",
+    stroken:"blue",
     percentage:50,
     percentage1:10,
     strokeWidth: 1

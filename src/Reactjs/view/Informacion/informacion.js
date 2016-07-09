@@ -1,20 +1,73 @@
 import React from 'react';
 import CircularProgressInfo from '../../component/ProgressCircular/progresscircularInfo'
+import {Chart,Pies,Transform} from 'rumble-charts'
 
-const CuerpoInformacion=React.createClass({
+
+const CircularProgress=React.createClass({
     render(){
         return(
-            <div className="row small-up-1 medium-up-2 large-up-3">
-                <div className="columns" style={{border:'1px solid red'}}>
-                    <div className="sepa">
-                        <div className="row">
-                            <img src="asset/images/software-medida1.png" style={{height:'160px'}} alt="Escaneo vuln"/>
-                        </div>
-                        <div className="row" style={{margin:'10px'}}>
-                            <h5 className="title">Software a Medida</h5>
-                            <p>No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</p>
-                        </div>
+            <div className="row">
+                <div className="small-6 medium-6 large-4 columns">
+                    <div className="progressCircle">
+                        <CircularProgressInfo
+                            strokeWidth="3"
+                            radius="20"
+                            stroken="#6BAED6"
+                            fontsize="10px"
+                            percentage="22"
+                        />
                     </div>
+                </div>
+                <div className="small-6 medium-6 large-8 columns">
+                    <div className="progressText">
+                        <div className="columns">html5, css3, javascript,
+                            angular, polimer, react, sass, stylus  </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+});
+
+const QuienesSomos=React.createClass({
+    getInitialState(){
+        return {
+            cantidadDatos:[
+                {key:1,key:2,key:3}
+            ]
+        }
+    },
+    eachItem(item){
+        return(
+            <CircularProgress key={item.key}
+            />
+        );
+    },
+    render(){
+        return(
+            <div className="container">
+                <div className=" medium-5 large-6 columns" style={{border:'1px solid red'}}>
+                    <Chart width={150} height={150} series={series}>
+                        <Transform method={['transpose', 'stackNormalized']}>
+                            <Pies
+                                colors='category10'
+                                combined={true}
+                                innerRadius='35%'
+                                padAngle={0.025}
+                                cornerRadius={3}
+                                innerPadding={2}
+                                pieAttributes={{
+                                                                onMouseMove: (e) => e.target.style.opacity = 1,
+                                                                onMouseLeave: (e) => e.target.style.opacity = 0.5
+                                                              }}
+                                pieStyle={{opacity: 0.8}}
+                            >
+                            </Pies>
+                        </Transform>
+                    </Chart>
+                </div>
+                <div className=" medium-7 large-6 columns" style={{border:'1px solid red'}}>
+                    {this.state.cantidadDatos.map(this.eachItem)}
                 </div>
             </div>
         );
@@ -136,36 +189,25 @@ const ViewInformacion=React.createClass({
                         </div>
                         <div className="content-content">
                             <div className="row">
-                                <div className="medium-6 columns">
-                                    <div className="personal">
-                                        <CircularProgressInfo
-                                            strokeWidth="10"
-                                            radius="50"
-                                            percentage="22"
-                                            percentage1="10"
-                                        />
-                                    </div>
+                                <div className="large-6 columns" style={{border:'1px solid green'}}>
+                                    <QuienesSomos/>
                                 </div>
-                                <div className="medium-6 columns">
-                                    <div className="personal">
-                                        B
-                                    </div>
+                                <div className="large-6 columns" style={{border:'1px solid green'}}>
+                                    <QuienesSomos/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="text-center">
-                        <h1 className="diferences-title">¿Quienes Somos?</h1>
-                        <p>Somos un grupo de jovenes, emprendedores e innovadores, apasionados por la tecnologia
-                            informatica y seguridad informatica y dar soluciones informatica.</p>
-                    </div>
                 </section>
-
             </div>
 
         );
     }
 });
+    
+const series = [{
+    data: [1, 3, 2, 5, 7,]
+}];
 
 
 export default ViewInformacion;
