@@ -63,7 +63,7 @@ const ViewHome=React.createClass({
     },
     render(){
          return(
-            <div >
+            <div className="sectionhomeAll">
                 <div className="sectionhome">
                     <div className="content">
                         <div className="text-content">
@@ -81,21 +81,19 @@ const ViewHome=React.createClass({
                 <div className="sectionhome1">
                     <div className="row columns">
                         <div className="large-7 columns">
-                            <div className="content1">
-                                <div className="container">
-                                    sdfsdf
-                                </div>
+                            <div className="container1">
+                                sdfsdf
                             </div>
                         </div>
                         <div className="large-5 columns">
-                            <div className="content2">
-                                <div className="container">
-                                    <div className="text-img">
-                                        <img src="asset/images/desktop.png" alt=""/>
-                                    </div>
-                                    <PruebaModal></PruebaModal>
+                            <div className="container2">
+                                <div className="text-img">
+                                    <i className="fa fa-times" aria-hidden="true"></i>
                                 </div>
+                                <h6><small>video</small></h6>
+                                <PruebaModal></PruebaModal>
                             </div>
+
                         </div>
                     </div>
 
@@ -154,20 +152,7 @@ const ViewHome=React.createClass({
                 </div>
 
                 <div className="show-for-medium">
-                    <section className="sectionVideoDesktop">
-                        <div className="imagenfondodekstop" style={{height:'500px'}}>
-                            <div className="row" style={{margin:'60px 10px 0 10px'}}>
-                                <div className="medium-6 large-6 columns">
-                                        <h3 className="title-web">Desarrollo de páginas web y sistemas a medida, implementando Seguridad Hacking</h3>
-                                        <h6 className="title-we">Confie en nosotros.</h6>
-                                </div>
-                                <div className="medium-6 large-6 columns">
-                                    <PruebaModal></PruebaModal>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section style={{background:'#FCFAF9'}}>
+                    <section className="sectionQuienesSomos">
                         <div className="text-center information">
                              <span className="information-we">¿Quienes Somos?</span>
                             <Link to="/Informacion" className="information-more">Mas informacion</Link>

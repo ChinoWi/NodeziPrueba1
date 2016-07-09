@@ -4,7 +4,6 @@
     <list default="true" id="2e0d5713-053e-459d-b6d8-5ad57828688c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asset/css/styles.css" afterPath="$PROJECT_DIR$/asset/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ComponentsCss/home/home.styl" afterPath="$PROJECT_DIR$/src/ComponentsCss/home/home.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/component/modalVideo/modalVideo.js" afterPath="$PROJECT_DIR$/src/Reactjs/component/modalVideo/modalVideo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reactjs/view/Home/home.js" afterPath="$PROJECT_DIR$/src/Reactjs/view/Home/home.js" />
     </list>
     <ignored path="NodeziPrueba.iws" />
@@ -27,24 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+            <state relative-caret-position="788">
+              <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#3894#6766#0" expanded="false" />
+                <element signature="e#3775#6647#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.styl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComponentsCss/home/home.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+            <state relative-caret-position="393">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -53,18 +52,8 @@
       <file leaf-file-name="modalVideo.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reactjs/component/modalVideo/modalVideo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="informacion.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2802">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="330">
+              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -121,8 +110,8 @@
         <option value="$PROJECT_DIR$/src/Reactjs/view/Preguntas/preguntas.js" />
         <option value="$PROJECT_DIR$/src/ComponentsCss/question/question.styl" />
         <option value="$PROJECT_DIR$/src/Reactjs/component/modalVideo/modalVideo.js" />
-        <option value="$PROJECT_DIR$/src/Reactjs/view/Home/home.js" />
         <option value="$PROJECT_DIR$/src/ComponentsCss/home/home.styl" />
+        <option value="$PROJECT_DIR$/src/Reactjs/view/Home/home.js" />
       </list>
     </option>
   </component>
@@ -493,12 +482,12 @@
       <workItem from="1467930865773" duration="15487000" />
       <workItem from="1467987663609" duration="6536000" />
       <workItem from="1467994785200" duration="58515000" />
-      <workItem from="1468088193897" duration="10595000" />
+      <workItem from="1468088193897" duration="14032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259356000" />
+    <option name="totallyTimeSpent" value="262793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
@@ -785,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2802">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentsCss/info/info.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -801,30 +782,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Informacion/informacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Reactjs/component/modalVideo/modalVideo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="330">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/home/home.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reactjs/view/Home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+        <state relative-caret-position="788">
+          <caret line="92" column="48" selection-start-line="92" selection-start-column="48" selection-end-line="92" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#3894#6766#0" expanded="false" />
+            <element signature="e#3775#6647#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ComponentsCss/home/home.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
