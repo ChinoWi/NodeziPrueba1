@@ -20,8 +20,10 @@
         display flex
         .text-content
             -webkit-align-self: flex-end;
+            padding-bottom 20px
+            padding-left 60px
             .description
-                font-size 20px
+                font-size 22px
                 color white
                 max-width 400px
         .text-img
@@ -31,6 +33,18 @@
             img
                 height 50px
                 opacity 0.7
+
+@media screen and (max-width: 639px)
+    .sectionhome
+        padding 15px
+        .content-small
+            text-align center
+            padding 0 18px 0 18px
+            .description-small
+                font-size 18px
+                color white
+        .content
+            display none
 
 @media screen and (min-width: 640px) and (max-width: 1023px)
     .sectionhome
@@ -49,33 +63,24 @@
     .container2
         border-radius 2px
         display flex
-        .text-img
-            position: absolute;
-            padding 10px
-            right 60px
-            z-index 100
-            i
-                font-size 30px
 
-
-
-//SECTION VIDEO
-#sectionVideo
-    margin 0
-
-#sectionVideo .topVideo
-    margin 0
-    height 100px
-    background #4B8BA0
-    box-shadow 0 3px 3px -2px #BFBFBF
-    position relative
-
-
-#sectionVideo .bottomVideo
-    margin-top -75px
-    box-shadow 0 3px 3px -2px #BFBFBF;
-    background white
-
+@media screen and (max-width: 639px)
+    .sectionhome1
+        .container2
+            display block
+            margin-top -80px
+            .flex-video
+                text-align center
+                margin 0 40px 20px 40px
+            .bottomVideo-span
+                display flex
+                color white
+                justify-content space-around
+                .texto
+                    margin-bottom -8px
+                .spacio
+                    margin 1px
+                    border  1px solid #4B8BA0
 
 
 
@@ -94,39 +99,7 @@
     font-size: 30px;
     text-decoration: none;
 
-.bottomVideo .centerVideo
-    margin-left 50px
-    margin-right 50px
-    position relative
 
-.centroVideo .titleVideo
-    text-align left
-
-.bottonVideo-content
-
-    text-align center
-    margin-left 10px
-    margin-right 10px
-
-.bottonVideo-content .title
-    padding 3px
-    margin-left 40px
-    margin-right 40px
-    font-weight bold
-
-.bottonVideo-content .texto
-    margin 0 auto
-
-.bottomVideo-span
-    display flex
-    justify-content space-around
-    border 1px solid #4B8BA0
-
-.bottomVideo-span .texto
-    margin-bottom -8px
-
-.bottomVideo-span .spacio
-    border  1px solid #4B8BA0
 
 .separacion
     padding-bottom 8px
@@ -147,12 +120,18 @@
 
 .slideContainerDesktop
     height 400px
+    p.pTitleDesktop
+        font-size 30px
+    p.ptextDesktop
+        font-size 25px
+
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em)
     .slideDesktop
         height 630px
     .slideContainerDesktop
         height 630px
+
 
 //SectionInfo
 

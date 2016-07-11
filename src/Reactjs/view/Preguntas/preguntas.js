@@ -59,6 +59,47 @@ const Preguntas=React.createClass({
     }
 });
 
+
+const Preguntas1=React.createClass({
+    getInitialState(){
+        return{
+            showRespuesta:false,
+            showMostrar:'MOSTRAR'
+        }
+    },
+    handleClickMostrar(){
+        this.setState({
+            showRespuesta:!this.state.showRespuesta,
+            showMostrar:!this.state.showMostrar
+        })
+    },
+    render(){
+        return(
+            <div>
+               <div className="card-item article-questionss">
+                    <div className="row text-left">
+                        <div className="medium-2 large-2 columns">
+                            <img src={this.props.imgUrl}/>
+                        </div>
+                        <div className="medium-10 large-10 columns" >
+                            <div style={{paddingLeft:'10px',borderBottom:'2px solid #EDECE8'}}>
+                                <h5 className="question">{this.props.pregunta} </h5>
+                                <div className="separator-question"></div>
+                                <h6 className="card-item-mostrar question-option" onClick={this.handleClickMostrar}>{this.state.showMostrar ? "Ver Respuesta" : "Ocultar Respuesta"} </h6>
+                            </div>
+                            <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={800} transitionLeaveTimeout={300}>
+                                {this.state.showRespuesta ? <Respuestas  respuesta={this.props.respuesta}></Respuestas> : null}
+                            </ReactCSSTransitionGroup>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        );
+    }
+});
+
 const ViewPreguntas= React.createClass({
     getInitialState(){
         return{
@@ -86,16 +127,32 @@ const ViewPreguntas= React.createClass({
             </Preguntas>
         );
     },
+
+    eachItem1(item){
+        return(
+            <Preguntas1 key={item.key}
+                       pregunta={item.pregunta}
+                       imgUrl={item.imgUrl}
+                       respuesta={item.respuesta}
+            >
+
+            </Preguntas1>
+        );
+    },
     render(){
         return(
-            <section className="sectionPreguntas">
-                <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
-                <div className="medium-10 large-8 columns card ">
-                    <h4 className="question-title">Preguntas</h4>
-                    {this.state.Datos.map(this.eachItem)}
-                </div>
-                <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
-            </section>
+            <div>
+                <section className="sectionPreguntas">
+                    <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
+                    <div className="medium-10 large-8 columns card ">
+                        <h4 className="question-title">Preguntas</h4>
+                        {this.state.Datos.map(this.eachItem)}
+                    </div>
+                    <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
+                </section>
+            </div>
+
+
         );
     }
 });

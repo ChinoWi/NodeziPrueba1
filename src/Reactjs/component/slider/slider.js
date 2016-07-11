@@ -25,15 +25,11 @@ const RecorreSmall=React.createClass({
         return(
             <div className="slideSmall" style={{backgroundColor:this.props.color}}>
                 <div className="text-center">
-                    <img src={this.props.imagensrc} alt="" style={{height:'300px',width:'100%'}} />
+                    <img src={this.props.imagensrc} alt="" style={{height:'200px',width:'80%',padding:'30px'}} />
                 </div>
-                <div className="row">
-                    <div style={{fontSize:'30px'}}>
-                        <p>{this.props.titulo} </p>
-                    </div>
-                    <div style={{fontSize:'25px'}}>
-                        <p>{this.props.texto} </p>
-                    </div>
+                <div style={{padding:'20px'}}>
+                    <p>{this.props.titulo} </p>
+                    <p>{this.props.texto} </p>
                 </div>
             </div>
         );
@@ -46,17 +42,15 @@ const RecorreDesktop=React.createClass({
         return(
             <div className="slideDesktop" style={{backgroundColor:this.props.color}}>
                 <div className="row" >
-                    <div className="large-7 columns">
-                        <img src={this.props.imagensrc} style={{height:'370px',width:'100%'}} alt=""/>
+                    <div className="large-6 columns">
+                        <div style={{margin:'15px'}}>
+                            <img src={this.props.imagensrc} style={{height:'330px',width:'90%'}} alt=""/>
+                        </div>
                     </div>
-                    <div className="large-5 columns">
+                    <div className="large-6 columns">
                         <div style={{marginTop:'60px',marginLeft:'40px'}}>
-                            <div style={{fontSize:'50px'}}>
-                                <p>{this.props.titulo} </p>
-                            </div>
-                            <div style={{fontSize:'30px'}}>
-                                <p>{this.props.texto} </p>
-                            </div>
+                            <p className="pTitleDesktop">{this.props.titulo} </p>
+                            <p className="ptextDesktop">{this.props.texto} </p>
                         </div>
                     </div>
                 </div>

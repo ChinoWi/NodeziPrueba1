@@ -65,6 +65,14 @@ const ViewHome=React.createClass({
          return(
             <div className="sectionhomeAll">
                 <div className="sectionhome">
+                    <div className="show-for-small-only">
+                        <div className="content-small">
+                            <div className="description-small">
+                                Desarrollo de Software Aplicaciones Web, Móviles
+                                y Desktop, implementando Seguridad Hacking
+                            </div>
+                        </div>
+                    </div>
                     <div className="content">
                         <div className="text-content">
                             <div className="description">
@@ -81,58 +89,42 @@ const ViewHome=React.createClass({
                 <div className="sectionhome1">
                     <div className="row columns">
                         <div className="large-7 columns">
-                            <div className="container1">
-                                sdfsdf
+                            <div className="show-for-medium">
+                                <div className="container1">
+                                    sdfsdf
+                                </div>
                             </div>
                         </div>
                         <div className="large-5 columns">
                             <div className="container2">
-                                <div className="text-img">
-                                    <i className="fa fa-times" aria-hidden="true"></i>
-                                </div>
                                 <h6><small>video</small></h6>
-                                <PruebaModal></PruebaModal>
+                                <div className="show-for-small-only">
+                                    <div className="flex-video">
+                                        <iframe style={{background:'#DBD8F0'}} className="thumbnail" src="https://www.youtube.com/embed/aiBt44rrslw"></iframe>
+                                    </div>
+                                    <div className="text-center">
+                                            sdfsdfsdf
+                                        <div className="bottomVideo-span">
+                                            <span className="texto"><h3><small>Website</small></h3></span><div className="spacio"></div>
+                                            <span className="texto"><h3><small>Desing</small></h3></span><div className="spacio"></div>
+                                            <span className="texto"><h3><small>Security</small></h3></span><div className="spacio"></div>
+                                            <span className="texto"><h3><small>Movil</small></h3></span><div className="spacio"></div>
+                                            <span className="texto"><h3><small>Marketing</small></h3></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div className="show-for-medium text-center">
+                                    <PruebaModal></PruebaModal>
+                                </div>
                             </div>
 
                         </div>
                     </div>
-
                 </div>
 
-
                 <div className="show-for-small-only">
-                    <section id="sectionVideo">
-                        <div className="topVideo"></div>
-                        <div className="bottomVideo">
-                            <div className="centerVideo">
-                                <div className="titleVideo"><h6><small>Video</small></h6></div>
-                                <div className="text-center">
-                                    <div className="flex-video">
-                                        <iframe style={{background:'#DBD8F0'}} className="thumbnail" width="330" height="220" src="https://www.youtube.com/embed/aiBt44rrslw"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bottonVideo-content">
-                               <div className="bottonVideo-content title">
-                                   Welcome
-                               </div>
-                                <div className="bottonVideo-content texto">
-                                    Soluciones para todo tipo de negocio,
-                                    para personas y empresas
-                                </div>
-                            </div>
-                            <br/>
-                            <div className="bottomVideo-span">
-                                <span className="texto"><h3><small>Website</small></h3></span><div className="spacio"></div>
-                                <span className="texto"><h3><small>Desing</small></h3></span><div className="spacio"></div>
-                                <span className="texto"><h3><small>Security</small></h3></span><div className="spacio"></div>
-                                <span className="texto"><h3><small>Movil</small></h3></span><div className="spacio"></div>
-                                <span className="texto"><h3><small>Marketing</small></h3></span>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div className="separacion"></div>
+                   <div className="separacion"></div>
                     <section id="sectionSlider">
                         <Slider></Slider>
                     </section>

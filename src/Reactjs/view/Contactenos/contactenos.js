@@ -322,7 +322,6 @@ const ViewContactenos=React.createClass({
 
                 <div className="text-center" style={{display:this.state.showContacto}}>
                     <div className="contactenos">
-                        <div className="row">
                             <div className="container">
                                 <div className="title">
                                     <div className="row">
@@ -417,10 +416,10 @@ const ViewContactenos=React.createClass({
                                                 <div className="circleDesktop">
                                                     <CircularProgress
                                                         strokeWidth="8"
-                                                        fontsize="25px"
+                                                        fontsize="35px"
                                                         stroken1="#7B858A"
                                                         stroken2="#49B5D5"
-                                                        radius="75"
+                                                        radius="90"
                                                         percentage={this.state.valor}/>
                                                 </div>
                                             </div>
@@ -429,7 +428,6 @@ const ViewContactenos=React.createClass({
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 

@@ -49,13 +49,13 @@ const Modal=React.createClass({
 
     render() {
         if (this.props.isShowModal === false)
-            return null
+            return null;
 
         let StyleModal = {
             position: 'absolute',
             top: '44%',
             left: '50%',
-            transform: 'translate(-50%, -100%)',
+            transform: 'translate(-50%, -50%)',
             zIndex: '300',
             background: '#fff',
             textAlign:'center'
