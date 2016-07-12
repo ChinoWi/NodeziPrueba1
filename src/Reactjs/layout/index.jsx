@@ -58,7 +58,137 @@ const  FooterRedes = React.createClass({
     }
 })
 
-const SmallMenu=React.createClass({
+
+const FormSearch=React.createClass({
+  render(){
+     return(
+          <form className="form-content">
+              <span className="form-icon"><i className="fa fa-search" aria-hidden="true"></i></span>
+              <input className="form-search" type="text" placeholder="Buscar en Nodezi"/>
+          </form>
+     )
+  }
+
+
+})
+
+
+const Header=React.createClass({
+    render(){
+        return(
+            <div>
+                <div className="show-for-medium">
+                    <header className="headerr">
+                        <div className="row">
+                            <div className="small-12 medium-4 columns">
+                                <Link to="/">
+                                    <img src="asset/images/logo.png" alt=""/>
+                                </Link>
+                            </div>
+                            <div className="small-12 medium-2 columns form">
+                                <FormSearch/>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div className="show-for-small-only">
+                    <header className="header-small">
+                        <div className="text-center">
+                            <Link to="/">
+                                <img src="asset/images/logo.png" alt=""/>
+                            </Link>
+                            <div className="input-wrapper">
+                                <input type="text" className="search-box" placeholder="Buscar en Nodezi"/>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+
+        );
+    }
+})
+
+const MenuNav=React.createClass({
+    getInitialState: function(){
+        return{
+            datos:[
+                {key:1,title:'Home',urlLink:'/',styloIcon:'fa fa-home iconos'},
+                {key:2,title:'Informacion',urlLink:'/Informacion',styloIcon:'fa fa-info-circle iconos'},
+                {key:3,title:'Preguntas',urlLink:'/Preguntas',styloIcon:'fa fa-question-circle iconos'},
+                {key:4,title:'Contactenos',urlLink:'/Contactenos',styloIcon:'fa fa-envelope iconos'}
+            ],
+            showMenu:false
+        }
+    },
+    eachItem(item){
+
+        return(
+            <MenuItemSmall key={item.key}
+                            title={item.title}
+                            urlLink={item.urlLink}
+                            styloIcon={item.styloIcon}
+                            handleClickSubTitle={this.handleClickShowSubTitle}
+            />
+        );
+    },
+    handleClickShowSubTitle(){
+        this.setState({
+            showMenu:false
+        });
+    },
+    handleClickShow(){
+        this.setState({
+            showMenu:!this.state.showMenu
+        });
+    },
+
+    render(){
+        return(
+            <div>
+                <div className="show-for-small-only">
+                    <div className="top-barr">
+                        <section className="top-bar-section">
+                            <ul onClick={this.handleClickShow} >
+                                <li className="listMenu">
+                                    <i className="fa fa-list iconos"></i>
+                                    <span>Menu</span>
+                                </li>
+                            </ul>
+                            {this.state.showMenu ? this.state.datos.map(this.eachItem) : null}
+                        </section>
+                    </div>
+                </div>
+                <div className="show-for-medium">
+                    <MenuItem items={this.state.datos} />
+                </div>
+            </div>
+
+        );
+    }
+});
+
+
+
+const MenuItem = React.createClass({
+    render(){
+        return (
+            <ul className="nav">
+                {
+                    this.props.items.map((elem) => {
+                        return (
+                            <li className="nav-item" key={elem.key}> <Link to={elem.urlLink}><i className={elem.styloIcon}></i> {elem.title}</Link></li>
+                        )
+                    })
+                }
+            </ul>
+        )
+    }
+})
+
+
+const MenuItemSmall=React.createClass({
     render(){
         return(
             <ul className="rightt" onClick={this.props.handleClickSubTitle}>
@@ -74,18 +204,7 @@ const SmallMenu=React.createClass({
 });
 
 
-const FormSearch=React.createClass({
-  render(){
-     return(
-          <form className="form-content">
-              <span className="form-icon"><i className="fa fa-search" aria-hidden="true"></i></span>
-              <input className="form-search" type="text" placeholder="Buscar en Nodezi"/>
-          </form>
-     )
-  }
 
-
-})
 
 
 const App=React.createClass({
@@ -103,7 +222,7 @@ const App=React.createClass({
     eachItem(item){
 
         return(
-            <SmallMenu key={item.key}
+            <SmallMenuSmall key={item.key}
                        title={item.title}
                        urlLink={item.urlLink}
                        styloIcon={item.styloIcon}
@@ -124,89 +243,10 @@ const App=React.createClass({
     render(){
         return(
             <div>
-                <div className="body-container">
-                    <div className="show-for-medium">
-                        <header className="headerr">
-                            <div className="row">
-                                <div className="small-12 medium-4 columns">
-                                    <Link to="/">
-                                        <img src="asset/images/logo.png" alt=""/>
-                                    </Link>
-                                </div>
-                                <div className="small-12 medium-2 columns form">
-                                   <FormSearch/>  
-                                </div>
-                            </div>
-                        </header>
-                    </div>
+                <Header></Header>
+                <MenuNav></MenuNav>
+                {this.props.children}
 
-                    <div className="content-row">
-                        <div className="row">
-                            <div className="medium-3 large-2 hide-for-small-only columns menu-izq">
-                                <div className="text-center">
-                                    <div className="menu-izq-content" style={styles}>
-                                        <div className="row">
-                                            <ul className="menu-izq-nav text-left">
-                                                <li>
-                                                    <Link to="/" className="active">
-                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                        <span>Inicio</span>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to="/Informacion">
-                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                        <span>Informacion</span>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to="/Preguntas">
-                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                        <span>Preguntas</span>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to="/Contactenos">
-                                                        <img src="https://res.cloudinary.com/hashnode/image/upload/v1450381587/static_imgs/nodes-img.png"/>
-                                                        <span>Contactenos</span>
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="show-for-small-only">
-                                <header className="header-small">
-                                    <div className="text-center">
-                                        <Link to="/">
-                                            <img src="asset/images/logo.png" alt=""/>
-                                        </Link>
-                                        <div className="input-wrapper">
-                                            <input type="text" className="search-box" placeholder="Buscar en Nodezi"/>
-                                        </div>
-                                    </div>
-                                </header>
-                                <div className="top-barr">
-                                    <section className="top-bar-section">
-                                        <ul onClick={this.handleClickShow} >
-                                            <li className="listMenu">
-                                                <i className="fa fa-list iconos"></i>
-                                                <span>Menu</span>
-                                            </li>
-                                        </ul>
-                                        {this.state.showMenu ? this.state.datos.map(this.eachItem) : null}
-                                    </section>
-                                </div>
-
-                            </div>
-                            <div className="medium-9 large-10 columns menu-der">
-                                {this.props.children}
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
         );

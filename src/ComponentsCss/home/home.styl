@@ -2,9 +2,11 @@
 [class*="entypo-"]:before
     font-family: 'entypo', sans-serif;
 
-.sectionhome
-    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-    webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+.sectionhomeAll
+    box-shadow: 0 1px 0px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+    webkit-box-shadow: 0 1px 0px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+
+.sectionhome1
     background white
     background-image url(../../asset/images/gradient-background.png)
     background-repeat no-repeat
@@ -18,8 +20,10 @@
         display flex
         .text-content
             -webkit-align-self: flex-end;
+            padding-bottom 20px
+            padding-left 60px
             .description
-                font-size 20px
+                font-size 22px
                 color white
                 max-width 400px
         .text-img
@@ -30,6 +34,18 @@
                 height 50px
                 opacity 0.7
 
+@media screen and (max-width: 639px)
+    .sectionhome1
+        padding 15px
+        .content-small
+            text-align center
+            padding 0 18px 0 18px
+            .description-small
+                font-size 18px
+                color white
+        .content
+            display none
+
 @media screen and (min-width: 640px) and (max-width: 1023px)
     .sectionhome
         .content
@@ -39,72 +55,50 @@
                     font-size 18px
 
 
-.sectionhome1
-    padding-top 20px
-    .content1
-        padding 20px 10px 20px 0
-        .container
-            background white
-            padding 10px
-            border-radius 2px
-            box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-            webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-    .content2
-        padding 20px 0 20px 10px
-        .container
-            background #2BA991
-            border-radius 2px
-            box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-            webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
-            .text-img
-                position: absolute;
-                top: 250px;
-                right: 20px;
-
-@media screen and (min-width: 640px) and (max-width: 1023px)
-    .sectionhome1
-        .content1
-            padding 20px 0
-        .content2
-            padding 20px 0
-
-
-
-//SECTION VIDEO
-#sectionVideo
-    margin 0
-
-#sectionVideo .topVideo
-    margin 0
-    height 100px
-    background #4B8BA0
-    box-shadow 0 3px 3px -2px #BFBFBF
-    position relative
-
-
-#sectionVideo .bottomVideo
-    margin-top -75px
-    box-shadow 0 3px 3px -2px #BFBFBF;
+.sectionhome2
     background white
+    .container1
+        padding 140px
+        border-radius 2px
+        p
+            font-size 25px
+            color #5F6A70
+    .container2
+        border-radius 2px
+        display flex
 
-.sectionVideoDesktop1
-    margin 0
+@media screen and (max-width: 639px)
+    .sectionhome3
+        .container2
+            display block
+            margin-top -80px
+            .flex-video
+                text-align center
+                margin 0 40px 20px 40px
+            .bottomVideo-span
+                display flex
+                color white
+                justify-content space-around
+                .texto
+                    margin-bottom -8px
+                .spacio
+                    margin 1px
+                    border  1px solid #4B8BA0
 
-.title-web
-    color white
-    font-family 'Oswald'
-.title-we
-    font-family 'Oswald'
-    color white
 
-.imagenfondodekstop
-    background-image url(../../asset/images/fondoimg2.png)
-    background-repeat no-repeat
-    background-position center center
-    background-size cover
-    padding 20px
-
-
+.sectionhome3
+    padding-top 20px
+    background white
+    .text-title
+        p
+            font-size 20px
+            color #5F6A70
+    .container
+        .content-item
+            padding 10px
+            border 1px solid #cfd8dc;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
+            webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 
 //MODAL
 #contentModal
@@ -121,39 +115,7 @@
     font-size: 30px;
     text-decoration: none;
 
-.bottomVideo .centerVideo
-    margin-left 50px
-    margin-right 50px
-    position relative
 
-.centroVideo .titleVideo
-    text-align left
-
-.bottonVideo-content
-
-    text-align center
-    margin-left 10px
-    margin-right 10px
-
-.bottonVideo-content .title
-    padding 3px
-    margin-left 40px
-    margin-right 40px
-    font-weight bold
-
-.bottonVideo-content .texto
-    margin 0 auto
-
-.bottomVideo-span
-    display flex
-    justify-content space-around
-    border 1px solid #4B8BA0
-
-.bottomVideo-span .texto
-    margin-bottom -8px
-
-.bottomVideo-span .spacio
-    border  1px solid #4B8BA0
 
 .separacion
     padding-bottom 8px
@@ -162,9 +124,6 @@
 
 
 //Section Slider
-#sectionSlider
-    background white
-
 
 .slideSmall
     height 470px
@@ -177,12 +136,18 @@
 
 .slideContainerDesktop
     height 400px
+    p.pTitleDesktop
+        font-size 30px
+    p.ptextDesktop
+        font-size 25px
+
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em)
     .slideDesktop
         height 630px
     .slideContainerDesktop
         height 630px
+
 
 //SectionInfo
 
@@ -200,27 +165,27 @@
 #sectionServicios .ServiciosSeparacion
     margin 10px
 
-
-.information
-    padding 1.5em 0
-    background #08D1D8
-    &-we
-        color white
-        font-family 'Roboto'  
-        font-size 1.4em  
-    &-more
-        margin-left 2.2em
-        color white
-        font-size 1.2em
-        background #456FB6
-        padding 1em 1em
-        font-family 'Roboto'
-        border-radius 5px
-    &-more:hover
-        color #4683B2
-        background #ECEFF1
-        border-radius 0
-        transition  border-radius 3s
+.sectionQuienesSomos
+    .information
+        padding 1.5em 0
+        background #08D1D8
+        &-we
+            color white
+            font-family 'Roboto'
+            font-size 1.4em
+        &-more
+            margin-left 2.2em
+            color white
+            font-size 1.2em
+            background #456FB6
+            padding 1em 1em
+            font-family 'Roboto'
+            border-radius 5px
+        &-more:hover
+            color #4683B2
+            background #ECEFF1
+            border-radius 0
+            transition  border-radius 3s
 
         
         

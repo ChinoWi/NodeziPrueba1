@@ -1,3 +1,6 @@
+.contentRespuesta
+	padding 15px
+
 .sectionInfoQue
 	.content
 		box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
@@ -23,7 +26,7 @@
 				.text-mensaje
 					color white
 					margin 10px
-					font-size 17px
+					font-size 20px
 				img
 					height 200px
 
@@ -41,7 +44,7 @@
 						font-size 14px
 
 .sectionInfoDif
-	padding-top 20px
+
 	.content
 		box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 		webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
@@ -85,7 +88,6 @@
 
 
 .sectionInforQuie
-	padding-top 20px
 	.content
 		box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 		webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
@@ -100,11 +102,16 @@
 				i
 					padding-right 10px
 		&-content
+			img.icon-user-admin
+				height 100px
+			padding 20px
 			.row
 				margin 15px
 				text-align center
 				.container
 					padding 5px
+					.chart
+						padding-top 70px
 					.progressCircle
 						padding-top 0
 					.progressText
@@ -112,17 +119,6 @@
 						font-size 12px
 						text-align left
 						font-family sans-serif
-					.experiencie
-						padding-top 10px
-						.title
-							color #263238
-							font-size 16px
-							i
-								font-size 12px
-								padding-right 5px
-						.text-content
-							font-size 13px
-							color #596E7A
 
 
 @media screen and (max-width: 639px)
@@ -131,6 +127,8 @@
 			&-content
 				.row
 					.container
+						.chart
+							padding-top 10px
 						.progressText
 							font-size 14px
 							text-align left

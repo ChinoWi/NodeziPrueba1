@@ -252,11 +252,20 @@ const ViewContactenos=React.createClass({
 
     componentDidMount(){
         var maxLength = 140;
-        $('textarea').keyup(function() {
+        $('first-textarea').keyup(function() {
             var length = $(this).val().length;
             var length = maxLength-length;
             $('#chars').text(length);
         });
+
+        $(".mat-input").focus(function(){
+            $(this).parent().addClass("is-active is-completed");
+        });
+        $(".mat-input").focusout(function(){
+            if($(this).val() === "")
+                $(this).parent().removeClass("is-completed");
+            $(this).parent().removeClass("is-active");
+        })
     },
 
     handleSubmit(e){
@@ -322,7 +331,6 @@ const ViewContactenos=React.createClass({
 
                 <div className="text-center" style={{display:this.state.showContacto}}>
                     <div className="contactenos">
-                        <div className="row">
                             <div className="container">
                                 <div className="title">
                                     <div className="row">
@@ -343,14 +351,14 @@ const ViewContactenos=React.createClass({
                                         </div>
                                         <div className="show-for-medium">
                                             <i className="fa fa-wpforms" aria-hidden="true"></i>
-                                            <div className="text-contact">Contact forma</div>
+                                            <div className="text-contact">Contact form</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="content">
                                     <div className="row">
                                         <div className="medium-6 large-6 columns">
-                                            <form className="formContat">
+                                            <form>
                                                 <div className="row">
                                                     <div className="small-2 columns">
                                                         <div className="show-for-small-only">
@@ -360,9 +368,10 @@ const ViewContactenos=React.createClass({
                                                         </div>
                                                     </div>
                                                     <div className="small-10 columns">
-                                                        <label>Nombres
-                                                            <input type="text" name="nombre" value={this.state.textNombreFirebase}  onChange={this.onNombreChange} placeholder="Nombre" />
-                                                        </label>
+                                                        <div className="content-input">
+                                                            <label htmlFor="first-name" className="label-mat">Nombre prueba</label>
+                                                            <input type="text" className="mat-input" id="first-name" name="nombre" value={this.state.textNombreFirebase}  onChange={this.onNombreChange} autoComplete="off"/>
+                                                        </div>
                                                         <div className="help-text">La contraseña debe tener al menos 3 caracteres.</div>
                                                     </div>
                                                 </div>
@@ -375,9 +384,10 @@ const ViewContactenos=React.createClass({
                                                         </div>
                                                     </div>
                                                     <div className="small-10 columns">
-                                                        <label>Email
-                                                            <input type="text" name="email" value={this.state.textEmailFirebase} onChange={this.onEmailChange} placeholder="Email" />
-                                                        </label>
+                                                        <div className="content-input">
+                                                            <label htmlFor="first-email" className="label-mat">Email</label>
+                                                            <input type="text" className="mat-input" id="first-email" name="email" value={this.state.textEmailFirebase} onChange={this.onEmailChange} autoComplete="off"/>
+                                                        </div>
                                                         <div className="help-text">Ingrese Email correcto @dominio.com</div>
                                                     </div>
                                                 </div>
@@ -390,11 +400,11 @@ const ViewContactenos=React.createClass({
                                                         </div>
                                                     </div>
                                                     <div className="small-10 columns">
-                                                        <label>Mensaje
-                                                            <textarea id="textArea" onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} placeholder="Escribe tu consulta"/>
-                                                            <div className="help-textArea">Min 4 - Max <span id="chars">140</span></div>
-
-                                                        </label>
+                                                        <div className="content-inputTextarea">
+                                                            <label htmlFor="first-textarea" className="label-mat">Consulta</label>
+                                                            <textarea className="mat-input" id="first-textarea" onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} autoComplete="off"/>
+                                                        </div>
+                                                        <div className="help-textArea">Min 5 - Max <span id="chars">140</span></div>
                                                     </div>
                                                 </div>
 
@@ -413,14 +423,14 @@ const ViewContactenos=React.createClass({
                                             </form>
                                         </div>
                                         <div className="medium-6 large-6 columns">
-                                            <div className="show-for-medium">
+                                            <div className="show-for-medium fondoContact">
                                                 <div className="circleDesktop">
                                                     <CircularProgress
                                                         strokeWidth="8"
-                                                        fontsize="25px"
-                                                        stroken1="#7B858A"
+                                                        fontsize="35px"
+                                                        stroken1="#636A70"
                                                         stroken2="#49B5D5"
-                                                        radius="75"
+                                                        radius="90"
                                                         percentage={this.state.valor}/>
                                                 </div>
                                             </div>
@@ -429,7 +439,6 @@ const ViewContactenos=React.createClass({
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 

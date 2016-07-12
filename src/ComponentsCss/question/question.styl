@@ -1,34 +1,26 @@
-
-.sectionPreguntas
-	background #EEEEEE
-
-.sectionPreguntas .row
-	min-width 80%
-	margin-top 1%
-
-.contentRespuesta
-	padding 10px
-
-.row .card
+.sectionPreguntas .card
 	background white
-	border-radius 5px
 	box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 	webkit-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)
 	&-item
-		margin-left 20px
-		margin-right 20px
+		margin-left 15px
+		margin-right 15px
 		&-imgAdmin
-			width 67px
+			width 70px
 		&-mostrar
 			cursor pointer
+			.contentRespuesta
+				padding 10px
 
 @media screen and (max-width: 639px)
-	.row .card
+	.sectionPreguntas .card
 		&-item
+			margin-left 0
+			margin-right 0
 			&-alinear
 				text-align center
 			&-imgAdmin
-				width 80px
+				width 90px
 
 
 
@@ -62,6 +54,7 @@
 
 .article-question img
 	transition 1s
+	height 90px
 
 .content-question
 	border 1px solid white
