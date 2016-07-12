@@ -10,6 +10,8 @@ import ViewInformacion from './view/Informacion/informacion';
 import ViewPreguntas from './view/Preguntas/preguntas';
 import Inbox from './view/Contactenos/contactenos'
 import PageNotFound from './view/Error/404';
+import ViewBuscar from './view/buscar/buscar'
+
 
 ReactDOM.render((
     <Router history={browserHistory}>
@@ -22,6 +24,7 @@ ReactDOM.render((
             </Route>
             <Route path="Preguntas" component={ViewPreguntas}></Route>
         </Route>
+        <Route path="Search" component={ViewBuscar}></Route>
         <Route path="*" component={PageNotFound} />
     </Router>
 ),document.getElementById('react_app'));

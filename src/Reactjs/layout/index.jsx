@@ -132,7 +132,9 @@ const Header=React.createClass({
                                 <img src="asset/images/logo.png" alt=""/>
                             </Link>
                             <div className="input-wrapper">
-                                <input type="text" className="search-box" placeholder="Buscar en Nodezi"/>
+                                <div className="span" onClick={this.RedirectTo}>
+                                    <Link to="/Search"><i className="fa fa-search" aria-hidden="true"></i> Buscar en nodezi</Link>
+                                </div>
                             </div>
                         </div>
                     </header>

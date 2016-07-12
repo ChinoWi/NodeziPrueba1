@@ -87,9 +87,13 @@
 
 	var _2 = _interopRequireDefault(_);
 
+	var _buscar = __webpack_require__(506);
+
+	var _buscar2 = _interopRequireDefault(_buscar);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//Layout
+	//Component
 
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -108,9 +112,11 @@
 	        ),
 	        _react2.default.createElement(_reactRouter.Route, { path: 'Preguntas', component: _preguntas2.default })
 	    ),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'Search', component: _buscar2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _2.default })
 	), document.getElementById('react_app'));
-	//Component
+
+	//Layout
 
 /***/ },
 /* 2 */
@@ -26926,7 +26932,16 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'input-wrapper' },
-	                            _react2.default.createElement('input', { type: 'text', className: 'search-box', placeholder: 'Buscar en Nodezi' })
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'span', onClick: this.RedirectTo },
+	                                _react2.default.createElement(
+	                                    _reactRouter.Link,
+	                                    { to: '/Search' },
+	                                    _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }),
+	                                    ' Buscar en nodezi'
+	                                )
+	                            )
 	                        )
 	                    )
 	                )
@@ -27215,13 +27230,304 @@
 
 	var slice = arr.slice;
 
+<<<<<<< HEAD
 	var concat = arr.concat;
+=======
+	var SectionInformacionDesktop = _react2.default.createClass({
+	    displayName: 'SectionInformacionDesktop',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'row columns content-item' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'medium-3 large-3 columns ' },
+	                    _react2.default.createElement('img', { src: this.props.imagensrc, style: { width: '110px' }, alt: '' })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'medium-6 large-6 columns' },
+	                    _react2.default.createElement(
+	                        'h5',
+	                        { style: { margin: '27px' } },
+	                        this.props.texto
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'medium-3 large-3 columns' },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { className: 'secondary button', style: { margin: '35px' } },
+	                        'Informacion'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement('br', null)
+	        );
+	    }
+	});
+>>>>>>> origin/master
 
 	var push = arr.push;
 
 	var indexOf = arr.indexOf;
 
+<<<<<<< HEAD
 	var class2type = {};
+=======
+	    eachItemDesktop: function eachItemDesktop(info) {
+	        return _react2.default.createElement(SectionInformacionDesktop, { key: info.key,
+	            imagensrc: info.imagensrc,
+	            texto: info.texto });
+	    },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'sectionhomeAll' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'sectionhome1' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'show-for-small-only' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-small' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'description-small' },
+	                            'Desarrollo de Software Aplicaciones Web, Móviles y Desktop, implementando Seguridad Hacking'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'content' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'text-content' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'description' },
+	                            'Desarrollo de Software Aplicaciones Web, Móviles y Desktop, implementando Seguridad Hacking.'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'text-img' },
+	                        _react2.default.createElement('img', { src: 'asset/images/desktop.png', alt: '' })
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'sectionhome2' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row columns' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'large-7 columns' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'show-for-medium' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'container1' },
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Confie en Nosotros.'
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'large-5 columns' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'container2' },
+	                            _react2.default.createElement(
+	                                'h6',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'small',
+	                                    null,
+	                                    'video'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'show-for-small-only' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'flex-video' },
+	                                    _react2.default.createElement('iframe', { style: { background: '#DBD8F0' }, className: 'thumbnail', src: 'https://www.youtube.com/embed/aiBt44rrslw' })
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'text-center' },
+	                                    'sdfsdfsdf',
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'bottomVideo-span' },
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            { className: 'texto' },
+	                                            _react2.default.createElement(
+	                                                'h3',
+	                                                null,
+	                                                _react2.default.createElement(
+	                                                    'small',
+	                                                    null,
+	                                                    'Website'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement('div', { className: 'spacio' }),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            { className: 'texto' },
+	                                            _react2.default.createElement(
+	                                                'h3',
+	                                                null,
+	                                                _react2.default.createElement(
+	                                                    'small',
+	                                                    null,
+	                                                    'Desing'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement('div', { className: 'spacio' }),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            { className: 'texto' },
+	                                            _react2.default.createElement(
+	                                                'h3',
+	                                                null,
+	                                                _react2.default.createElement(
+	                                                    'small',
+	                                                    null,
+	                                                    'Security'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement('div', { className: 'spacio' }),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            { className: 'texto' },
+	                                            _react2.default.createElement(
+	                                                'h3',
+	                                                null,
+	                                                _react2.default.createElement(
+	                                                    'small',
+	                                                    null,
+	                                                    'Movil'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement('div', { className: 'spacio' }),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            { className: 'texto' },
+	                                            _react2.default.createElement(
+	                                                'h3',
+	                                                null,
+	                                                _react2.default.createElement(
+	                                                    'small',
+	                                                    null,
+	                                                    'Marketing'
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'show-for-medium text-center' },
+	                                _react2.default.createElement(_modalVideo2.default, null)
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'sectionQuienesSomos' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'text-center information' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'information-we' },
+	                        '¿Quienes Somos?'
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/Informacion', className: 'information-more' },
+	                        'Mas informacion'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'sectionhome2' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'show-for-small-only' },
+	                    _react2.default.createElement(
+	                        'section',
+	                        { id: 'sectionSlider' },
+	                        _react2.default.createElement(_slider2.default, null)
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'show-for-medium' },
+	                    _react2.default.createElement(
+	                        'section',
+	                        { id: 'sectionSlider' },
+	                        _react2.default.createElement(_slider2.default, null)
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'sectionhome3' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row columns' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'text-center' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'text-title' },
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'NUESTRAS SOLUCINES INCLUYEN LO SIGUIENTE'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'container' },
+	                            this.state.informacion.map(this.eachItemDesktop)
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	exports.default = ViewHome;
+>>>>>>> origin/master
 
 	var toString = class2type.toString;
 
@@ -30043,6 +30349,7 @@
 	} );
 
 
+<<<<<<< HEAD
 	// Initialize a jQuery object
 
 
@@ -30054,6 +30361,478 @@
 		// Strict HTML recognition (#11290: must start with <)
 		// Shortcut simple #id case for speed
 		rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,
+=======
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	var CircularProgress1 = _react2.default.createClass({
+	    displayName: 'CircularProgress1',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'row text-left' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'small-3 medium-6 large-4 columns' },
+	                _react2.default.createElement(_progresscircularInfo2.default, {
+	                    strokeWidth: '3',
+	                    radius: '20',
+	                    stroken: this.props.colorCircle,
+	                    fontsize: '10px',
+	                    percentage: this.props.experience
+	                })
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'small-9 medium-6 large-8 columns' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'progressText' },
+	                    this.props.text
+	                )
+	            )
+	        );
+	    }
+	});
+
+	var QuienesSomos1 = _react2.default.createClass({
+	    displayName: 'QuienesSomos1',
+	    getInitialState: function getInitialState() {
+	        return {
+	            cantidadDatos: [{ key: 1, text: "html5, css3, javascript,angular, polimer, react, sass, stylus.", experience: "2", colorCircle: "#FF3333" }, { key: 2, text: "php, ruby on rails, go, java EE, asp.net.", experience: "2", colorCircle: "#33B2FD" }, { key: 3, text: "mysql,sql server, mongo-db, postgress.", experience: "2", colorCircle: "#6E9AC2" }, { key: 4, text: "marketing,seo,google analitycs, estrategia digital, email marketing", experience: "2", colorCircle: "#4F5053" }, { key: 5, text: "Ux, UI, APPs.", experience: "2", colorCircle: "#52CBCF" }]
+	        };
+	    },
+	    eachItem: function eachItem(item) {
+	        return _react2.default.createElement(CircularProgress1, { key: item.key,
+	            text: item.text,
+	            experience: item.experience,
+	            colorCircle: item.colorCircle
+	        });
+	    },
+	    render: function render() {
+	        var _React$createElement;
+
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: ' medium-5 large-6 columns' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'chart' },
+	                    _react2.default.createElement(
+	                        _rumbleCharts.Chart,
+	                        { width: 150, height: 150, series: series1 },
+	                        _react2.default.createElement(
+	                            _rumbleCharts.Transform,
+	                            { method: ['transpose', 'stackNormalized'] },
+	                            _react2.default.createElement(_rumbleCharts.Pies, (_React$createElement = {
+	                                colors: 'category10',
+	                                combined: true
+	                            }, _defineProperty(_React$createElement, 'colors', ['red', '#009FFD', '#4A81B3', '#232528', '#27BEC4']), _defineProperty(_React$createElement, 'innerRadius', '35%'), _defineProperty(_React$createElement, 'padAngle', 0.025), _defineProperty(_React$createElement, 'cornerRadius', 3), _defineProperty(_React$createElement, 'innerPadding', 2), _defineProperty(_React$createElement, 'pieAttributes', {
+	                                onMouseMove: function onMouseMove(e) {
+	                                    return e.target.style.opacity = 1;
+	                                },
+	                                onMouseLeave: function onMouseLeave(e) {
+	                                    return e.target.style.opacity = 0.5;
+	                                }
+	                            }), _defineProperty(_React$createElement, 'pieStyle', { opacity: 0.8 }), _React$createElement))
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: ' medium-7 large-6 columns' },
+	                this.state.cantidadDatos.map(this.eachItem)
+	            )
+	        );
+	    }
+	});
+
+	var CircularProgress2 = _react2.default.createClass({
+	    displayName: 'CircularProgress2',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'small-3 medium-6 large-4 columns' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'progressCircle' },
+	                    _react2.default.createElement(_progresscircularInfo2.default, {
+	                        strokeWidth: '3',
+	                        radius: '20',
+	                        stroken: this.props.colorCircle,
+	                        fontsize: '10px',
+	                        percentage: this.props.experience
+	                    })
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'small-9 medium-6 large-8 columns' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'progressText' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'columns' },
+	                        this.props.text,
+	                        ' '
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	var QuienesSomos2 = _react2.default.createClass({
+	    displayName: 'QuienesSomos2',
+	    getInitialState: function getInitialState() {
+	        return {
+	            cantidadDatos: [{ key: 1, text: "html5, css3, javascript, typescript, angular, react, sass, stylus.", experience: "2", colorCircle: "#1F77B4" }, { key: 2, text: "php, ruby on rails, go, visual.net, asp.net.", experience: "1", colorCircle: "#FF7F0E" }, { key: 3, text: "mysql,sql server, mongo-db, postgress, firebase.", experience: "2", colorCircle: "#56B356" }, { key: 4, text: "Ux, UI, APPs.", experience: "1", colorCircle: "#DE5253" }, { key: 5, text: "Hacking Etico, Pruebas de penetracion, ofensive security Profesional, Owasp Top 10,python pentester", experience: "3", colorCircle: "#9467BD" }]
+	        };
+	    },
+	    eachItem: function eachItem(item) {
+	        return _react2.default.createElement(CircularProgress2, { key: item.key,
+	            text: item.text,
+	            experience: item.experience,
+	            colorCircle: item.colorCircle
+	        });
+	    },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: ' medium-5 large-6 columns' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'chart' },
+	                    _react2.default.createElement(
+	                        _rumbleCharts.Chart,
+	                        { width: 150, height: 150, series: series2 },
+	                        _react2.default.createElement(
+	                            _rumbleCharts.Transform,
+	                            { method: ['transpose', 'stackNormalized'] },
+	                            _react2.default.createElement(_rumbleCharts.Pies, {
+	                                colors: 'category10',
+	                                combined: true,
+	                                innerRadius: '35%',
+	                                padAngle: 0.025,
+	                                cornerRadius: 3,
+	                                innerPadding: 2,
+	                                pieAttributes: {
+	                                    onMouseMove: function onMouseMove(e) {
+	                                        return e.target.style.opacity = 1;
+	                                    },
+	                                    onMouseLeave: function onMouseLeave(e) {
+	                                        return e.target.style.opacity = 0.5;
+	                                    }
+	                                },
+	                                pieStyle: { opacity: 0.8 }
+	                            })
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: ' medium-7 large-6 columns' },
+	                this.state.cantidadDatos.map(this.eachItem)
+	            )
+	        );
+	    }
+	});
+	var ViewInformacion = _react2.default.createClass({
+	    displayName: 'ViewInformacion',
+	    render: function render() {
+
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'section',
+	                { className: 'sectionInfoQue' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'content' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-title' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'title-mensaje' },
+	                            _react2.default.createElement('i', { className: 'fa fa-cogs', 'aria-hidden': 'true' }),
+	                            'Que es Nodezi?'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'imgFondo' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'imgFondo-content' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'medium-7 columns' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'text-mensaje' },
+	                                    'Welcome a Nodezi, Somos una empresa especializada en dar servicios y soluciones informática en el sector profesional. Nuestra especialización se centra en el desarrollo de apliaciones web, moviles, implementando las mejores tecnicas  de seguridad segun OWASP Top.'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'medium-5 columns' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'show-for-medium text-center' },
+	                                    _react2.default.createElement('img', { src: 'asset/images/mocad.png', alt: '' })
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'section',
+	                { className: 'sectionInfoDif' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'content' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-title' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'title-mensaje' },
+	                            _react2.default.createElement('i', { className: 'fa fa-th-large', 'aria-hidden': 'true' }),
+	                            'Que nos diferencia Nodezi?'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-content' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'small-up-1 medium-up-2 large-up-3' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/software-medida1.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Software a Medida'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'No tienes nada que hacer. El desarrollo ya corre por nuestra parte.'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/time-real.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Software en Tiempo Real'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'No tienes nada que hacer. El desarrollo ya corre por nuestra parte.'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/ux.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Experiencia de Usuario'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'Mejor experiencia para tus usuario. dfsdfsdfsdf'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/ui.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Interfaz Grafica'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'No tienes nada que hacer. El desarrollo ya corre por nuestra parte.'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/compromiso.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Compromiso con el cliente'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'No tienes nada que hacer. El desarrollo ya corre por nuestra parte.'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/testing.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Testing De hacking'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'No tienes nada que hacer. El desarrollo ya corre por nuestra parte.'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'spaces text-center' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'medida' },
+	                                            _react2.default.createElement('img', { src: 'asset/images/seo.png', alt: 'software medidda' }),
+	                                            _react2.default.createElement(
+	                                                'h5',
+	                                                { className: 'titlebox' },
+	                                                'Seo y Posicionamiento'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'description' },
+	                                                'No tienes nada que hacer. El desarrollo ya corre por nuestra parte.'
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'section',
+	                { className: 'sectionInforQuie' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'content' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-title' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'title-mensaje' },
+	                            _react2.default.createElement('i', { className: 'fa fa-users', 'aria-hidden': 'true' }),
+	                            'Quienes Somos?'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-content' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'large-6 columns' },
+	                                _react2.default.createElement('img', { className: 'icon-user-admin', src: 'asset/images/user-admin1.png', height: '100px', alt: '' }),
+	                                'User Admin',
+	                                _react2.default.createElement(QuienesSomos1, null)
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'large-6 columns' },
+	                                _react2.default.createElement('img', { className: 'icon-user-admin', src: 'asset/images/user-admin2.png', height: '100px', alt: '' }),
+	                                'User Admin',
+	                                _react2.default.createElement(QuienesSomos2, null)
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+>>>>>>> origin/master
 
 		init = jQuery.fn.init = function( selector, context, root ) {
 			var match, elem;
@@ -57919,6 +58698,7 @@
 	    this._next = null;
 	  }
 
+<<<<<<< HEAD
 	  Timer.prototype = timer.prototype = {
 	    constructor: Timer,
 	    restart: function(callback, delay, time) {
@@ -57932,6 +58712,23 @@
 	      this._call = callback;
 	      this._time = time;
 	      sleep();
+=======
+	    componentDidMount: function componentDidMount() {
+	        var maxLength = 140;
+	        (0, _jquery2.default)('first-textarea').keyup(function () {
+	            var length = (0, _jquery2.default)(this).val().length;
+	            var length = maxLength - length;
+	            (0, _jquery2.default)('#chars').text(length);
+	        });
+
+	        (0, _jquery2.default)(".mat-input").focus(function () {
+	            (0, _jquery2.default)(this).parent().addClass("is-active is-completed");
+	        });
+	        (0, _jquery2.default)(".mat-input").focusout(function () {
+	            if ((0, _jquery2.default)(this).val() === "") (0, _jquery2.default)(this).parent().removeClass("is-completed");
+	            (0, _jquery2.default)(this).parent().removeClass("is-active");
+	        });
+>>>>>>> origin/master
 	    },
 	    stop: function() {
 	      if (this._call) {
@@ -58032,9 +58829,265 @@
 	  exports.timeout = timeout$1;
 	  exports.interval = interval$1;
 
+<<<<<<< HEAD
 	  Object.defineProperty(exports, '__esModule', { value: true });
 
 	}));
+=======
+	            iconItem1: 'asset/images/icon_item1.png',
+	            iconItem2: 'asset/images/icon_item2.png',
+	            iconItem3: 'asset/images/icon_item3.png'
+	        });
+	    },
+	    onChange: function onChange(response) {
+	        this.setState({
+	            'g-recaptcha-response': response
+	        });
+	    },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { style: { background: this.state.background } },
+	            this.state.mostrarSucces ? _react2.default.createElement(SuccesMensaje, { nombre: this.state.showMensajeNombre, retorna: this.retornarContacto, styleMostrar: this.state.showMensaje }) : null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'text-center', style: { display: this.state.showContacto } },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'contactenos' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'container' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'title' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'row' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'show-for-small-only' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'small-3 columns text-center', style: { paddingTop: '10px' } },
+	                                        _react2.default.createElement(_progresscircular2.default, {
+	                                            strokeWidth: '2',
+	                                            fontsize: '15px',
+	                                            stroken1: '#D1D1D1',
+	                                            stroken2: 'white',
+	                                            radius: '22',
+	                                            percentage: this.state.valor })
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'small-9 columns text-left' },
+	                                        _react2.default.createElement('i', { className: 'fa fa-wpforms', 'aria-hidden': 'true' }),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'text-contactOculto' },
+	                                            'Contact form'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'show-for-medium' },
+	                                    _react2.default.createElement('i', { className: 'fa fa-wpforms', 'aria-hidden': 'true' }),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'text-contact' },
+	                                        'Contact form'
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'content' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'row' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'medium-6 large-6 columns' },
+	                                    _react2.default.createElement(
+	                                        'form',
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'row' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'small-2 columns' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'show-for-small-only' },
+	                                                    _react2.default.createElement(
+	                                                        'div',
+	                                                        { className: 'iconAprov' },
+	                                                        _react2.default.createElement('img', { src: this.state.iconItem1, style: { height: '40px' }, alt: '' })
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'small-10 columns' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'content-input' },
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        { htmlFor: 'first-name', className: 'label-mat' },
+	                                                        'Nombre prueba'
+	                                                    ),
+	                                                    _react2.default.createElement('input', { type: 'text', className: 'mat-input', id: 'first-name', name: 'nombre', value: this.state.textNombreFirebase, onChange: this.onNombreChange, autoComplete: 'off' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'help-text' },
+	                                                    'La contraseña debe tener al menos 3 caracteres.'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'row' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'small-2 columns' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'show-for-small-only' },
+	                                                    _react2.default.createElement(
+	                                                        'div',
+	                                                        { className: 'iconAprov' },
+	                                                        _react2.default.createElement('img', { src: this.state.iconItem2, style: { height: '40px' }, alt: '' })
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'small-10 columns' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'content-input' },
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        { htmlFor: 'first-email', className: 'label-mat' },
+	                                                        'Email'
+	                                                    ),
+	                                                    _react2.default.createElement('input', { type: 'text', className: 'mat-input', id: 'first-email', name: 'email', value: this.state.textEmailFirebase, onChange: this.onEmailChange, autoComplete: 'off' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'help-text' },
+	                                                    'Ingrese Email correcto @dominio.com'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'row' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'small-2 columns' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'show-for-small-only' },
+	                                                    _react2.default.createElement(
+	                                                        'div',
+	                                                        { className: 'iconAprov' },
+	                                                        _react2.default.createElement('img', { src: this.state.iconItem3, style: { height: '40px' }, alt: '' })
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'small-10 columns' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'content-inputTextarea' },
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        { htmlFor: 'first-textarea', className: 'label-mat' },
+	                                                        'Consulta'
+	                                                    ),
+	                                                    _react2.default.createElement('textarea', { className: 'mat-input', id: 'first-textarea', onChange: this.onTextareaChange, value: this.state.textTextareaFirebase, autoComplete: 'off' })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'help-textArea' },
+	                                                    'Min 5 - Max ',
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        { id: 'chars' },
+	                                                        '140'
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'row' },
+	                                            _react2.default.createElement('div', { className: 'g-recaptcha', 'data-sitekey': '6Lef1iQTAAAAAEQQOvIRttpwewdHPDiyRI5a0Anb' })
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            { className: 'errorPadding', style: { display: this.state.mostrarMensajeDisplay } },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'row' },
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    { className: 'ErrorMessage' },
+	                                                    _react2.default.createElement(
+	                                                        'div',
+	                                                        { className: 'Message-text' },
+	                                                        'Error Ingrese Correctamente los campos'
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'buttonFinal' },
+	                                            _react2.default.createElement(
+	                                                'button',
+	                                                { type: 'button', onClick: this.handleSubmit, className: 'hollow button' },
+	                                                'Enviar'
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'medium-6 large-6 columns' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'show-for-medium fondoContact' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'circleDesktop' },
+	                                            _react2.default.createElement(_progresscircular2.default, {
+	                                                strokeWidth: '8',
+	                                                fontsize: '35px',
+	                                                stroken1: '#E2E2E2',
+	                                                stroken2: '#49B5D5',
+	                                                radius: '90',
+	                                                percentage: this.state.valor })
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	exports.default = ViewContactenos;
+>>>>>>> origin/master
 
 /***/ },
 /* 476 */
@@ -80533,6 +81586,118 @@
 	    }
 	});
 	exports.default = PageNotFound;
+
+/***/ },
+/* 506 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(171);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ViewBuscar = _react2.default.createClass({
+	    displayName: 'ViewBuscar',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'show-for-small-only' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'sectionSearch' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row columns content-icon' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'small-1 columns' },
+	                                _react2.default.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'small-2 columns' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'span' },
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/' },
+	                                        'Cancel'
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'row content-search' },
+	                            _react2.default.createElement('input', { type: 'search', className: 'inputSearch', placeholder: 'SEARCH' })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'sectionSearchContent' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'resultadoSearch' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'text-resultado' },
+	                            'Resultado (0)'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'ul',
+	                        null,
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'a'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'b'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'c'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'd'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'e'
+	                        )
+	                    ),
+	                    'Esto es una view de buscar'
+	                )
+	            )
+	        );
+	    }
+	});
+
+	exports.default = ViewBuscar;
 
 /***/ }
 /******/ ]);

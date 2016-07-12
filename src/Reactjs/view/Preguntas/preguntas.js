@@ -2,6 +2,14 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import TestUtils from 'react-addons-test-utils';
 
+import Scroll from 'react-scroll'
+
+var Linkk      = Scroll.Link;
+var DirectLink = Scroll.DirectLink;
+var Element    = Scroll.Element;
+var Events     = Scroll.Events;
+var scroll     = Scroll.animateScroll;
+
 const Respuestas=React.createClass({
     render(){
         return(
@@ -139,9 +147,48 @@ const ViewPreguntas= React.createClass({
             </Preguntas1>
         );
     },
+    componentDidMount: function() {
+
+        Events.scrollEvent.register('begin', function() {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register('end', function() {
+            console.log("end", arguments);
+        });
+
+    },
+    scrollToTop: function() {
+        scroll.scrollToTop();
+    },
+    componentWillUnmount: function() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+    },
+
+    getDefaultProps(){
+        return{
+            test1:"test1",
+            test2:"test2",
+            anchor:"anchor"
+        }
+    },
+
     render(){
         return(
             <div>
+                <ul className="nav">
+                    <li><Linkk activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >Test 1</Linkk></li>
+                    <li><Linkk activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500}>Test 2</Linkk></li>
+                    <li><Linkk activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500} >Test 3</Linkk></li>
+                    <li><Linkk activeClass="active" className="test4" to="test4" spy={true} smooth={true} duration={500}>Test 4</Linkk></li>
+                    <li><Linkk activeClass="active" className="test5" to="test5" spy={true} smooth={true} duration={500} delay={1000}>Test 5 ( delay )</Linkk></li>
+                    <li><DirectLink className="test6" to="anchor" spy={true} smooth={true} duration={500}>Test 6 (anchor)</DirectLink></li>
+                    <li> <a onClick={() => scroll.scrollTo(100)}>Scroll To 100!</a></li>
+                </ul>
+
+                
+
                 <section className="sectionPreguntas">
                     <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
                     <div className="medium-10 large-8 columns card ">
@@ -149,7 +196,41 @@ const ViewPreguntas= React.createClass({
                         {this.state.Datos.map(this.eachItem)}
                     </div>
                     <div className="medium-1 large-2 columns" style={{border:'1px solid #EEEEEE'}}></div>
+
+
+                    <div className="row">
+
+                    </div>
+
                 </section>
+
+                <Element name={this.props.test1} className="element" style={{height:"400px"}}>
+                    test 1
+                </Element>
+
+
+                <Element name={this.props.test2} className="element" style={{height:"400px"}}>
+                    test 2
+                </Element>
+
+                <Element name="test3" className="element" style={{height:"400px"}}>
+                    test 3
+                </Element>
+
+                <div id={this.props.anchor} className="element" style={{height:"400px"}}>
+                    test 6 (anchor)
+                </div>
+
+                <Element name="test4" className="element" style={{height:"400px"}}>
+                    test 4
+                </Element>
+
+                <Element name="test5" className="element" style={{height:"400px"}}>
+                    test 5
+                </Element>
+
+
+
             </div>
 
 

@@ -3,7 +3,6 @@ import {Link} from 'react-router';
 import CircularProgress from '../../component/ProgressCircular/progresscircular'
 import $ from 'jquery'
 
-
 var config = {
     apiKey: "6UjUW00u80Dvd7SwaYJYUiStT31XYmAfrZXcDJzx",
     databaseURL: "https://chromenodezi.firebaseio.com/"
@@ -323,6 +322,12 @@ const ViewContactenos=React.createClass({
             iconItem3:'asset/images/icon_item3.png'
         });
     },
+
+    onChange(response) {
+        this.setState({
+            'g-recaptcha-response': response
+        });
+    },
     render(){
         return(
             <div  style={{background:this.state.background}}>
@@ -408,13 +413,18 @@ const ViewContactenos=React.createClass({
                                                     </div>
                                                 </div>
 
-                                                <span style={{display:this.state.mostrarMensajeDisplay}}>
+                                                <div className="row">
+                                                    <div className="g-recaptcha" data-sitekey="6Lef1iQTAAAAAEQQOvIRttpwewdHPDiyRI5a0Anb"></div>
+                                                </div>
+
+                                                <span className="errorPadding" style={{display:this.state.mostrarMensajeDisplay}}>
                                                     <div className="row">
                                                         <div className="ErrorMessage">
                                                             <div className="Message-text">Error Ingrese Correctamente los campos</div>
                                                         </div>
                                                     </div>
                                                 </span>
+
 
                                                 <div className="buttonFinal">
                                                     <button type="button" onClick={this.handleSubmit} className="hollow button">Enviar</button>
@@ -428,7 +438,7 @@ const ViewContactenos=React.createClass({
                                                     <CircularProgress
                                                         strokeWidth="8"
                                                         fontsize="35px"
-                                                        stroken1="#636A70"
+                                                        stroken1="#E2E2E2"
                                                         stroken2="#49B5D5"
                                                         radius="90"
                                                         percentage={this.state.valor}/>

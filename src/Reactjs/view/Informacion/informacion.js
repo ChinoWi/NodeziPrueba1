@@ -11,9 +11,9 @@ const CircularProgress1=React.createClass({
                     <CircularProgressInfo
                             strokeWidth="3"
                             radius="20"
-                            stroken="#6BAED6"
+                            stroken={this.props.colorCircle}
                             fontsize="10px"
-                            percentage="22"
+                            percentage={this.props.experience}
                         />
                 </div>
                 <div className="small-9 medium-6 large-8 columns">
@@ -30,18 +30,20 @@ const QuienesSomos1=React.createClass({
     getInitialState(){
         return {
             cantidadDatos:[
-                {key:1,text:"html5, css3, javascript,angular, polimer, react, sass, stylus."},
-                {key:2,text:"php, ruby on rails, go, java EE, asp.net."},
-                {key:3,text:"mysql,sql server, mongo-db, postgress."},
-                {key:4,text:"marketing,seo,google analitycs, estrategia digital, email marketing"},
-                {key:5,text:"Ux, UI, APPs."}
+                {key:1,text:"html5, css3, javascript,angular, polimer, react, sass, stylus.",experience:"2",colorCircle:"#FF3333"},
+                {key:2,text:"php, ruby on rails, go, java EE, asp.net.",experience:"2",colorCircle:"#33B2FD"},
+                {key:3,text:"mysql,sql server, mongo-db, postgress.",experience:"2",colorCircle:"#6E9AC2"},
+                {key:4,text:"marketing,seo,google analitycs, estrategia digital, email marketing",experience:"2",colorCircle:"#4F5053"},
+                {key:5,text:"Ux, UI, APPs.",experience:"2",colorCircle:"#52CBCF"}
             ]
         }
     },
     eachItem(item){
         return(
             <CircularProgress1 key={item.key}
-                              text={item.text}
+                               text={item.text}
+                               experience={item.experience}
+                               colorCircle={item.colorCircle}
             />
         );
     },
@@ -55,6 +57,7 @@ const QuienesSomos1=React.createClass({
                                 <Pies
                                     colors='category10'
                                     combined={true}
+                                    colors={['red', '#009FFD', '#4A81B3','#232528','#27BEC4']} //category20, category20, category20b, category20c
                                     innerRadius='35%'
                                     padAngle={0.025}
                                     cornerRadius={3}
@@ -211,6 +214,15 @@ const ViewInformacion=React.createClass({
                                     <div className="columns">
                                         <div className="spaces text-center">
                                             <div className="medida">
+                                                <img src="asset/images/time-real.png" alt="software medidda"/>
+                                                <h5 className="titlebox">Software en Tiempo Real</h5>
+                                                <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="columns">
+                                        <div className="spaces text-center">
+                                            <div className="medida">
                                                 <img src="asset/images/ux.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Experiencia de Usuario</h5>
                                                 <div className="description">Mejor experiencia para tus usuario. dfsdfsdfsdf</div>
@@ -296,6 +308,7 @@ const series1 = [{
 const series2 = [{
     data: [2, 1, 2, 1, 3]
 }];
+
 
 
 export default ViewInformacion;

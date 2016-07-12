@@ -3,6 +3,7 @@
 @import 'info/info.styl'
 @import 'contact/contact.styl'
 @import 'question/question.styl'
+@import 'buscar/buscar.styl'
 
 body
   background #ECEFF1
@@ -23,6 +24,7 @@ body
 
 .headerr .input-wrapper
   position relative
+  padding 50px
 
 .navv
   list-style none
@@ -163,10 +165,23 @@ body
 //HEADER SMALL
 .header-small
   background white
-  padding 20px
   border-bottom: 1px solid #CFD8DC
   img
-    height 50px
+    height 70px
+    padding 7px
+
+  .input-wrapper
+    padding 5px
+    .span
+      margin 5px
+      i
+        padding-right 5px
+      a
+        padding 8px
+        color #263238
+
+
+
   input
     position: relative
     z-index: 10
