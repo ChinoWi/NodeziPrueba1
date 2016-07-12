@@ -49,32 +49,25 @@ const QuienesSomos1=React.createClass({
         return(
             <div className="container">
                 <div className=" medium-5 large-6 columns">
-                    <Chart width={150} height={150} series={series1}>
-                        <Transform method={['transpose', 'stackNormalized']}>
-                            <Pies
-                                colors='category10'
-                                combined={true}
-                                innerRadius='35%'
-                                padAngle={0.025}
-                                cornerRadius={3}
-                                innerPadding={2}
-                                pieAttributes={{
+                    <div className="chart">
+                        <Chart width={150} height={150} series={series1}>
+                            <Transform method={['transpose', 'stackNormalized']}>
+                                <Pies
+                                    colors='category10'
+                                    combined={true}
+                                    innerRadius='35%'
+                                    padAngle={0.025}
+                                    cornerRadius={3}
+                                    innerPadding={2}
+                                    pieAttributes={{
                                     onMouseMove: (e) => e.target.style.opacity = 1,
                                     onMouseLeave: (e) => e.target.style.opacity = 0.5
                                 }}
-                                pieStyle={{opacity: 0.8}}
-                            >
-                            </Pies>
-                        </Transform>
-                    </Chart>
-                    <div className="experiencie">
-                        <div className="title">
-                            <i className="fa fa-cogs" aria-hidden="true"></i>
-                            Experiencia Profesional
-                        </div>
-                        <div className="text-content">
-                            sdfsfsdfsdf
-                        </div>
+                                    pieStyle={{opacity: 0.8}}
+                                >
+                                </Pies>
+                            </Transform>
+                        </Chart>
                     </div>
                 </div>
                 <div className=" medium-7 large-6 columns">
@@ -134,32 +127,25 @@ const QuienesSomos2=React.createClass({
         return(
             <div className="container">
                 <div className=" medium-5 large-6 columns">
-                    <Chart width={150} height={150} series={series2}>
-                        <Transform method={['transpose', 'stackNormalized']}>
-                            <Pies
-                                colors='category10'
-                                combined={true}
-                                innerRadius='35%'
-                                padAngle={0.025}
-                                cornerRadius={3}
-                                innerPadding={2}
-                                pieAttributes={{
+                    <div className="chart">
+                        <Chart  width={150} height={150} series={series2}>
+                            <Transform method={['transpose', 'stackNormalized']}>
+                                <Pies
+                                    colors='category10'
+                                    combined={true}
+                                    innerRadius='35%'
+                                    padAngle={0.025}
+                                    cornerRadius={3}
+                                    innerPadding={2}
+                                    pieAttributes={{
                                     onMouseMove: (e) => e.target.style.opacity = 1,
                                     onMouseLeave: (e) => e.target.style.opacity = 0.5
                                 }}
-                                pieStyle={{opacity: 0.8}}
-                            >
-                            </Pies>
-                        </Transform>
-                    </Chart>
-                    <div className="experiencie">
-                        <div className="title">
-                            <i className="fa fa-cogs" aria-hidden="true"></i>
-                            Experiencia Profesional
-                        </div>
-                        <div className="text-content">
-                            sdfsfsdfsdf
-                        </div>
+                                    pieStyle={{opacity: 0.8}}
+                                >
+                                </Pies>
+                            </Transform>
+                        </Chart>
                     </div>
                 </div>
                 <div className=" medium-7 large-6 columns">
@@ -178,7 +164,7 @@ const ViewInformacion=React.createClass({
                     <div className="content">
                         <div className="content-title">
                             <div className="title-mensaje">
-                                <i className="fa fa-th-large" aria-hidden="true"></i>
+                                <i className="fa fa-cogs" aria-hidden="true"></i>
                                 Que es Nodezi?
                             </div>
                         </div>
@@ -278,16 +264,20 @@ const ViewInformacion=React.createClass({
                     <div className="content">
                         <div className="content-title">
                             <div className="title-mensaje">
-                                <i className="fa fa-th-large" aria-hidden="true"></i>
+                                <i className="fa fa-users" aria-hidden="true"></i>
                                 Quienes Somos?
                             </div>
                         </div>
                         <div className="content-content">
                             <div className="row">
                                 <div className="large-6 columns">
+                                    <img className="icon-user-admin" src="asset/images/user-admin1.png" height="100px" alt=""/>
+                                    User Admin
                                     <QuienesSomos1/>
                                 </div>
                                 <div className="large-6 columns">
+                                    <img className="icon-user-admin" src="asset/images/user-admin2.png" height="100px" alt=""/>
+                                    User Admin
                                     <QuienesSomos2/>
                                 </div>
                             </div>

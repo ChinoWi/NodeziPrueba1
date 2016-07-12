@@ -8,8 +8,8 @@ const SectionInformacionDesktop=React.createClass({
     render(){
         return(
             <div>
-                <div className="row columns" style={{boxShadow:'0 1px 2px 0 #BFBFBF',background:'white',padding:'10px'}}>
-                    <div className="medium-3 large-3 columns" >
+                <div className="row columns content-item">
+                    <div className="medium-3 large-3 columns " >
                         <img src={this.props.imagensrc} style={{width:'110px'}} alt=""/>
                     </div>
                     <div className="medium-6 large-6 columns" >
@@ -64,7 +64,7 @@ const ViewHome=React.createClass({
     render(){
          return(
             <div className="sectionhomeAll">
-                <div className="sectionhome">
+                <div className="sectionhome1">
                     <div className="show-for-small-only">
                         <div className="content-small">
                             <div className="description-small">
@@ -86,12 +86,12 @@ const ViewHome=React.createClass({
                     </div>
                 </div>
 
-                <div className="sectionhome1">
+                <div className="sectionhome2">
                     <div className="row columns">
                         <div className="large-7 columns">
                             <div className="show-for-medium">
                                 <div className="container1">
-                                    sdfsdf
+                                    <p>Confie en Nosotros.</p>
                                 </div>
                             </div>
                         </div>
@@ -123,48 +123,38 @@ const ViewHome=React.createClass({
                     </div>
                 </div>
 
-                <div className="show-for-small-only">
-                   <div className="separacion"></div>
-                    <section id="sectionSlider">
-                        <Slider></Slider>
-                    </section>
-                    <div className="separacion"></div>
-                    <section id="SectionInformationDesktop">
-                        <div className="row columns">
-                            <div className="text-center">
-                                <div className="row columns">
-                                    <h1>NUESTRAS SOLUCINES INCLUYEN LO SIGUIENTE</h1>
-                                </div>
-                                {this.state.informacion.map(this.eachItemDesktop)}
-
-                            </div>
-                        </div>
-                    </section>
-
+                <div className="sectionQuienesSomos">
+                    <div className="text-center information">
+                        <span className="information-we">¿Quienes Somos?</span>
+                        <Link to="/Informacion" className="information-more">Mas informacion</Link>
+                    </div>
                 </div>
 
-                <div className="show-for-medium">
-                    <section className="sectionQuienesSomos">
-                        <div className="text-center information">
-                             <span className="information-we">¿Quienes Somos?</span>
-                            <Link to="/Informacion" className="information-more">Mas informacion</Link>
-                        </div>
-                    </section>
-                    <section id="sectionSlider">
-                        <Slider></Slider>
-                    </section>
-                    <section id="SectionInformationDesktop">
-                        <div className="row columns">
-                            <div className="text-center">
-                                <div className="row columns">
-                                    <h1>Nuestras Soluciones</h1>
-                                </div>
-                                {this.state.informacion.map(this.eachItemDesktop)}
+                <div className="sectionhome2">
+                    <div className="show-for-small-only">
+                        <section id="sectionSlider">
+                            <Slider></Slider>
+                        </section>
+                    </div>
+                    <div className="show-for-medium">
+                        <section id="sectionSlider">
+                            <Slider></Slider>
+                        </section>
+                    </div>
+                </div>
 
+                <div className="sectionhome3">
+                    <div className="row columns">
+                        <div className="text-center">
+                            <div className="text-title">
+                                <p>NUESTRAS SOLUCINES INCLUYEN LO SIGUIENTE</p>
                             </div>
-                        </div>
-                    </section>
+                            <div className="container">
+                                {this.state.informacion.map(this.eachItemDesktop)}
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
 
             </div>
