@@ -36,9 +36,10 @@ body
   max-height 50px
 .nav-item
   display inline-block
-  margin-left 2em
+  margin 0
   box-sizing border-box
   line-height 16px
+  width 151px
 .nav-item a
   color white
   font-size 1.1em
@@ -48,6 +49,7 @@ body
   height 50px
   padding 12px
   border-top 5px solid transparent
+  text-align center
 .nav-item a:focus
   background white
   color #005995
@@ -242,26 +244,6 @@ body
   padding-right 10px
   font-size 18px
 
-//REDES
-
-.redess a
-  margin 0 .5em
-
-.facebook
-  color #3B5998
-  font-size 2.5em !important
-
-.twitter
-  color #1B95E0
-  font-size 2.5em !important
-
-.google
-  color #DA4B39
-  font-size 2.5em !important
-
-.skype
-  color #00AFF0
-  font-size 2.5em !important
 
 
 //SEARCH
@@ -301,8 +283,109 @@ input::-webkit-input-placeholder
 
 
 
+//FOOTER
 
 
+.main-footer
+  padding 1em 0
+  background #005995
+
+.Footer
+  padding .5em 0
+
+.Footer-Redes   
+  width 200px
+  height 50px
+  margin-bottom 6em
+  
+
+.Footer-Linea
+  height 130px
+  width .5px
+  background white
+  
+
+.Footer-Terminos
+  background #DA4B39
+  color white
+  margin 0 auto
+  width 200px
+  text-align center
+  padding .8em 0
+  border-radius 5px
+  margin-top -10px
+
+.Footer-Terminos:hover
+  background #D81F16
+
+.Content
+  color white
+  font-family 'Roboto'
+  font-size 1.1em
+  text-align center
+  
+.Copy
+  padding-top 2em
+  margin-top 0
+  font-family 'Roboto'
+  font-weight bold
+  color white
+  border-top .5px solid white
+  
+
+//REDES
+
+
+.redess a
+  margin 0 1em
+   
+.facebook
+  color white
+  font-size 2.5em !important
+
+.twitter
+  color #1B95E0
+  font-size 2.5em !important
+
+.google
+  color #DA4B39
+  font-size 2.5em !important
+
+.skype
+  color #00AFF0
+  font-size 2.5em !important
+
+.snapchat
+  color #FFFC00
+  font-size 2.5em !important
+  
+.contact
+  color white
+  font-size 2.2em !important
+
+
+// MEDIAS QUERIES  
+  
+@media screen and (max-width: 650px) 
+    .Footer-Content
+      min-width 100%
+      border-bottom 1px solid white
+      padding-bottom 2em
+    .Footer-Redes
+      min-width 100%
+      margin-top 30px
+      text-align center
+      height 0
+    .Footer-Linea
+      display none
+    .Footer-Copy
+      font-size .8em
+      font-family 'Roboto'
+      font-weight normal
+    
+      
+    
+  
 
 //ANIMACIONES
 @keyframes animacion1

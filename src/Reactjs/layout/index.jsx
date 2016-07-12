@@ -26,18 +26,19 @@ const Footer=React.createClass({
     render(){
         return(
           <div className="main-footer">
-              <div className="roww centerr middlee">
-                 <div className="col-6">
+              <div className="roww aroundd Footer">
+                 <div className="col-6 Footer-Content">
                      <FooterContent/>
                      <FooterTerminos/>
                  </div>
-                 <div className="col-6">
+                 <div className="Footer-Linea"></div>
+                 <div className="col-4 Footer-Redes">
                      <FooterRedes/>
                  </div>              
               </div>
-              <div className="roww">
+              <div className="roww centerr middlee Copy">
                  <div className="col-12">
-                   <FooterCopy/> 
+                   <FooterCopy /> 
                  </div>
              </div>
           </div>
@@ -45,15 +46,48 @@ const Footer=React.createClass({
     }
 });
 
+const FooterContent = React.createClass({
+  render(){
+    return(
+        <p className="Content">  
+          Desarrollo de aplicaciones web,moviles,
+          Posicionamiento web, Servicios de Seguridad
+          informatica, con el trato que tu te mereces.
+        </p>  
+     )
+  }
+});
+
+
+const FooterTerminos = React.createClass({
+   render(){
+     return  <p className="Footer-Terminos">Terminos y Condiciones</p>
+   }
+
+});
+
+
+const FooterCopy = React.createClass({
+    render(){
+        return <p className="Footer-Copy">Copyright@2016 Power By Nodezi</p>
+    }
+})
+
 const  FooterRedes = React.createClass({
     render(){
         return(
-           <p className="redess">
+           <article>
+            <p className="redess">
              <a href="#"><i className="fa fa-facebook-square facebook" aria-hidden="true"></i></a>
              <a href="#"><i className="fa fa-twitter-square twitter" aria-hidden="true"></i></a>
              <a href="#"><i className="fa fa-google-plus-official google" aria-hidden="true"></i></a>
+            </p>
+            <p className="redess">
              <a href="#"><i className="fa fa-skype skype" aria-hidden="true"></i></a>
-           </p>
+             <a href="#"><i className="fa fa-snapchat-ghost snapchat" aria-hidden="true"></i></a>
+             <a href="#"><i className="fa fa-envelope-o contact" aria-hidden="true"></i></a> 
+            </p>
+         </article>
         )
     }
 })
@@ -246,6 +280,7 @@ const App=React.createClass({
                 <Header></Header>
                 <MenuNav></MenuNav>
                 {this.props.children}
+                <Footer/>
 
             </div>
 
