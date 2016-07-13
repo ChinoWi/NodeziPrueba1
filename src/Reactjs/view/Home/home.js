@@ -16,7 +16,7 @@ const SectionInformacionDesktop=React.createClass({
                         <h5 style={{margin:'27px'}}>{this.props.texto}</h5>
                     </div>
                     <div className="medium-3 large-3 columns" >
-                        <a className="secondary button" style={{margin:'35px'}}>Informacion</a>
+                         <Link to={this.props.url} className="secondary button" style={{margin:'35px'}}>Informacion</Link>
                     </div>
                 </div>
                 <br/>
@@ -34,19 +34,22 @@ const ViewHome=React.createClass({
                     key:1,
                     imagensrc:'asset/images/desarrolloWeb.png',
                     texto:'Desarrollo de Aplicaciones web para personas y empresas',
-                    textoButton:'Informacion'
+                    textoButton:'Informacion',
+                    url:'/Frontend'
 
                 },
                 {
                     key:2,
                     imagensrc:'asset/images/seguridad.png',
                     texto:'Auditoria y Seguridad para para empresas y aplicaciones',
-                    textoButton:'Informacion'
+                    textoButton:'Informacion',
+                    url:'/Seguridad'
                 },
                 {
                     key:3,
                     imagensrc:'asset/images/desarrolloMovil.png',
                     texto:'Desarrollo de Aplicaciones Moviles para personas y empresas',
+                    url:'/Moviles'
                 }
 
             ]
@@ -56,10 +59,11 @@ const ViewHome=React.createClass({
         return (
             <SectionInformacionDesktop key={info.key}
                                         imagensrc={info.imagensrc}
-                                        texto={info.texto}>
+                                        texto={info.texto}
+                                        url={info.url}>
             </SectionInformacionDesktop>
         )
-        ;
+        
     },
     render(){
          return(

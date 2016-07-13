@@ -85,7 +85,7 @@ const  FooterRedes = React.createClass({
             <p className="redess">
              <a href="#"><i className="fa fa-skype skype" aria-hidden="true"></i></a>
              <a href="#"><i className="fa fa-snapchat-ghost snapchat" aria-hidden="true"></i></a>
-             <a href="#"><i className="fa fa-envelope-o contact" aria-hidden="true"></i></a> 
+             <Link to="/Contactenos"><i className="fa fa-envelope-o contact" aria-hidden="true"></i></Link> 
             </p>
          </article>
         )
@@ -132,8 +132,8 @@ const Header=React.createClass({
                                 <img src="asset/images/logo.png" alt=""/>
                             </Link>
                             <div className="input-wrapper">
-                                <div className="span" onClick={this.RedirectTo}>
-                                    <Link to="/Search"><i className="fa fa-search" aria-hidden="true"></i> Buscar en nodezi</Link>
+                                <div onClick={this.RedirectTo}>
+                                    <Link to="/Search" className="search-nodezi">Buscar en nodezi</Link>
                                 </div>
                             </div>
                         </div>
