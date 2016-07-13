@@ -14,8 +14,6 @@ var DirectLink = Scroll.DirectLink;
 var Element    = Scroll.Element;
 
 
-
-
 const Prueba=React.createClass({
     render(){
         return(
@@ -123,11 +121,14 @@ const ViewBuscar=React.createClass({
 
                         <Linkk activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >Test 1</Linkk>
                         <Linkk activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500}>Test 2</Linkk>
-                        <DirectLink className="test6" to="anchor" spy={true} smooth={true} duration={500}>Test 6 (anchor)</DirectLink>
+                        <DirectLink className="test6" onClick={this.props.OnClickAnchor} to="anchorrr" spy={true} smooth={true} duration={500}>Test 6 (anchor)</DirectLink>
 
                         <Prueba1 products={productos}
                                  filterText={this.state.filterText}
                         />
+                        <h1>{this.props.prueba} </h1>
+
+                        <div id="anchorr" style={{height:'300px'}}>sdfsd</div>
                     </div>
 
                 </div>

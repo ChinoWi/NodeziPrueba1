@@ -2,6 +2,8 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import TestUtils from 'react-addons-test-utils';
 
+import ViewBuscar from '../buscar/buscar'
+
 import Scroll from 'react-scroll'
 
 var Linkk      = Scroll.Link;
@@ -166,12 +168,9 @@ const ViewPreguntas= React.createClass({
         Events.scrollEvent.remove('end');
     },
 
-    getDefaultProps(){
-        return{
-            test1:"test1",
-            test2:"test2",
-            anchor:"anchor"
-        }
+
+    PruebaS(){
+        alert("prueba");
     },
 
     render(){
@@ -229,14 +228,17 @@ const ViewPreguntas= React.createClass({
                     test 5
                 </Element>
 
-
-
+                <ViewBuscar OnClickAnchor={this.PruebaS} prueba="pruebaSSS"/>
             </div>
+
+
 
 
         );
     }
 });
+
+
 
 export default ViewPreguntas
 
