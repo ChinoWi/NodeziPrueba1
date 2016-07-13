@@ -11,6 +11,9 @@ import ViewPreguntas from './view/Preguntas/preguntas';
 import Inbox from './view/Contactenos/contactenos'
 import PageNotFound from './view/Error/404';
 import ViewBuscar from './view/buscar/buscar'
+import ViewFrontend from './view/Frontend/frontend'
+import ViewMoviles from './view/Moviles/moviles'
+import ViewSeguridad from './view/Seguridad/seguridad'
 
 
 ReactDOM.render((
@@ -18,6 +21,9 @@ ReactDOM.render((
         <Route path="/" component={App} >
             <IndexRoute component={ViewHome}></IndexRoute>
             <Route path="/" component={ViewHome}></Route>
+            <Route path="/Frontend" component={ViewFrontend}></Route>
+            <Route path="/Moviles" component={ViewMoviles}></Route>
+            <Route path="/Seguridad" component={ViewSeguridad}></Route>
             <Route path="Informacion" component={ViewInformacion}></Route>
             <Route path="Contactenos" component={Inbox}>
                 <Route path="Nuevo"></Route>
