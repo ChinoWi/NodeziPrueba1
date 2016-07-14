@@ -43,7 +43,7 @@ const ViewHome=React.createClass({
                     imagensrc:'asset/images/seguridad.png',
                     texto:'Auditoria y Seguridad para para empresas y aplicaciones',
                     textoButton:'Informacion',
-                    url:'/Seguridad'
+                    url:'/Servicios/Seguridad'
                 },
                 {
                     key:3,
@@ -146,8 +146,59 @@ const ViewHome=React.createClass({
                         </section>
                     </div>
                 </div>
-
+                
+                
                 <div className="sectionhome3">
+                    <div className="container">
+                        <div className="section-title">
+                            <div className="title">
+                                NUESTROS SERVICIOS
+                            </div>
+                        </div>
+                        <div className="row small-up-1 medium-up-2 large-up-4 text-center">
+                            <div className="columns">
+                                <div className="spaces">
+                                    <div className="content">
+                                        <img src="asset/images/icno-home-web.png" alt=""/>
+                                        <div className="text-content">Diseño Web y Desarrollo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="columns">
+                                <div className="spaces">
+                                    <div className="content">
+                                        <img src="asset/images/icon-home-mobil.png" alt=""/>
+                                        <div className="text-content">Diseño Movil y Desarrollo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="columns">
+                                <div className="spaces">
+                                    <div className="content">
+                                        <img src="asset/images/icon-home-pentesting.png" alt=""/>
+                                        <div className="text-content">Pentesting Web</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="columns">
+                                <div className="spaces">
+                                    <div className="content">
+                                        <img src="asset/images/icon-home-hacking.png" alt=""/>
+                                        <div className="text-content">Seguridad Informatica</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="content-button">
+                            <Link to="/Servicios" className="button large secondary">+ Informacion</Link>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div className="sectionhome4">
                     <div className="row columns">
                         <div className="text-center">
                             <div className="text-title">

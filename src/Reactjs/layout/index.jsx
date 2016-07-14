@@ -151,9 +151,10 @@ const MenuNav=React.createClass({
         return{
             datos:[
                 {key:1,title:'Home',urlLink:'/',styloIcon:'fa fa-home iconos'},
-                {key:2,title:'Informacion',urlLink:'/Informacion',styloIcon:'fa fa-info-circle iconos'},
-                {key:3,title:'Preguntas',urlLink:'/Preguntas',styloIcon:'fa fa-question-circle iconos'},
-                {key:4,title:'Contactenos',urlLink:'/Contactenos',styloIcon:'fa fa-envelope iconos'}
+                {key:2,title:'Servicios',urlLink:'/Servicios',styloIcon:'fa fa-asterisk iconos'},
+                {key:3,title:'Informacion',urlLink:'/Informacion',styloIcon:'fa fa-info-circle iconos'},
+                {key:4,title:'Preguntas',urlLink:'/Preguntas',styloIcon:'fa fa-question-circle iconos'},
+                {key:5,title:'Contactenos',urlLink:'/Contactenos',styloIcon:'fa fa-envelope iconos'}
             ],
             showMenu:false
         }

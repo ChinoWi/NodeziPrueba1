@@ -67,8 +67,60 @@
         border-radius 2px
         display flex
 
-@media screen and (max-width: 639px)
+
+.sectionhome3
+    background white
+    padding 40px 2px
+    border-top 1px solid #5F6A70
+
+    .container
+        padding 10px
+        .section-title
+            text-align center
+            margin 10px
+            .title
+                padding 20px
+                font-size 28px
+                color #5F6A70
+        .spaces
+            padding 10px
+            .content
+                border-radius 2px
+                border 1px solid #e4eaec
+                background #F0F0F0
+                margin 1px
+                img
+                    height 120px
+                    padding 15px
+                .text-content
+                    padding 10px
+                    font-size 16px
+                    background #728087
+                    color white
+
+            .content:hover
+                border 1px solid #0072C6
+                color white
+            .content:hover .text-content
+                background #0072C6
+
+        .content-button
+            text-align center
+            margin-top 20px
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em)
     .sectionhome3
+        .container
+            .content
+                .spaces
+                    .text-content
+                        text-align center
+
+
+
+@media screen and (max-width: 639px)
+    .sectionhome4
         .container2
             display block
             margin-top -80px
@@ -85,8 +137,7 @@
                     margin 1px
                     border  1px solid #4B8BA0
 
-
-.sectionhome3
+.sectionhome4
     padding-top 20px
     background white
     .text-title

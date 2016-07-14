@@ -168,7 +168,6 @@ const ViewPreguntas= React.createClass({
         Events.scrollEvent.remove('end');
     },
 
-
     PruebaS(){
         alert("prueba");
     },
@@ -227,11 +226,7 @@ const ViewPreguntas= React.createClass({
                 <Element name="test5" className="element" style={{height:"400px"}}>
                     test 5
                 </Element>
-
-                <ViewBuscar OnClickAnchor={this.PruebaS} prueba="pruebaSSS"/>
             </div>
-
-
 
 
         );
@@ -239,6 +234,20 @@ const ViewPreguntas= React.createClass({
 });
 
 
+var Hola=function () {
+    alert("prueba")
+}
+
+
+ViewBuscar.getDefaultProps=function () {
+    return {
+        prueba:"jasjsajs"
+    }
+}
+
+ViewBuscar.defaultProps={
+    OnClickAnchor:{Hola}
+}
 
 export default ViewPreguntas
 
