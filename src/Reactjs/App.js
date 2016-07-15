@@ -16,7 +16,6 @@ import ViewMoviles from './view/Moviles/moviles'
 import ViewSeguridad from './view/Seguridad/seguridad'
 import ViewServicios from './view/Servicios/Servicios'
 
-
 ReactDOM.render((
     <Router history={browserHistory}>
         <Route path="/" component={App} >
@@ -28,7 +27,7 @@ ReactDOM.render((
             </Route>
             <Route path="Preguntas" component={ViewPreguntas}></Route>
             <Route path="Servicios" component={ViewServicios}>
-                <Route path=":idSeguridad" component={ViewSeguridad}></Route>
+                <Route path="Seguridad" component={ViewSeguridad}></Route>
             </Route>
             <Route path="/Frontend" component={ViewFrontend}></Route>
             <Route path="/Moviles" component={ViewMoviles}></Route>

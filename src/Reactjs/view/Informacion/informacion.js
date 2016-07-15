@@ -200,6 +200,7 @@ const ViewInformacion=React.createClass({
                             </div>
                         </div>
                         <div className="content-content">
+                            <h4>Trabajamos segun las preferencias de ustedes</h4>
                             <div className="row">
                                 <div className="small-up-1 medium-up-2 large-up-3" >
                                     <div className="columns" >
@@ -216,6 +217,15 @@ const ViewInformacion=React.createClass({
                                             <div className="medida">
                                                 <img src="asset/images/time-real.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Software en Tiempo Real</h5>
+                                                <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="columns">
+                                        <div className="spaces text-center">
+                                            <div className="medida">
+                                                <img src="asset/images/seo.png" alt="software medidda"/>
+                                                <h5 className="titlebox">Veloz</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
                                         </div>
