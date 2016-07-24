@@ -3,7 +3,7 @@
 		.title
 			padding 10px
 			text-align center
-			background #00BAFF
+			border-bottom .5px solid #49B5D5
 			.circleMovil
 				text-align left
 				padding-left 30px
@@ -14,12 +14,11 @@
 			.text-contact
 				text-align center
 				display inline-block
-				font-size 18px
-				color white
+				font-size 20px
+				color #49B5D5
 			.text-contactOculto
 				display inline-block
 				padding-top 22px
-				color white
 
 		.content
 			padding 30px
@@ -41,16 +40,17 @@
 					position: relative;
 					.label-mat
 						display: block;
-						font-size: 18px;
+						font-size: 12px;
 						transform: translateY(35px);
 						color: #5F6A70;
 						transition: all 0.5s;
 						width: 75%
+						font-weight bold
 					.input-mat
 						position: relative;
 						outline: none;
 						padding: 8px 0;
-						font-size: 16px;
+						font-size: 12px;
 					.label-mat:hover
 						cursor pointer
 				.content-input:after, .content-input:before
@@ -73,7 +73,8 @@
 					position: relative;
 					.label-mat
 						display: block;
-						font-size: 18px;
+						font-size: 12px;
+						font-weight bold
 						transform: translateY(35px);
 						color: #5F6A70;
 						transition: all 0.5s;
@@ -106,14 +107,16 @@
 					transform: translateY(0);
 
 				.help-text
-					color #596E7A
+					color #49B5D5
+					font-weight bold
 					margin-top -7px
 					font-size 12px
 				.help-textArea
-					color #596E7A
+					color #49B5D5
 					right 20px
+					font-weight bold
 					margin-top 5px
-					font-size 9px
+					font-size 12px
 
 				.iconAprov
 					padding-top 20px
@@ -149,6 +152,8 @@
 			.circleDesktop
 				padding-top 100px
 				height 320px
+
+
 
 
 
@@ -221,7 +226,6 @@
 	stroke var(--progress-fg-color)
 
 .CircularProgress-Text
-	font-family sans-serif
 	fill var(--progress-fg-color)
 	transform translate(0 50%)
 
@@ -234,6 +238,5 @@
 
 
 .CircularProgressInfo-Text
-	font-family sans-serif
 	fill var(--progressInfo-fg-color)
 	transform translate(0 50%)

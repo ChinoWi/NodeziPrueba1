@@ -26,13 +26,13 @@ const SuccesMensaje=React.createClass({
                 <div className="row">
                     <div className="medium-6 large-6 columns"   >
                         <div className="content-img">
-                            <img src="asset/images/success.png" alt=""/>
+                            <img src="/asset/images/success.png" alt=""/>
                         </div>
                     </div>
                     <div className="medium-6 large-6 columns">
                         <div className="content-text">
                             <div className="textMensaje">
-                                <img src="asset/images/icon_success.png" alt=""/>
+                                <img src="/asset/images/icon_success.png" alt=""/>
                                 <h2> Hola {this.props.nombre},</h2>
                                 <h3>Su mensaje a sido enviado.</h3>
                                 <button onClick={this.props.retorna} className="button">Volver a enviar Mensaje</button>
@@ -72,9 +72,9 @@ const ViewContactenos=React.createClass({
             bordererror:'1px solid #E91E63',
             bordersuccess:'1px solid #2196F3',
 
-            iconItem1:'asset/images/icon_item1.png',
-            iconItem2:'asset/images/icon_item2.png',
-            iconItem3:'asset/images/icon_item3.png',
+            iconItem1:'/asset/images/icon_item1.png',
+            iconItem2:'/asset/images/icon_item2.png',
+            iconItem3:'/asset/images/icon_item3.png',
         };
     },
 
@@ -98,18 +98,18 @@ const ViewContactenos=React.createClass({
             });
             if(this.state.valor==0){
                 value=32;
-                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'/asset/images/icon_success.png'})
             }if(this.state.valor==33){
                 value=65;
-                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'/asset/images/icon_success.png'})
             }
             if(this.state.valor==35){
                 value=67;
-                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'/asset/images/icon_success.png'})
             }
             if(this.state.valor==68){
                 value=100;
-                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeNombre:'Correct',iconItem1:'/asset/images/icon_success.png'})
             }
         }if(valorNombre.length<=2 ){
             if(this.state.valor==0)
@@ -124,7 +124,7 @@ const ViewContactenos=React.createClass({
                 value=value-32;
                 this.setState({
                     mensajeNombre:'Min 4 caracteres, letras',
-                    iconItem1:'asset/images/icon_error.png'
+                    iconItem1:'/asset/images/icon_error.png'
                 });
             }
         }
@@ -152,10 +152,10 @@ const ViewContactenos=React.createClass({
             });
             if(this.state.valor==0){
                 value=33;
-                this.setState({valor:value,mensajeEmail:'Correct',iconItem2:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeEmail:'Correct',iconItem2:'/asset/images/icon_success.png'})
             }if(this.state.valor==32){
                 value=65;
-                this.setState({valor:value,mensajeEmail:'Correct',iconItem2:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeEmail:'Correct',iconItem2:'/asset/images/icon_success.png'})
             }
             if(this.state.valor==35){
                 value=68;
@@ -178,7 +178,7 @@ const ViewContactenos=React.createClass({
                 value=value-33;
                 this.setState({
                     mensajeEmail:'Ingrese email valido',
-                    iconItem2:'asset/images/icon_error.png'
+                    iconItem2:'/asset/images/icon_error.png'
                 });
             }
         }
@@ -204,18 +204,18 @@ const ViewContactenos=React.createClass({
             });
             if(this.state.valor==0){
                 value=35;
-                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'/asset/images/icon_success.png'})
             }if(this.state.valor==32){
                 value=67;
-                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'/asset/images/icon_success.png'})
             }
             if(this.state.valor==33){
                 value=68;
-                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'/asset/images/icon_success.png'})
             }
             if(this.state.valor==65){
                 value=100;
-                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'asset/images/icon_success.png'})
+                this.setState({valor:value,mensajeTextarea:'Correct',iconItem3:'/asset/images/icon_success.png'})
             }
         }if(valorTextarea.length<5 ){
             if(this.state.valor==0)
@@ -230,7 +230,7 @@ const ViewContactenos=React.createClass({
                 value=value-35;
                 this.setState({
                     mensajeTextarea:'Min 6 caracteres',
-                    iconItem3:'asset/images/icon_error.png'
+                    iconItem3:'/asset/images/icon_error.png'
                 });
             }
         }
@@ -317,9 +317,9 @@ const ViewContactenos=React.createClass({
 
             background:'#FAFAFA',
 
-            iconItem1:'asset/images/icon_item1.png',
-            iconItem2:'asset/images/icon_item2.png',
-            iconItem3:'asset/images/icon_item3.png'
+            iconItem1:'/asset/images/icon_item1.png',
+            iconItem2:'/asset/images/icon_item2.png',
+            iconItem3:'/asset/images/icon_item3.png'
         });
     },
 
@@ -336,86 +336,82 @@ const ViewContactenos=React.createClass({
 
                 <div className="text-center" style={{display:this.state.showContacto}}>
                     <div className="contactenos">
-                            <div className="container">
-                                <div className="title">
-                                    <div className="row">
-                                        <div className="show-for-small-only">
-                                            <div className="small-3 columns text-center" style={{paddingTop:'10px'}}>
-                                                <CircularProgress
-                                                    strokeWidth="2"
-                                                    fontsize="15px"
-                                                    stroken1="#D1D1D1"
-                                                    stroken2="white"
-                                                    radius="22"
-                                                    percentage={this.state.valor}/>
-                                            </div>
-                                            <div className="small-9 columns text-left">
-                                                <i className="fa fa-wpforms" aria-hidden="true"></i>
-                                                <div className="text-contactOculto">Contact form</div>
-                                            </div>
+                        <div className="container">
+                            <div className="title">
+                                <div className="row">
+                                    <div className="show-for-small-only">
+                                        <div className="small-3 columns text-center" style={{paddingTop:'10px'}}>
+                                            <CircularProgress
+                                                strokeWidth="3"
+                                                fontsize="15px"
+                                                stroken1="#D1D1D1"
+                                                stroken2="#00BAFF"
+                                                radius="22"
+                                                percentage={this.state.valor}/>
                                         </div>
-                                        <div className="show-for-medium">
+                                        <div className="small-9 columns text-left">
                                             <i className="fa fa-wpforms" aria-hidden="true"></i>
-                                            <div className="text-contact">Contact form</div>
+                                            <div className="text-contactOculto">Formulario de Consulta</div>
                                         </div>
                                     </div>
+                                    <div className="show-for-medium">
+                                        <i className="fa fa-wpforms" aria-hidden="true"></i>
+                                        <div className="text-contact">Formulario de Consulta</div>
+                                    </div>
                                 </div>
-                                <div className="content">
-                                    <div className="row">
-                                        <div className="medium-6 large-6 columns">
-                                            <form>
-                                                <div className="row">
-                                                    <div className="small-2 columns">
-                                                        <div className="show-for-small-only">
-                                                            <div className="iconAprov">
-                                                                <img src={this.state.iconItem1} style={{height:'40px'}} alt=""/>
-                                                            </div>
+                            </div>
+                            <div className="content">
+                                <div className="row">
+                                    <div className="medium-6 large-6 columns">
+                                        <form>
+                                            <div className="row">
+                                                <div className="small-2 columns">
+                                                    <div className="show-for-small-only">
+                                                        <div className="iconAprov">
+                                                            <img src={this.state.iconItem1} style={{height:'40px'}} alt=""/>
                                                         </div>
-                                                    </div>
-                                                    <div className="small-10 columns">
-                                                        <div className="content-input">
-                                                            <label htmlFor="first-name" className="label-mat">Nombre prueba</label>
-                                                            <input type="text" className="mat-input" id="first-name" name="nombre" value={this.state.textNombreFirebase}  onChange={this.onNombreChange} autoComplete="off"/>
-                                                        </div>
-                                                        <div className="help-text">La contraseña debe tener al menos 3 caracteres.</div>
                                                     </div>
                                                 </div>
-                                                <div className="row">
-                                                    <div className="small-2 columns">
-                                                        <div className="show-for-small-only">
-                                                            <div className="iconAprov">
-                                                                <img src={this.state.iconItem2} style={{height:'40px'}} alt=""/>
-                                                            </div>
-                                                        </div>
+                                                <div className="small-10 columns">
+                                                    <div className="content-input">
+                                                        <label htmlFor="first-name" className="label-mat">Nombre prueba</label>
+                                                        <input type="text" className="mat-input" id="first-name" name="nombre" value={this.state.textNombreFirebase}  onChange={this.onNombreChange} autoComplete="off"/>
                                                     </div>
-                                                    <div className="small-10 columns">
-                                                        <div className="content-input">
-                                                            <label htmlFor="first-email" className="label-mat">Email</label>
-                                                            <input type="text" className="mat-input" id="first-email" name="email" value={this.state.textEmailFirebase} onChange={this.onEmailChange} autoComplete="off"/>
+                                                    <div className="help-text">Ingrese su  nombre</div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="small-2 columns">
+                                                    <div className="show-for-small-only">
+                                                        <div className="iconAprov">
+                                                            <img src={this.state.iconItem2} style={{height:'40px'}} alt=""/>
                                                         </div>
-                                                        <div className="help-text">Ingrese Email correcto @dominio.com</div>
                                                     </div>
                                                 </div>
-                                                <div className="row">
-                                                    <div className="small-2 columns">
-                                                        <div className="show-for-small-only">
-                                                            <div className="iconAprov">
-                                                                <img src={this.state.iconItem3} style={{height:'40px'}} alt=""/>
-                                                            </div>
+                                                <div className="small-10 columns">
+                                                    <div className="content-input">
+                                                        <label htmlFor="first-email" className="label-mat">Email</label>
+                                                        <input type="text" className="mat-input" id="first-email" name="email" value={this.state.textEmailFirebase} onChange={this.onEmailChange} autoComplete="off"/>
+                                                    </div>
+                                                    <div className="help-text">Ingrese suEmail</div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="small-2 columns">
+                                                    <div className="show-for-small-only">
+                                                        <div className="iconAprov">
+                                                            <img src={this.state.iconItem3} style={{height:'40px'}} alt=""/>
                                                         </div>
                                                     </div>
-                                                    <div className="small-10 columns">
-                                                        <div className="content-inputTextarea">
-                                                            <label htmlFor="first-textarea" className="label-mat">Consulta</label>
-                                                            <textarea className="mat-input" id="first-textarea" onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} autoComplete="off"/>
-                                                        </div>
-                                                        <div className="help-textArea">Min 5 - Max <span id="chars">140</span></div>
+                                                </div>
+                                                <div className="small-10 columns">
+                                                    <div className="content-inputTextarea">
+                                                        <label htmlFor="first-textarea" className="label-mat">Consulta</label>
+                                                        <textarea className="mat-input" id="first-textarea" onChange={this.onTextareaChange} value={this.state.textTextareaFirebase} autoComplete="off"/>
                                                     </div>
+                                                    <div className="help-textArea">Min 5 - Max <span id="chars">140</span></div>
                                                 </div>
-
-                                                <div className="row">
-                                                    <div className="g-recaptcha" data-sitekey="6Lef1iQTAAAAAEQQOvIRttpwewdHPDiyRI5a0Anb"></div>
-                                                </div>
+                                            </div>
 
                                                 <span className="errorPadding" style={{display:this.state.mostrarMensajeDisplay}}>
                                                     <div className="row">
@@ -426,29 +422,29 @@ const ViewContactenos=React.createClass({
                                                 </span>
 
 
-                                                <div className="buttonFinal">
-                                                    <button type="button" onClick={this.handleSubmit} className="hollow button">Enviar</button>
-                                                </div>
+                                            <div className="buttonFinal">
+                                                <button type="button" onClick={this.handleSubmit} className="hollow button">Enviar</button>
+                                            </div>
 
-                                            </form>
-                                        </div>
-                                        <div className="medium-6 large-6 columns">
-                                            <div className="show-for-medium fondoContact">
-                                                <div className="circleDesktop">
-                                                    <CircularProgress
-                                                        strokeWidth="8"
-                                                        fontsize="35px"
-                                                        stroken1="#E2E2E2"
-                                                        stroken2="#49B5D5"
-                                                        radius="90"
-                                                        percentage={this.state.valor}/>
-                                                </div>
+                                        </form>
+                                    </div>
+                                    <div className="medium-6 large-6 columns">
+                                        <div className="show-for-medium fondoContact">
+                                            <div className="circleDesktop">
+                                                <CircularProgress
+                                                    strokeWidth="8"
+                                                    fontsize="35px"
+                                                    stroken1="#E2E2E2"
+                                                    stroken2="#49B5D5"
+                                                    radius="90"
+                                                    percentage={this.state.valor}/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
 

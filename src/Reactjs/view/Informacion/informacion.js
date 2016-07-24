@@ -183,7 +183,7 @@ const ViewInformacion=React.createClass({
                                 </div>
                                 <div className="medium-5 columns">
                                     <div className="show-for-medium text-center">
-                                        <img src="asset/images/mocad.png" alt=""/>
+                                        <img src="/asset/images/mocad.png" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +206,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns" >
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/software-medida1.png" alt="software medidda"/>
+                                                <img src="/asset/images/software-medida1.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Software a Medida</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -215,7 +215,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns">
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/time-real.png" alt="software medidda"/>
+                                                <img src="/asset/images/time-real.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Software en Tiempo Real</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -224,7 +224,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns">
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/seo.png" alt="software medidda"/>
+                                                <img src="/asset/images/seo.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Veloz</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -233,7 +233,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns">
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/ux.png" alt="software medidda"/>
+                                                <img src="/asset/images/ux.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Experiencia de Usuario</h5>
                                                 <div className="description">Mejor experiencia para tus usuario. dfsdfsdfsdf</div>
                                             </div>
@@ -242,7 +242,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns" >
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/ui.png" alt="software medidda"/>
+                                                <img src="/asset/images/ui.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Interfaz Grafica</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -251,7 +251,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns" >
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/compromiso.png" alt="software medidda"/>
+                                                <img src="/asset/images/compromiso.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Compromiso con el cliente</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -260,7 +260,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns" >
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/testing.png" alt="software medidda"/>
+                                                <img src="/asset/images/testing.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Testing De hacking</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -269,7 +269,7 @@ const ViewInformacion=React.createClass({
                                     <div className="columns">
                                         <div className="spaces text-center">
                                             <div className="medida">
-                                                <img src="asset/images/seo.png" alt="software medidda"/>
+                                                <img src="/asset/images/seo.png" alt="software medidda"/>
                                                 <h5 className="titlebox">Seo y Posicionamiento</h5>
                                                 <div className="description">No tienes nada que hacer. El desarrollo ya corre por nuestra parte.</div>
                                             </div>
@@ -293,12 +293,12 @@ const ViewInformacion=React.createClass({
                         <div className="content-content">
                             <div className="row">
                                 <div className="large-6 columns">
-                                    <img className="icon-user-admin" src="asset/images/user-admin1.png" height="100px" alt=""/>
+                                    <img className="icon-user-admin" src="/asset/images/user-admin1.png" height="100px" alt=""/>
                                     User Admin
                                     <QuienesSomos1/>
                                 </div>
                                 <div className="large-6 columns">
-                                    <img className="icon-user-admin" src="asset/images/user-admin2.png" height="100px" alt=""/>
+                                    <img className="icon-user-admin" src="/asset/images/user-admin2.png" height="100px" alt=""/>
                                     User Admin
                                     <QuienesSomos2/>
                                 </div>

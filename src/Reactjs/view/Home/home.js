@@ -37,7 +37,7 @@ const ViewHome=React.createClass({
                     <div className="row">
                         <div className="large-7 columns">
                             <div className="show-for-medium">
-                                <div className="container1">
+                                <div className="container1 text-center">
                                     <p>Confie en Nosotros.</p>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ const ViewHome=React.createClass({
                                     </div>
                                     <div className="sectionTexto">
                                         <div className="text-content text-center">
-                                            sdfsdfsdf
+                                            Confie en nosotros.
                                         </div>
                                         <div className="bottomVideo-span">
                                             <span className="texto"><h3><small>Website</small></h3></span><div className="spacio"></div>
@@ -84,16 +84,7 @@ const ViewHome=React.createClass({
                 </div>
 
                 <div className="sectionhome3">
-                    <div className="show-for-small-only">
-                        <section id="sectionSlider">
-                            <Slider></Slider>
-                        </section>
-                    </div>
-                    <div className="show-for-medium">
-                        <section id="sectionSlider">
-                            <Slider></Slider>
-                        </section>
-                    </div>
+                    <Slider></Slider>
                 </div>
                 
                 
@@ -104,7 +95,15 @@ const ViewHome=React.createClass({
                                 NUESTROS SERVICIOS
                             </div>
                         </div>
-                        <div className="row small-up-1 medium-up-2 large-up-4 text-center">
+                        <div className="row small-up-1 medium-up-2 large-up-3 text-center">
+                            <div className="columns">
+                                <div className="spaces">
+                                    <div className="content">
+                                        <img src="asset/images/icno-home-web.png" alt=""/>
+                                        <div className="text-content">Sistemas y Aplicaciones web</div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className="columns">
                                 <div className="spaces">
                                     <div className="content">
@@ -129,7 +128,7 @@ const ViewHome=React.createClass({
                                     </div>
                                 </div>
                             </div>
-                            <div className="columns">
+                            <div className="columns large-6 columns">
                                 <div className="spaces">
                                     <div className="content">
                                         <img src="asset/images/icon-home-hacking.png" alt=""/>
@@ -138,7 +137,6 @@ const ViewHome=React.createClass({
                                 </div>
                             </div>
                         </div>
-
                         <div className="content-button">
                             <Link to="/Servicios" className="button secondary hollow large">Ver más</Link>
                         </div>
@@ -159,7 +157,8 @@ const ViewHome=React.createClass({
                                         <img src="asset/images/icno-home-web.png" alt=""/>
                                         <div className="text-title">FRONTEND</div>
                                         <div className="text-texto">
-                                            sdfsdfsdfsdfsd sad asd asd asd asd ass
+                                            Tus aplicaciones con una mejor interfaz y experiencia
+                                            de usuario
                                         </div>
                                         <div className="buttonEnvio">
                                             <Link to="/Servicios/Tecnologias/Frontend" className="secondary hollow button">Ver más</Link>
@@ -173,7 +172,8 @@ const ViewHome=React.createClass({
                                         <img src="asset/images/icon-home-mobil.png" alt=""/>
                                         <div className="text-title">BACKEND</div>
                                         <div className="text-texto">
-                                            sdfsdfsdfsdfsd sad asd asd asd asd ass
+                                            Tu proyecto en los lenguajes del lado del servidor
+                                            mas usados
                                         </div>
                                         <div className="buttonEnvio">
                                             <Link to="/Servicios/Tecnologias/Backend" className="secondary hollow button">Ver más</Link>
@@ -187,7 +187,7 @@ const ViewHome=React.createClass({
                                         <img src="asset/images/icon-home-pentesting.png" alt=""/>
                                         <div className="text-title">MOVIL</div>
                                         <div className="text-texto">
-                                            sdfsdfsdfsdfsd sad asd asd asd asd ass
+                                           Aplicaciones Moviles mas seguras y rapidas
                                         </div>
                                         <div className="buttonEnvio">
                                             <Link to="/Servicios/Tecnologias/Movil" className="secondary hollow button">Ver más</Link>
@@ -201,7 +201,8 @@ const ViewHome=React.createClass({
                                         <img src="asset/images/icon-home-hacking.png" alt=""/>
                                         <div className="text-title">ALMACENAMIENTO DE DATOS</div>
                                         <div className="text-texto">
-                                            sdfsdfsdfsdfsd sad asd asd asd asd ass
+                                            Tus datos almacenados en gestores de base de datos 
+                                            de alta concurrencia
                                         </div>
                                         <div className="buttonEnvio">
                                             <Link to="/Servicios/Tecnologias/Almacenamiento-de-datos" className="secondary hollow button">Ver más</Link>

@@ -1,0 +1,90 @@
+
+
+
+.containerr
+	// border 1px solid red
+	margin 0  9%
+	padding 2.5em 0
+
+.terminos
+	font-family 'Lato' !important
+	color #1C3643
+	font-size 27px
+	font-weight bold
+	&-content
+		font-family 'Lato' !important
+		color #1C3643
+		font-size 16px
+
+.general
+	font-family 'Lato' !important
+	color #1C3643
+	font-size 27px
+	font-weight bold
+	&-content
+		font-family 'Lato' !important
+		color #1C3643
+		font-size 16px
+	&-content:before
+		counter-increment lista
+		content counter(lista)
+		margin-right .7em
+		color #1C3643
+		background white
+		padding 0 .3em
+		border-radius 50%
+		font-weight bold
+	&-lista
+		font-family 'Lato' !important
+		list-style-type  square
+		color #1C3643
+		font-size 16px
+	&-listaMaster
+		counter-reset master
+	&-list
+		counter-reset lista
+		padding 0 .9em
+.general:before
+	counter-increment master
+	content counter(master)
+	color #1C3643
+	margin-right .3em
+	background white
+	padding 0 .3em
+	border-radius 50%
+
+ 
+	
+
+.acuerdo
+	font-family 'Lato' !important
+	color #1C3643
+	font-size 27px
+	font-weight bold
+	&-content
+		font-family 'Lato' !important
+		color #1C3643
+		font-size 16px
+		text-indent 10px
+
+.politica
+	font-family 'Lato' !important
+	color #1C3643
+	font-size 27px
+	font-weight bold
+	&-content
+		font-family 'Lato' !important
+		color #1C3643
+		font-size 16px
+		text-indent 10px	
+
+.terminacion
+	font-family 'Lato' !important
+	color #1C3643
+	font-size 27px
+	font-weight bold
+	&-content
+		font-family 'Lato' !important
+		color #1C3643
+		font-size 16px
+		text-indent 10px

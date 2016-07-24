@@ -1,6 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router';
-import AppSidebar from '../component/sidebar/sidebar'
+import Scroll from 'react-scroll';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import TestUtils from 'react-addons-test-utils';
+import $ from 'jquery';
+
+var DirectLink = Scroll.DirectLink;
+var Events     = Scroll.Events;
+var scroll     = Scroll.animateScroll;
+
+
 
 
 const styles = {
@@ -29,7 +38,7 @@ const Footer=React.createClass({
               <div className="roww aroundd Footer">
                  <div className="col-6 Footer-Content">
                      <FooterContent/>
-                     <FooterTerminos/>
+                     <FooterTerminos/>`
                  </div>
                  <div className="Footer-Linea"></div>
                  <div className="col-4 Footer-Redes">
@@ -61,7 +70,7 @@ const FooterContent = React.createClass({
 
 const FooterTerminos = React.createClass({
    render(){
-     return  <p className="Footer-Terminos">Terminos y Condiciones</p>
+     return    <p  className="Footer-Terminos"><Link  to="/Terminos">Terminos y Condiciones</Link> </p>
    }
 
 });
@@ -116,7 +125,7 @@ const Header=React.createClass({
                         <div className="row">
                             <div className="small-12 medium-4 columns">
                                 <Link to="/">
-                                    <img src="asset/images/logo.png" alt=""/>
+                                    <img src="/asset/images/logo.png" alt=""/>
                                 </Link>
                             </div>
                             <div className="small-12 medium-2 columns form">
@@ -129,7 +138,7 @@ const Header=React.createClass({
                     <header className="header-small">
                         <div className="text-center">
                             <Link to="/">
-                                <img src="asset/images/logo.png" alt=""/>
+                                <img src="/asset/images/logo.png" alt=""/>
                             </Link>
                             <div className="input-wrapper">
                                 <div onClick={this.RedirectTo}>
@@ -222,8 +231,7 @@ const MenuItem = React.createClass({
             </ul>
         )
     }
-})
-
+});
 
 const MenuItemSmall=React.createClass({
     render(){
@@ -241,7 +249,43 @@ const MenuItemSmall=React.createClass({
 });
 
 
+// (function(){
+//    console.log(this.refs.up)
+// })()
 
+
+
+
+const IconSubir=React.createClass({ 
+
+ 
+
+  componentDidMount: function() {
+      this.evento()
+  },
+
+   render(props){
+       
+       return(
+           <div className="icon-fixex">
+               <DirectLink className="test6"  id="up" to="subir" spy={true} smooth={true} duration={500}><img src="/asset/images/subir.png" height="50px" width="50px" alt=""/></DirectLink>
+           </div>
+       );
+   },
+
+
+   evento:(function(){
+      $('#up').addClass('upHide')
+      $(window).scroll(function(e){
+         if($(window).scrollTop()>140){
+            $('#up').show()
+         }
+         else{
+            $('#up').hide()
+         }
+      });
+   }),
+});
 
 
 const App=React.createClass({
@@ -280,11 +324,13 @@ const App=React.createClass({
     render(){
         return(
             <div>
-                <Header></Header>
-                <MenuNav></MenuNav>
-                {this.props.children}
-                <Footer/>
-
+                <div id="subir">
+                    <Header></Header>
+                    <MenuNav></MenuNav>
+                    {this.props.children}
+                    <Footer/>
+                </div>
+                <IconSubir/>
             </div>
 
         );

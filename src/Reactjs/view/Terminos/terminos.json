@@ -1,0 +1,24 @@
+[
+
+  { 
+  	"id":"1",
+  	"termino":"Esto servicios en su mayoria son a distancia,claro dependediendo de donde el cliente se encuentre"
+  },
+  {
+    "id":"2",
+    "termino":"Al ingresar sus datos en el area de registro usted nos estaria dando la autorizacion para poder contactarlo"
+  },
+  {
+  	"id":"3",
+  	"termino":"El servicio se empezara ejecutar cuando usted deposite el  adelanto que  se le diga segun su proyecto"
+  },
+  {
+  	"id":"4",
+  	"termino":"Como parte de la politica de la empresa se le presentara cada cierto tiempo avances del proyecto durante su ejecucion"
+  },
+  {
+  	"id":"5",
+  	"termino":"Usted no tendra derecho a reembolso una vez que el proyecto ya este en ejecucion"
+  }
+
+]

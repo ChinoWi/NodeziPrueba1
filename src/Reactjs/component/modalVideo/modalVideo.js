@@ -18,7 +18,7 @@ const PruebaModal=React.createClass({
     },
     render() {
         return (
-            <div className="row" style={{padding:'15px'}}>
+            <div style={{padding:'15px'}}>
                 <div id="contentModal">
                     <div className="text-center">
                         <img className="imgVideoModal" src="asset/images/video_portada.png" style={{height:'280px'}} onClick={() => this.showModal()}alt=""/>

@@ -1,7 +1,3 @@
-
-[class*="entypo-"]:before
-    font-family: 'entypo', sans-serif;
-
 .sectionhomeAll
     .sectionhome1
         background white
@@ -33,18 +29,46 @@
 
     .sectionhome2
         background white
+        border-bottom 1px solid #E9EAEA
         .container1
-            padding 140px
             border-radius 2px
+            padding-top 150px
             p
                 font-size 25px
                 color #5F6A70
         .container2
             border-radius 2px
 
+    .sectionhome3
+      background #6EB9BF
+      .container
+        padding 0 100px
+        .content
+          padding 40px
+          &-text
+            padding 15px
+            text-align right
+            .text-title
+              margin-top 50px
+              font-size 2em
+              color #204056
+              .text-mensaje
+                text-align right
+                padding-top 10px
+                font-size 1.2em
+          &-img
+            padding 15px
+            text-align center
+            img
+              margin 0
+              padding 0
+              height 300px
+              width 500px
+
+
+
     .sectionhome4
         background white
-        padding 40px 2px
         .container
             padding 10px
             .section-title
@@ -82,9 +106,9 @@
                 color white
 
     .sectionhome5
-        background white
-        padding 20px 2px
-        .container
+      background white
+      padding-bottom 50px
+      .container
             padding 10px
             .section-title
                 text-align center
@@ -152,35 +176,13 @@
 .separacion
     padding-bottom 8px
 
-//Section Mas Informacion
 
-
-//Section Slider
-
-.slideSmall
-    height 470px
-    color white
-
-.slideDesktop
-    height 400px
-    padding: 20px
-    color : white
-
-.slideContainerDesktop
-    height 400px
-    p.pTitleDesktop
-        font-size 30px
-    p.ptextDesktop
-        font-size 25px
-
-
-//SectionInfo
 .sectionQuienesSomos
+    background #F0F0F0
     .information
         padding 1.5em 0
-        background #08D1D8
         &-we
-            color white
+            color: #5f6a70;
             font-family 'Roboto'
             font-size 1.4em
         &-more
@@ -200,7 +202,7 @@
 
 
 @media screen and (max-width: 639px)
-    .sectionhome1
+  .sectionhome1
         padding 15px
         .content-small
             text-align center
@@ -208,11 +210,9 @@
             .description-small
                 font-size 18px
                 color white
-    .sectionhome2
+  .sectionhome2
         .container2
             display block
-            margin 0
-            padding 0
             .sectionVideo
                 margin -70px 50px 0px 50px
                 .flex-video1
@@ -230,26 +230,30 @@
                         margin 1px
                         border  1px solid #4B8BA0
 
-
+  .sectionhome3
+      .container
+        padding 0 !important
+      .content
+        padding 10px !important
+        &-text
+          text-align center !important
+          .text-title
+            margin 0 !important
+            font-size 1.5em !important
+        &-img
+          padding 10px !important
+          img
+            height 250px !important
 
 @media screen and (min-width: 640px) and (max-width: 1023px)
+  .sectionhome2
+      .container1
+          padding-top 40px !important
+
+
    .sectionhome4
         .container
             .content
                 .spaces
                     .text-content
                         text-align center
-
-
-
-
-
-
-
-
-
-
-
-
-
-
