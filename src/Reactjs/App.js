@@ -28,6 +28,7 @@ import ViewSeguridad from './view/Servicios/Servicios/Seguridad/Seguridad'
 
 import ViewBuscar from './view/buscar/buscar'
 
+
 ReactDOM.render((
     <Router history={browserHistory}>
         <Route path="/" component={App}>

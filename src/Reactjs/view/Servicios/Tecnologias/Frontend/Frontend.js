@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router'
+import {Link,IndexLink} from 'react-router'
+
 import Scroll from 'react-scroll'
 
 var DirectLink = Scroll.DirectLink;
@@ -175,9 +176,12 @@ const ViewFrontend = React.createClass({
                         <hr/>
                         <div className="content-bottom">
                             <div>Ir a Tecnologia</div>
+                            <IndexLink  to="/">Redirect Backend</IndexLink>
+
                             <Link className="urlDir" to="/Servicios/Tecnologias/Backend">Backend</Link>
                             <Link className="urlDir" to="/Servicios/Tecnologias/Movil">Movíl</Link>
                             <Link className="urlDir" to="/Servicios/Tecnologias/Almacenamiento-de-datos">Almacenamiento de Datos</Link>
+
                         </div>
                     </div>
 

@@ -2,10 +2,11 @@ module.exports={
     entry:['./src/Reactjs/App.js'],
     output:{
         path: __dirname,
-        filename:'bundle.js'
+        filename:'./dist/asset/js/app/app.js'
     },
     devServer: {
         inline: true,
+        contentBase:'./dist',
         port: 8081,
         historyApiFallback:true
     },
